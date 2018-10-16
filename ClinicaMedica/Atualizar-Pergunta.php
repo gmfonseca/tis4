@@ -6,10 +6,10 @@
     $sql_banco = mysqli_query($conexao, "SELECT * FROM pergunta WHERE codigoPergunta='$id' LIMIT 1");
     $r = mysqli_fetch_assoc($sql_banco);
 
-   $sql_certo = mysqli_query($conexao, "SELECT * FROM respostaCerta WHERE cod_pergunta='$id' LIMIT 1");
-   $c = mysqli_fetch_assoc($sql_certo);
+    $sql_certo = mysqli_query($conexao, "SELECT * FROM respostacerta WHERE cod_pergunta='$id' LIMIT 1");
+    $c = mysqli_fetch_assoc($sql_certo);
 
-    $sql_pegadados = mysqli_query($conexao, "SELECT * FROM respostaErrada WHERE cod_pergunta='$id'");
+    $sql_pegadados = mysqli_query($conexao, "SELECT * FROM respostaerrada WHERE cod_pergunta='$id'");
 
     $radio = 1;
 ?>
@@ -106,9 +106,17 @@
 
     <!-- Nav-Bar -->
     <div style="background-color: rgb(145, 85, 167);">
-        <?php 
-            require_once('navbar.php');
-        ?>
+        <nav class="z-depth-0" style="height: 100px;">
+            <div class="nav-wrapper white">
+                <ul class="center">
+                    <!-- ><li><a href="index.php"><img src="Img_Prog/logo.png" height="100px" width="200px;"> </a></li> -->
+                    <li class="lina"><a href="Sobre-Nos.php" class="black-text"> SOBRE NÓS </a></li>
+                    <li class="lina"><a href="Espcialidades.php" class="black-text dropdown-trigger" data-target="Especialidades"> ESPECIALIDADES <i class="material-icons right"> arrow_drop_down </i></a></li>
+                    <li class="lina"><a href="Convenios.php" class="black-text"> CONVÊNIOS </a></li>
+                    <li class="lina"><a href="Contato.php" class="black-text"> CONTATO </a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 112 container center z-depth-5">
@@ -134,23 +142,21 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> cancel </i>
-                                            <label for="<?php echo " cAlterE".$radio; ?>">Alternativa Errada
-                                                <?php echo $radio; ?>: </label><input class="active validate" type="text" name="<?php echo " tAlterE".$radio; ?>" id="
-                                            <?php echo "cAlterE".$radio; ?>" value="<?php echo $l["descricao"]; ?>" maxlength="60" required>
+                                            <label for="<?php echo "cAlterE".$radio; ?>">Alternativa Errada <?php echo $radio; ?>: </label><input class="active validate" type="text" name="<?php echo "tAlterE".$radio; ?>" id="<?php echo "cAlterE".$radio; ?>" value="<?php echo $l["descricao"]; ?>" maxlength="60" required>
                                         </div>
                                     </div>
                                     <?php $radio = $radio+1; } ?>
-                                    <div class="row">
-                                        <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick=""> Publicar
-                                            <i class="material-icons right"> send </i>
-                                        </button>
-                                        
-                                        <a href="Admin.php">
-                                            <button class="btn waves-effect waves-light green darken-3 right" type="button" onclick=""> Voltar
-                                                <i class="material-icons left"> send </i>    
-                                            </button> 
+<div class="row">
+                                    <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick=""> Publicar
+                                        <i class="material-icons right"> send </i>
+                                    </button>
+                                    
+                                    <a href="Admin.php">
+                                    <button class="btn waves-effect waves-light green darken-3 right" type="button" onclick=""> Voltar
+                        <i class="material-icons left"> send </i>    
+                    </button> 
                                         </a>
-                                    </div>
+    </div>
                                 </form>
                             </div>
                             <br>
@@ -159,18 +165,39 @@
                 </div>
             </div>
         </div>
-        
-
-        <?php 
-            require_once('footer.php');
-        ?>
-
+        <div class="row grey lighten-3">
+            <br><br>
+            <div class="center">
+                <h4 id="Atfooter"> Receba nossa newsletter </h4>
+            </div>
+            <div class="center">
+                <p> Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor. </p>
+            </div>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6 m6 l6 offset-m3 offset-l3">
+                        <i class="material-icons prefix"> email </i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!--Materialize JS-->
     <script src="js/materialize.min.js"></script>
+
+    <!-- Activate Dropdown Menu -->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+        });
+
+    </script>
 
     <script>
         $(document).ready(function() {

@@ -7,23 +7,23 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title> Clinica Médica </title>
+    <title> Clinica Médica </title>
 
-        <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Google Icon Font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Materialize CSS-->
-        <link rel="stylesheet" href="css/materialize.min.css">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!--Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS-->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-    </head>
+</head>
 
-    <style>
+<style>
     /* Fonte da letra dos <li> */
         li{
             font-family: 'Raleway';
@@ -92,11 +92,30 @@
 
     </style>
 
-    <body class="grey lighten-3">
-        <?php 
-            require_once('navbar.php');
-        ?>
+<body class="grey lighten-3">
 
+    <!-- Nav-Bar -->
+    <div style="background-color: rgb(145, 85, 167);">
+        <nav class="z-depth-0" style="height: 100px;">
+            <div class="nav-wrapper white">
+                <ul class="center">
+                    <!-- ><li><a href="index.php"><img src="Img_Prog/logo.png" height="100px" width="200px;"> </a></li> -->
+                    <li class="lina"><a href="Sobre-Nos.php" class="black-text"> SOBRE NÓS </a></li>
+                    <li class="lina"><a href="Espcialidades.php" class="black-text dropdown-trigger" data-target="Especialidades"> ESPECIALIDADES <i class="material-icons right"> arrow_drop_down </i></a></li>
+                    <li class="lina"><a href="Convenios.php" class="black-text"> CONVÊNIOS </a></li>
+                    <li class="lina"><a href="Contato.php" class="black-text"> CONTATO </a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- Dropdown Structure -->
+        <ul id="Especialidades" class="dropdown-content z-depth-0">
+            <li><a href="Espcialidades.php" class="black-text center"> ÁREAS </a></li>
+            <li><a href="Cardiologia.php" class="black-text center"> CARDIOLOGIA </a></li>
+            <li><a href="Neurologia.php" class="black-text center"> NEUROLOGIA </a></li>
+            <li><a href="Ortopedia.php" class="black-text center"> ORTOPEDIA </a></li>
+        </ul>
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 112 container center z-depth-5">
@@ -124,6 +143,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+
                                             <tr>
                                                 <td>
 
@@ -132,9 +152,11 @@
                                                     <h8></h8>
                                                 </td>
                                                 <td>
+
                                                     <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
                                                         <i class='material-icons right'> close </i>
                                                     </button>
+
                                                 </td>
                                             </tr>
 
@@ -186,7 +208,6 @@
                                         <tbody>
 
                                             <tr>
-                                            
                                                 <td>
 
                                                 </td>
@@ -198,8 +219,10 @@
                                                     <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
                                                         <i class='material-icons right'> close </i>
                                                     </button>
+
                                                 </td>
                                             </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -225,6 +248,7 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
                                             <i class="material-icons right"> send </i>
                                         </button>
@@ -247,14 +271,17 @@
                                     <tbody>
                                         <tr>
                                             <td>
+
                                             </td>
                                             <td>
                                                 <h8></h8>
                                             </td>
                                             <td>
+
                                                 <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
                                                     <i class='material-icons right'> close </i>
                                                 </button>
+
                                             </td>
                                         </tr>
                                     </tbody>
@@ -263,42 +290,43 @@
                         </div>
 
                         <div id="perguntas" class="row">
-                            <div class="col s12 m12 l12">
-                                <table class="striped">
-                                    <thead>
-                                        <tr>
-                                            <th> Pergunta </th>
-                                            <th> Alterar </th>
-                                            <th> Remover </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php while($l = mysqli_fetch_array($sql_banco)){ ?>
-                                        <tr>
-                                            <td>
-                                                <?php echo $l["descricao"]; ?>
-                                            </td>
-                                            <td>
-                                                <a href="Atualizar-Pergunta.php?id=<?php echo $l["codigoPergunta"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
-                                            </td>
-                                            <td>
-                                                <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Pergunta.php?id=<?php echo $l[" codigoPergunta"]; ?>';">
-                                                    <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
-                                                        <i class='material-icons right'> close </i>
-                                                    </button>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
+                                <div class="col s12 m12 l12">
+                                    <table class="striped">
+                                        <thead>
+                                            <tr>
+                                                <th> Pergunta </th>
+                                                <th> Alterar </th>
+                                                <th> Remover </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php while($l = mysqli_fetch_array($sql_banco)){ ?>
+                                            <tr>
+                                                <td>
+                                                    <?php echo $l["descricao"]; ?>
+                                                </td>
+                                                <td>
+                                                    <a href="Atualizar-Pergunta.php?id=<?php echo $l["codigoPergunta"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Pergunta.php?id=<?php echo $l["codigoPergunta"]; ?>';">
+                                                        <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
+                                                            <i class='material-icons right'> close </i>
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                         </div>
 
                         <div class="row">
                             <div id="uploadP" class="col s12 m12 l12">
                                 <h4 class="center"> Upload de Pergunta </h4><br>
-                                <form name="formUpload" method="post" action="Cadastrar-Pergunta.php" enctype="multipart/form-data">                                    <div class="row">
+                                <form name="formUpload" method="post" action="Cadastrar-Pergunta.php" enctype="multipart/form-data">
+                                    <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> library_books </i>
                                             <label for="cPergunta">Pergunta: </label><input class="active validate" type="text" name="tPergunta" id="cPergunta" maxlength="60" required>
@@ -341,22 +369,49 @@
             </div>
         </div>
 
-        <?php 
-            require_once('footer.php');
-        ?>
 
-        <!-- Jquery-->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <!--Materialize JS-->
-        <script src="js/materialize.min.js"></script>
 
-        <script>
-            $(document).ready(function() {
-                $('.tabs').tabs();
-            });
+        <div class="row grey lighten-3">
+            <br><br>
+            <div class="center">
+                <h4 id="Atfooter"> Receba nossa newsletter </h4>
+            </div>
+            <div class="center">
+                <p> Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor. </p>
+            </div>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6 m6 l6 offset-m3 offset-l3">
+                        <i class="material-icons prefix"> email </i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-        </script>
+    <!-- Jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!--Materialize JS-->
+    <script src="js/materialize.min.js"></script>
 
-    </body>
+    <!-- Activate Dropdown Menu -->
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.tabs').tabs();
+        });
+
+    </script>
+
+</body>
 
 </html>

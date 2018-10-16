@@ -59,7 +59,7 @@
         
         body{
 			background-color:#C3C3C3
-            overflow-x: hidden;
+
         }
 		
 		/*Conteudo da página*/
@@ -93,7 +93,7 @@
                 <div class="center col s12 m4 l4">							
                     <img class="responsive-imga" src="Img_Prog/dados.png" style="height: 161px; width: 161px;">
 					<br>
-                    <a href="jogos.php" class="waves-effect waves-light btn">JOGOS</a>   
+                    <a href="#" class="waves-effect waves-light btn">JOGOS</a>   
                         <br><br>
                         <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
@@ -115,9 +115,6 @@
 		    <br>			
 		</div>
 
-        <?php 
-            require_once('footer.php');
-        ?>
 
 
         <!-- Jquery-->

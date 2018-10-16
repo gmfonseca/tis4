@@ -9,7 +9,7 @@
     $errada3 = isset($_POST['tAlterE3']) ? $_POST['tAlterE3']: ''; 
                 
     //ENVIANDO A QUERY PARA O BANCO DE DADOS
-    $query = "INSERT INTO pergunta(descricao) VALUES('$pergunta')";
+    $query = "INSERT INTO pergunta(descricao,cod_Questionario) VALUES('$pergunta',0)";
     $conexao->query($query);
     
     $sql = "SELECT codigoPergunta FROM pergunta WHERE descricao = '$pergunta'";
@@ -18,16 +18,16 @@
 
     $pergunta_id = $resultado['codigoPergunta'];
 
-    $query = "INSERT INTO respostaCerta(descricao,cod_pergunta) VALUES('$correta','$pergunta_id')";
+    $query = "INSERT INTO respostacerta(descricao,cod_pergunta) VALUES('$correta','$pergunta_id')";
     $conexao->query($query);
 
-    $query = "INSERT INTO respostaErrada(descricao,cod_pergunta) VALUES('$errada1','$pergunta_id')";
+    $query = "INSERT INTO respostaerrada(descricao,cod_pergunta) VALUES('$errada1','$pergunta_id')";
     $conexao->query($query);
 
-    $query = "INSERT INTO respostaErrada(descricao,cod_pergunta) VALUES('$errada2','$pergunta_id')";
+    $query = "INSERT INTO respostaerrada(descricao,cod_pergunta) VALUES('$errada2','$pergunta_id')";
     $conexao->query($query);
 
-     $query = "INSERT INTO respostaErrada(descricao,cod_pergunta) VALUES('$errada3','$pergunta_id')";
+     $query = "INSERT INTO respostaerrada(descricao,cod_pergunta) VALUES('$errada3','$pergunta_id')";
     
     //VERIFICANDO SE OS DADOS FORAM INSERIDOS COM SUCESSO
     if($conexao->query($query)=== TRUE){

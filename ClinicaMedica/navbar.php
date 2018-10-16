@@ -1,27 +1,27 @@
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+
 <!--Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Materialize CSS-->
 <link rel="stylesheet" href="css/materialize.min.css">
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
-        
+
 <!-- Jquery-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Materialize JS-->
 <script src="js/materialize.min.js"></script>
 
-                <!----------------
-                    REMOVER
-                    IMPORT
-                    DE
-                    SCRIPT
-                    E
-                    CSS
-                    DEPOIS
-                ----------------->
+<!----------------
+REMOVER
+IMPORT
+DE
+SCRIPT
+E
+CSS
+DEPOIS
+----------------->
 
 <!-- DROPDOWN STRUCTURE -->
 <ul id="drop-especialidade" class="dropdown-content purple lighten-2">
@@ -40,6 +40,8 @@
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">ESPECIALIDADES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="convenios.php">CONVÊNIOS</a></li>
             <li><a href="contato.php">CONTATO</a></li>
+            <li><a href="Definir-Jogo.php">JOGOS</a></li>
+            <li><a href="Login.php">LOGIN</a></li>
         </ul>
     </div>
 </nav>
@@ -63,17 +65,19 @@
     </li>
     <li><a href="convenios.php" class="collapsible-header white-text white-text">CONVÊNIOS</a></li>
     <li><a href="contato.php" class="collapsible-header white-text">CONTATO</a></li>
+    <li><a href="Definir-Jogo.php" class="collapsible-header white-text"> JOGOS</a></li>
+    <li><a href="Login.php" class="collapsible-header white-text"> LOGIN</a></li>
 </ul>
 <!-- ESTE NAV É PARA DAR ESPAÇAMENTO (recomendo arrumar essa gambiarra temporária depois :D) -->
 
 <!-- NAVBAR SCRIPT -->
 <script>
-    $(document).ready(()=>{
+    $(document).ready(() => {
         $('.sidenav').sidenav();
         $(".dropdown-trigger").dropdown();
         $('.collapsible').collapsible();
         // MOBILE ARROW     
-        $('#mob-especialidades').click(()=>{
+        $('#mob-especialidades').click(() => {
             let val = ($('.chevron').html() == 'chevron_right') ? 'keyboard_arrow_down' : 'chevron_right';
             $('.chevron').html(val)
         })

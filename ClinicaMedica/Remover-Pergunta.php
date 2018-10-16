@@ -6,10 +6,10 @@
     
                 
     //ENVIANDO A QUERY PARA O BANCO DE DADOS
-    $query = "DELETE FROM respostaCerta WHERE cod_pergunta='$id'";
+    $query = "DELETE FROM respostacerta WHERE cod_pergunta='$id'";
     $conexao->query($query);
 
-    $query = "DELETE FROM respostaErrada WHERE cod_pergunta='$id'";
+    $query = "DELETE FROM respostaerrada WHERE cod_pergunta='$id'";
     $conexao->query($query);
 
     $query = "DELETE FROM pergunta WHERE codigoPergunta='$id'";
