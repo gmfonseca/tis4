@@ -19,6 +19,7 @@ PRIMARY KEY(codigoQuestionario)
 CREATE TABLE pontuacao(
 cod_Questionario INT UNSIGNED NOT NULL,
 cod_Usuario INT UNSIGNED NOT NULL,
+pontos INT UNSIGNED NOT NULL,
 FOREIGN KEY(cod_Questionario) REFERENCES questionario(codigoQuestionario),
 FOREIGN KEY(cod_Usuario) REFERENCES usuario(codigo)
 );
