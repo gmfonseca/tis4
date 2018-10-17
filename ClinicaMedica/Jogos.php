@@ -1,6 +1,5 @@
 <?php
     include 'Conexao.php';
-    $sql_perguntas = mysqli_query($conexao,"SELECT * FROM pergunta");
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +9,7 @@
         <title> Clinica Médica </title>
         
         <!--Let browser know website is optimized for mobile-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1.0"/>
         
         <!--Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,20 +19,28 @@
         <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
       
         <!-- AJAX -->
-        <script src="jquery.js"></script>
         
-        
-<script>
     </head>
     
     <script>
-        
+        var cont = 0;
         function mudaCorCerto(btn_certo){
             btn_certo.style.background = "#36bc27";
+            contaAcerto();
+            getDados();
         }
-
+        
+        function contaAcerto(){
+            cont = cont+1;
+        }
+        
+        function getAcertos(){
+            return cont;
+        }
+        
         function mudaCorErrado(btn_errado){
            btn_errado.style.background = "red";
+            getDados();
         }
 
         
@@ -77,11 +84,11 @@
 
     </style>
 
-    <body class="grey darken-1">
-
+    <body onload="getDados();" class="grey darken-1">
+ <script type="text/javascript" src="js/ajax.js"></script>
         <br><br><br>
-
-        <?php
+<div id="resultado"></div>
+      <!--  <php
         while($sl = mysqli_fetch_array($sql_perguntas)){ 
             $id_pergunta = $sl["codigoPergunta"];
             $sql_resposta_certa = mysqli_query($conexao, "SELECT * FROM respostacerta WHERE cod_pergunta='$id_pergunta'");
@@ -95,20 +102,20 @@
                     <div class="container">
                         <div class="card-panel z-depth-5 white">
                             <div class="card-panel z-depth-5">
-                                <h3 class="center"> <?php echo $sl["descricao"] ?> </h3>                            
+                                <h3 class="center"> <php echo $sl["descricao"] ?> </h3>                            
                             </div>
                         </div>
                         <div class="row">
                             <div class="col s12 m12 l12">
                                 <div class="collection z-depth-3">
-                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorCerto(this), contaAcerto(this)" > <?php echo $sl_certa["descricao"]?> </a>
-                                    <?php 
+                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorCerto(this)" > <php echo $sl_certa["descricao"]?> </a>
+                                    <php 
                                         while($sl_errada = mysqli_fetch_array($sql_resposta_errada)){
                                             $id_errada = $sl_errada["codigoErrado"];
                                             $sql_resp_errada = mysqli_query($conexao, "SELECT * FROM respostaerrada WHERE codigoErrado='$id_errada'");
                                     ?>
-                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorErrado(this)"> <?php echo $sl_errada["descricao"] ?> </a>
-                                    <?php } ?>
+                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorErrado(this)"> <php echo $sl_errada["descricao"] ?> </a>
+                                    <php } ?>
                                 </div>
                             </div>
                         </div>   
@@ -116,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <?php } ?>
+        <php } ?>-->
         
         
         
