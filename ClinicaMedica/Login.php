@@ -83,15 +83,30 @@
         body{
             overflow-x: hidden;
         }
+        
+        .big-container{
+            background-color: #8e24aa;
+        }
+        
+        #usuario{
+            color: #e0e0e0 ;
+        }
+        #senha{
+            color: #e0e0e0 ;
+        }
+        i.icon-green {
+            color: #81c784;
+        }
+
 
     </style>
 
-    <body class="grey lighten-3">
+    <body class="big-container">
 
-        <div class="purple">
+     
 
             <?php 
-                require_once('navbar.php');
+            require_once('navbar.php');
             ?>
             <!--Login-->
             <div class="container">
@@ -102,12 +117,14 @@
                         <form class="col s12">
                             <div class="row">
                                 <div class="input-field col s12">
+                                    <i class="material-icons prefix icon-green">account_circle</i>
                                     <input id="usuario" type="text" class="validate">
                                     <label class="active" for="usuario">Usuário</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
+                                    <i class="material-icons prefix icon-green">lock_outline</i>
                                     <input id="senha" type="password" class="validate">
                                     <label class="active" for="senha">Senha</label>
                                 </div>
@@ -120,11 +137,9 @@
                 </div>
                 <br>
             </div>
-        </div>
 
-        <?php 
-            require_once('footer.php');
-        ?>
+
+
 
         <!-- Jquery-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
