@@ -17,6 +17,26 @@
 
     </head>
 
+    <script>
+        function valida(){
+            var usuario = document.getElementById('usuarioN');
+            var senha = document.getElementById('senhaN');
+
+            if(usuario.value == ''){
+                alert("Informe o usuario!")
+                form.usuarioID.focus();
+                return false;
+            }else{
+                if(senha.value == ''){
+                    alert('Selecione o Login de Direcionamento!');
+                    formCad.senhaID.focus();
+                    return false;
+                }
+            }   
+        }
+
+    </script>
+
     <style>
         /* Fonte da letra dos <li> */
         li{
@@ -83,11 +103,11 @@
         body{
             overflow-x: hidden;
         }
-        
+
         .big-container{
             background-color: #8e24aa;
         }
-        
+
         #usuario{
             color: #e0e0e0 ;
         }
@@ -103,43 +123,40 @@
 
     <body class="big-container">
 
-     
 
-            <?php 
-            require_once('navbar.php');
-            ?>
-            <!--Login-->
+
+        <?php 
+        require_once('navbar.php');
+        ?>
+        <!--Login-->
+        <div class="container">
             <div class="container">
-                <div class="container">
-                    <h1 class="white-text">Login</h1>
-                    <!--Container do formulario-->
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix icon-green">account_circle</i>
-                                    <input id="usuario" type="text" class="validate">
-                                    <label class="active" for="usuario">Usuário</label>
-                                </div>
+                <h1 class="white-text">Login</h1>
+                <!--Container do formulario-->
+                <div class="row">
+                    <form id="form"class="col s12" action="Valida-Login.php">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix icon-green">account_circle</i>
+                                <input name="usuarioN" id="usuarioID" type="text" class="validate">
+                                <label class="active" for="usuario">Usuário</label>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix icon-green">lock_outline</i>
-                                    <input id="senha" type="password" class="validate">
-                                    <label class="active" for="senha">Senha</label>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix icon-green">lock_outline</i>
+                                <input name="senhaN" id="senhaID" type="password" class="validate">
+                                <label class="active" for="senha">Senha</label>
                             </div>
-                        </form>
-                    </div>
-                    <div class="right-align">
-                        <a class="waves-effect waves-light btn">Entrar</a>
-                    </div>
+                        </div>
+                    </form>
                 </div>
-                <br>
+                <div class="right-align">
+                    <a class="waves-effect waves-green btn"><i class="material-icons right">send</i>Entrar</a>
+                </div>
             </div>
-
-
-
+            <br>
+        </div>
 
         <!-- Jquery-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
