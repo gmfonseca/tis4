@@ -24,14 +24,20 @@
     
     <script>
         var cont = 0;
+        var total = 0;
         function mudaCorCerto(btn_certo){
             btn_certo.style.background = "#36bc27";
             contaAcerto();
+            contaTotal();
             getDados();
         }
         
         function contaAcerto(){
             cont = cont+1;
+        }
+        
+        function contaTotal(){
+            total = total+1;
         }
         
         function getAcertos(){
@@ -40,6 +46,7 @@
         
         function mudaCorErrado(btn_errado){
            btn_errado.style.background = "red";
+            contaTotal();
             getDados();
         }
 
@@ -88,45 +95,15 @@
  <script type="text/javascript" src="js/ajax.js"></script>
         <br><br><br>
 <div id="resultado"></div>
-      <!--  <php
-        while($sl = mysqli_fetch_array($sql_perguntas)){ 
-            $id_pergunta = $sl["codigoPergunta"];
-            $sql_resposta_certa = mysqli_query($conexao, "SELECT * FROM respostacerta WHERE cod_pergunta='$id_pergunta'");
-            $sl_certa = mysqli_fetch_array($sql_resposta_certa);
-            $sql_resposta_errada = mysqli_query($conexao, "SELECT * FROM respostaerrada WHERE cod_pergunta='$id_pergunta'");
-
-        ?>
+             
         <div class="container">
             <div class="row">
-                <div class="col s12 m12 l12">
-                    <div class="container">
-                        <div class="card-panel z-depth-5 white">
-                            <div class="card-panel z-depth-5">
-                                <h3 class="center"> <php echo $sl["descricao"] ?> </h3>                            
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12 m12 l12">
-                                <div class="collection z-depth-3">
-                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorCerto(this)" > <php echo $sl_certa["descricao"]?> </a>
-                                    <php 
-                                        while($sl_errada = mysqli_fetch_array($sql_resposta_errada)){
-                                            $id_errada = $sl_errada["codigoErrado"];
-                                            $sql_resp_errada = mysqli_query($conexao, "SELECT * FROM respostaerrada WHERE codigoErrado='$id_errada'");
-                                    ?>
-                                    <a href="#!" class="collection-item muda-cor waves-effect waves-light" onclick="mudaCorErrado(this)"> <php echo $sl_errada["descricao"] ?> </a>
-                                    <php } ?>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
+                <div class="col s6 m6 l6 offset-s4 offset-m4 offset-l4">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i> Voltar </a>
+                <a class="waves-effect waves-light btn"><i class="material-icons right">check</i> Finalizar Questionário </a>
                 </div>
             </div>
         </div>
-        <php } ?>-->
-        
-        
-        
         
                 <!-- Modal Login -->
         <div class="modal modal-fixed-footer" id="Login">
