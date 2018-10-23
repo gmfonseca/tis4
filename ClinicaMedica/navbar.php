@@ -42,6 +42,7 @@ DEPOIS
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="Login.php">LOGIN</a></li>
+            <li><a href="Cadastro.php">CADASTRO</a></li>
         </ul>
     </div>
 </nav>
@@ -67,6 +68,7 @@ DEPOIS
     <li><a href="contato.php" class="collapsible-header white-text">CONTATO</a></li>
     <li><a href="Definir-Jogo.php" class="collapsible-header white-text"> JOGOS</a></li>
     <li><a href="Login.php" class="collapsible-header white-text"> LOGIN</a></li>
+    <li><a href="Cadastro.php" class="collapsible-header white-text"> CADASTRO</a></li>
 </ul>
 <!-- ESTE NAV É PARA DAR ESPAÇAMENTO (recomendo arrumar essa gambiarra temporária depois :D) -->
 

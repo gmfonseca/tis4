@@ -74,7 +74,7 @@
         /*Fonte para esse tipo de tags*/
         p, span, h5,h4, #Atfooter{
             font-family: raleway, sans-serif;
-              color: #f3e5f5    ;
+            color: #f3e5f5    ;
         }
 
         .topicos{
@@ -93,6 +93,7 @@
         .conteudo{
             background: linear-gradient(#8e24aa   , #ab47bc  );
         }
+
     </style>
 
     <body class="grey lighten-3">
@@ -100,15 +101,15 @@
         <div class="conteudo">
 
             <?php 
-                require_once('navbar.php');
+            require_once('navbar.php');
             ?>
-            <!--Login-->
+            <!--SingUp-->
             <div class="container">
                 <div class="container">
-                    <h1>Login</h1>
+                    <h1>Cadastro</h1>
                     <!--Container do formulario-->
                     <div class="row">
-                        <form method="post" class="col s12" action="Valida-Login.php" enctype="multipart/form-data">
+                        <form method="post" class="col s12" action="" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input name="tUsuario" id="usuario" type="text" class="validate">
@@ -117,13 +118,30 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
+                                    <input name="tEmail" id="email" type="text" class="validate">
+                                    <label class="active" for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
                                     <input name="tSenha" id="senha" type="password" class="validate">
                                     <label class="active" for="senha">Senha</label>
                                 </div>
                             </div>
-                                                <div class="right-align">
-                                                    <button type="submit" class="waves-effect waves-light btn"> Entrar </button>
-                    </div>
+                            <div class="row">
+                                <p>Gênero:</p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Masculino</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>Feminino</span>
+                                </label>
+                            </div>
+                            <div class="right-align">
+                                <button type="submit" class="waves-effect waves-light btn"> Entrar </button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -132,7 +150,7 @@
         </div>
 
         <?php 
-            require_once('footer.php');
+        require_once('footer.php');
         ?>
 
         <!-- Jquery-->
