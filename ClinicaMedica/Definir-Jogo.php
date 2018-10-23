@@ -72,18 +72,14 @@
         .divisor-line{
             border-color: #eee;
         }
-        #adulto{
-            border-style: solid;
-            border-color: red;
-        }
 
     </style>
 
     <body style="background-color: rgb(145, 85, 167">
-        <?php
-        require_once('navbar.php');
-        ?>
-
+            <?php
+            require_once('navbar.php');
+            ?>
+        
         <br><br><br>
         <!-- Website Content -->
         <div id="conteudo" style="background-color: rgb(145, 85, 167)">
@@ -91,14 +87,12 @@
 
             <br><br>
             <div class="row" id="linha">
-                <div class="center col s12 m6 l4 offset-l2">		
-                    <div id="adulto">
-                        <img class="responsive-imga" src="Img_Prog/adulto.png" style="height: 161px; width: 140px;">
-                        <br>
-                        <a href="Jogos.php" class="waves-effect waves-light btn"> ADULTO </a>   
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
+                <div class="center col s12 m6 l4 offset-l2">							
+                    <img class="responsive-imga" src="Img_Prog/adulto.png" style="height: 161px; width: 140px;">
+                    <br>
+                    <a href="Jogos.php" class="waves-effect waves-light btn"> ADULTO </a>   
+                    <br><br>
+                    <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
 
                 <div class="center col s12 m6 l4">	
