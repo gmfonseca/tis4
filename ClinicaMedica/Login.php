@@ -99,23 +99,23 @@
                     <h1 class="white-text">Login</h1>
                     <!--Container do formulario-->
                     <div class="row">
-                        <form class="col s12">
+                        <form method="post" class="col s12" action="Valida-Login.php" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="usuario" type="text" class="validate">
+                                    <input name="tUsuario" id="usuario" type="text" class="validate">
                                     <label class="active" for="usuario">Usuário</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="senha" type="password" class="validate">
+                                    <input name="tSenha" id="senha" type="password" class="validate">
                                     <label class="active" for="senha">Senha</label>
                                 </div>
                             </div>
-                        </form>
+                                                <div class="right-align">
+                                                    <button type="submit" class="waves-effect waves-light btn"> Entrar </button>
                     </div>
-                    <div class="right-align">
-                        <a class="waves-effect waves-light btn">Entrar</a>
+                        </form>
                     </div>
                 </div>
                 <br>
