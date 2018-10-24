@@ -109,7 +109,7 @@
                     <h1>Cadastro</h1>
                     <!--Container do formulario-->
                     <div class="row">
-                        <form method="post" class="col s12" action="" enctype="multipart/form-data">
+                        <form method="post" class="col s12" action="Valida-Cadastro.php" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input name="tUsuario" id="usuario" type="text" class="validate">
@@ -131,11 +131,11 @@
                             <div class="row">
                                 <p>Gênero:</p>
                                 <label>
-                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <input value="M" class="with-gap" name="tGenero" type="radio"  />
                                     <span>Masculino</span>
                                 </label>
                                 <label>
-                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <input value="F" class="with-gap" name="tGenero" type="radio"  />
                                     <span>Feminino</span>
                                 </label>
                             </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 23-Out-2018 às 17:04
+-- Generation Time: 24-Out-2018 às 15:31
 -- Versão do servidor: 10.1.35-MariaDB
 -- versão do PHP: 7.2.9
 
@@ -147,6 +147,7 @@ CREATE TABLE `usuario` (
   `nome` varchar(60) NOT NULL,
   `email` varchar(100) NOT NULL,
   `senha` varchar(20) NOT NULL,
+  `genero` char(1) NOT NULL,
   `tipo_usuario` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -154,9 +155,10 @@ CREATE TABLE `usuario` (
 -- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`codigo`, `nome`, `email`, `senha`, `tipo_usuario`) VALUES
-(1, 'Rafael', 'rafabadaro.15@hotmail.com', '1234', 1),
-(2, 'Gabriel Magno', 'gmfonseca@gmail.com', '123456', 0);
+INSERT INTO `usuario` (`codigo`, `nome`, `email`, `senha`, `genero`, `tipo_usuario`) VALUES
+(1, 'Rafael', 'rafabadaro.15@hotmail.com', '1234', '', 1),
+(2, 'Gabriel Magno', 'gmfonseca@gmail.com', '123456', '', 0),
+(3, 'JoÃ£o Henrique', 'kid1@gmail.com', '123456', 'M', 0);
 
 --
 -- Indexes for dumped tables
@@ -247,7 +249,7 @@ ALTER TABLE `telefone`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `codigo` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `codigo` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
