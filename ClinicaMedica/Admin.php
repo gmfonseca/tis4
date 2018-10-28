@@ -9,7 +9,7 @@
 
 <head>
 
-    <title> Clinica Médica </title>
+    <title> Clinica Médica - Administração </title>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -329,31 +329,31 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> library_books </i>
-                                            <label for="cPergunta">Pergunta: </label><input class="active validate" type="text" name="tPergunta" id="cPergunta" maxlength="60" required>
+                                            <label for="cPergunta">Pergunta: </label><input class="active validate" type="text" name="tPergunta" id="cPergunta" maxlength="300" required>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> check_circle </i>
-                                            <label for="cAlterC">Alternativa Certa: </label><input class="active validate" type="text" name="tAlterC" id="cAlterC" maxlength="60" required>
+                                            <label for="cAlterC">Alternativa Certa: </label><input class="active validate" type="text" name="tAlterC" id="cAlterC" maxlength="300" required>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> cancel </i>
-                                            <label for="cAlterE1">Alternativa Errada 1: </label><input class="active validate" type="text" name="tAlterE1" id="cAlterE1" maxlength="60" required>
+                                            <label for="cAlterE1">Alternativa Errada 1: </label><input class="active validate" type="text" name="tAlterE1" id="cAlterE1" maxlength="300">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> cancel </i>
-                                            <label for="cAlterE2">Alternativa Errada 2: </label><input class="active validate" type="text" name="tAlterE2" id="cAlterE2" maxlength="60" required>
+                                            <label for="cAlterE2">Alternativa Errada 2: </label><input class="active validate" type="text" name="tAlterE2" id="cAlterE2" maxlength="300">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> cancel </i>
-                                            <label for="cAlterE3">Alternativa Errada 3: </label><input class="active validate" type="text" name="tAlterE3" id="cAlterE3" maxlength="60" required>
+                                            <label for="cAlterE3">Alternativa Errada 3: </label><input class="active validate" type="text" name="tAlterE3" id="cAlterE3" maxlength="300">
                                         </div>
                                     </div>
 

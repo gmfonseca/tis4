@@ -2,7 +2,7 @@
 <html>
     <head>  
         
-       <title> Especialidades </title>
+       <title> Clinica Médica - Especialidades </title>
         
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -123,7 +123,7 @@
                         <img src="Img_Prog/neurologia.jpg" style="height: 161px; width: 271px;">
                         <h5 class="corVerdeTexto"> Neurologia  </h5>
                         <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <a href="Neurologia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                         <br><br>
                         <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                     </div>
@@ -132,7 +132,7 @@
                         <img src="Img_Prog/ortopedia.png" style="height: 161px; width: 271px;">
                         <h5 class="corVerdeTexto"> Ortopedia </h5>
                         <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>   
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <a href="Ortopedia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                     </div>
                 </div>            
             </div>

@@ -19,7 +19,7 @@ function CriaRequest() {
     }
     
     if (!request) 
-        alert("Seu Navegador não suporta Ajax!");
+        alert("Seu Navegador não suporta o jogo!");
     else
         return request;
 }

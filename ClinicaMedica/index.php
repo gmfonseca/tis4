@@ -5,6 +5,8 @@ require_once('navbar.php');
 <!DOCTYPE html>
 <html>
     <head>  
+        
+        <title> Clinica Médica </title>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -50,7 +52,7 @@ require_once('navbar.php');
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" class="white-text"> Saiba mais</a>
+                            <a href="Cardiologia.php" class="white-text"> Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +66,7 @@ require_once('navbar.php');
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" class="white-text"> Saiba mais </a>
+                            <a href="Neurologia.php" class="white-text"> Saiba mais </a>
                         </div>
                     </div>
                 </div> 
@@ -78,7 +80,7 @@ require_once('navbar.php');
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" class="white-text"> Saiba mais </a>
+                            <a href="Ortopedia.php" class="white-text"> Saiba mais </a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +111,7 @@ require_once('navbar.php');
                         <img src="Img_Prog/batepapo.png" style="height: 80px; width: 80px;">
                         <h4 class="topicos"> Convênios que atendemos </h4>
                         <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <a href="Convenios.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                         <br><br>
                         <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                     </div>
@@ -125,7 +127,7 @@ require_once('navbar.php');
                         <img src="Img_Prog/estetoscopio.png" style="height: 80px; width: 80px;">
                         <h4 class="topicos"> Especialidades médicas </h4>
                         <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>   
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <a href="especialidades.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                     </div>
                 </div>
             </div>

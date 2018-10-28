@@ -3,7 +3,7 @@
     <head>  
 
         <meta charset="utf-8">
-        <title> Clinica Médica </title>
+        <title> Clinica Médica - Escolher Jogo </title>
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
