@@ -91,7 +91,7 @@
 
     </style>
 
-    <body onload="getDados();" class="grey darken-1">
+    <body onload="getDados();" style="background-color:#aa00ff">
  <script type="text/javascript" src="js/ajax.js"></script>
         <br><br><br>
 <div id="resultado"></div>
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col s6 m6 l6 offset-s4 offset-m4 offset-l4">
-                <a class="waves-effect waves-light btn"><i class="material-icons left">chevron_left</i> Voltar </a>
+                <a class="waves-effect waves-light btn" href="Definir-Jogo.php"><i class="material-icons left">chevron_left</i> Voltar </a>
                 <a class="waves-effect waves-light btn"><i class="material-icons right">check</i> Finalizar Questionário </a>
                 </div>
             </div>

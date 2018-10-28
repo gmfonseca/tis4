@@ -95,7 +95,7 @@
         }
     </style>
 
-    <body class="grey lighten-3">
+    <body style="background-color:#ab47bc">
 
         <div class="conteudo">
 
@@ -131,9 +131,6 @@
             </div>
         </div>
 
-        <?php 
-            require_once('footer.php');
-        ?>
 
         <!-- Jquery-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

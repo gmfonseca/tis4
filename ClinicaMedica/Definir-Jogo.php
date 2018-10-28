@@ -58,7 +58,7 @@
 
         /*Conteudo da página*/
         #conteudo{
-            background-color:#0DB26B;
+            background: linear-gradient(#8e24aa   , #ab47bc  );
         }
         a
         .btn{
@@ -75,17 +75,15 @@
 
     </style>
 
-    <body style="background-color: rgb(145, 85, 167">
+    <body  style="background-color:#ab47bc">
+    
+        <!-- Website Content -->
+        <div id="conteudo">
             <?php
             require_once('navbar.php');
             ?>
-        
-        <br><br><br>
-        <!-- Website Content -->
-        <div id="conteudo" style="background-color: rgb(145, 85, 167)">
 
-
-            <br><br>
+            <br><br><br><br><br>
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
                     <img class="responsive-imga" src="Img_Prog/adulto.png" style="height: 161px; width: 140px;">
