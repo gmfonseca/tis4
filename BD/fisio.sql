@@ -34,6 +34,7 @@ USE fisio;
 CREATE TABLE `pergunta` (
   `codigoPergunta` int(10) UNSIGNED NOT NULL,
   `descricao` varchar(60) NOT NULL,
+  `tipo_pergunta` int(10) UNSIGNED NOT NULL,
   `cod_Questionario` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
