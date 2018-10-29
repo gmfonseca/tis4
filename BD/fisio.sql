@@ -22,6 +22,9 @@ SET time_zone = "+00:00";
 -- Database: `fisio`
 --
 
+CREATE DATABASE fisio;
+
+USE fisio;
 -- --------------------------------------------------------
 
 --
