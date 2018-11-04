@@ -1,139 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title> Clinica Médica - Jogo Infantíl </title>
-    <meta charset="utf-8">
-    <!--Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize CSS-->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
-    <style>
-        
-        #tabuleiro{
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: cover;
-            z-index: -1;
-            position: absolute;
-        }
-        
-        #player{
-            height: 300px;
-            width: 200px;
-            z-index:2;
-            position: absolute;
-        }
-        
-        area{
-            cursor: pointer;
-        }
-        
-    </style>
-    
-    <script type=text/javascript>
-        var pos =0;
-        
-        function alertaTeste(){
-            alert('FUNCIONOU');
-        }
-        
-        function andar(anda){
-            for(var i = 0; i< anda;i++){
-                document.getElementById(pos).hidden = true;
-                pos++;
-                document.getElementById(pos).hidden = false;
-                sleep(1);
+    <head>
+        <title> Clinica Médica - Jogo Infantíl </title>
+        <meta charset="utf-8">
+        <!--Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
+        <style>
+
+            #tabuleiro{
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                z-index: -1;
+                position: absolute;
             }
-        }
-        
-        
-        //DADO
-        function startTimer() {
-            //Reduzir o tamanho da imagem
-            document.getElementById("face").style.width = "15%";
-            document.getElementById("face").style.height = "10%";
-            //Começar um intervalo para trocar as imagens
-            var intervalo = setInterval(function displayNextImage() {
-                if(x === images.length ){
-                    //Quando terminar a animacao(passar por todas as outras faces)
-                    x = 0; // zera o contador
-                    document.getElementById("face").style.width = "15%"; //Volta imagem ao tamanho normal
-                    document.getElementById("face").style.height = "10%%";
-                    jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
-                    clearInterval(intervalo);//quebra o loop do intervalo
-                }
-                else {
-                    document.getElementById("face").src = images[x];//continua trocando as imagens
-                    x++;
-                }
-            }, 130);//Tempo que cada imagem aparece
-        }
-        
-        function jogarDado(){ 
-            var element = document.getElementById('face');
-            var sorte = Math.floor((Math.random() * 6) + 1);
-            var numeroTirado;
-            switch(sorte){
-                case 1:
-                    element.src = "Dado/face1.JPG";
-                    numeroTirado = 1;
-                    andar(numeroTirado);
-                    break;
-                case 2:
-                    element.src = "Dado/face2.JPG";
-                    numeroTirado = 2;
-                    andar(numeroTirado);
-                    break;
-                case 3:
-                    element.src = "Dado/face3.JPG";
-                    numeroTirado = 3;
-                    andar(numeroTirado);
-                    break;
-                case 4:
-                    element.src = "Dado/face4.JPG";
-                    numeroTirado = 4;
-                    andar(numeroTirado);
-                    break;
-                case 5:
-                    element.src = "Dado/face5.JPG";
-                    numeroTirado = 5;
-                    andar(numeroTirado);
-                    break;
-                case 6:
-                    element.src = "Dado/face6.JPG";
-                    numeroTirado = 6;
-                    andar(numeroTirado);
-                    break;
-                default:
-                    break;
+
+            #player{
+                height: 300px;
+                width: 200px;
+                z-index:2;
+                position: absolute;
             }
-        }
-        var images = [], x = 0;
-        images[0] = "Dado/face1.JPG";
-        images[1] = "Dado/face2.JPG";
-        images[2] = "Dado/face3.JPG";
-        images[3] = "Dado/face4.JPG";
-        images[4] = "Dado/face5.JPG";
-        images[5] = "Dado/face6.JPG";
-    </script>
-    
-    <style>
-                #face{
-            width: 15%;
-            height: 10%;
-            z-index: 4;
-        }
-    </style>
-    
-  </head>
-  <body>
-      <img src="Dado/face1.JPG" alt="dado" id="face" onclick="startTimer()">
-      <div>
+
+            area{
+                cursor: pointer;
+            }
+
+        </style>
+
+        <script type=text/javascript>
+            var pos =0;
+
+            function alertaTeste(){
+                alert('FUNCIONOU');
+            }
+
+            function andar(anda){
+                let numPassos = anda;
+                var intervaloPassos = setInterval(function passos(numPassos){
+                    if(y === anda){
+                        y = 0;
+                        clearInterval(intervaloPassos)
+                    }else{
+                        document.getElementById(pos).hidden = true;
+                        pos++;
+                        document.getElementById(pos).hidden = false;
+                        y++;
+                    }
+
+                }, 800)
+             }
+
+
+            //DADO
+            function startTimer() {
+                //Reduzir o tamanho da imagem
+                document.getElementById("face").style.width = "15%";
+                document.getElementById("face").style.height = "10%";
+                //Começar um intervalo para trocar as imagens
+                var intervalo = setInterval(function displayNextImage() {
+                    if(x === images.length ){
+                        //Quando terminar a animacao(passar por todas as outras faces)
+                        x = 0; // zera o contador
+                        document.getElementById("face").style.width = "15%"; //Volta imagem ao tamanho normal
+                        document.getElementById("face").style.height = "10%%";
+                        jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
+                        clearInterval(intervalo);//quebra o loop do intervalo
+                    }
+                    else {
+                        document.getElementById("face").src = images[x];//continua trocando as imagens
+                        x++;
+                    }
+                }, 130);//Tempo que cada imagem aparece
+            }
+
+            function jogarDado(){ 
+                var element = document.getElementById('face');
+                var sorte = Math.floor((Math.random() * 6) + 1);
+                var numeroTirado;
+                switch(sorte){
+                    case 1:
+                        element.src = "Dado/face1.JPG";
+                        numeroTirado = 1;
+                        andar(numeroTirado);
+                        break;
+                    case 2:
+                        element.src = "Dado/face2.JPG";
+                        numeroTirado = 2;
+                        andar(numeroTirado);
+                        break;
+                    case 3:
+                        element.src = "Dado/face3.JPG";
+                        numeroTirado = 3;
+                        andar(numeroTirado);
+                        break;
+                    case 4:
+                        element.src = "Dado/face4.JPG";
+                        numeroTirado = 4;
+                        andar(numeroTirado);
+                        break;
+                    case 5:
+                        element.src = "Dado/face5.JPG";
+                        numeroTirado = 5;
+                        andar(numeroTirado);
+                        break;
+                    case 6:
+                        element.src = "Dado/face6.JPG";
+                        numeroTirado = 6;
+                        andar(numeroTirado);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            var images = [], x = 0,y = 0;
+            images[0] = "Dado/face1.JPG";
+            images[1] = "Dado/face2.JPG";
+            images[2] = "Dado/face3.JPG";
+            images[3] = "Dado/face4.JPG";
+            images[4] = "Dado/face5.JPG";
+            images[5] = "Dado/face6.JPG";
+        </script>
+
+        <style>
+            #face{
+                width: 15%;
+                height: 10%;
+                z-index: 4;
+            }
+        </style>
+
+    </head>
+    <body>
+        <img src="Dado/face1.JPG" alt="dado" id="face" onclick="startTimer()">
+        <div>
             <img src="Img_Prog/tabuleiro/tabuleiro.png" usemap="#mapaTabuleiro" id="tabuleiro">
-      
+
             <map name="mapaTabuleiro" style="z-index: -1;">
                 <div>
                     <img id="0" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 210px; margin-top: 270px;">
@@ -180,7 +187,7 @@
                     <area title="10" shape="rect" coords="718,1775,943,2007" onclick="alertaTeste()"/>
                 </div>
                 <div>
-                     <img id="11" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 740px; margin-top: 1430px;" hidden="true">
+                    <img id="11" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 740px; margin-top: 1430px;" hidden="true">
                     <area title="11" shape="rect" coords="716,1542,949,1772" onclick="alertaTeste()"/>
                 </div>
                 <div>
@@ -310,7 +317,7 @@
             </map>  
         </div>
 
-       <div class="container" style="position:relative;">
+        <div class="container" style="position:relative;">
             <div class="row">
                 <div class="col s6 m6 l6 offset-s4 offset-m4 offset-l4">
                     <a class="waves-effect waves-light btn-large" onclick="certo()"><i class="material-icons left">chevron_left</i> Certo </a>
@@ -318,11 +325,11 @@
                 </div>
             </div>
         </div>
-      
+
         <!-- Jquery-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <!--Materialize JS-->
         <script src="js/materialize.min.js"></script>
-        
-  </body>
+
+    </body>
 </html>
