@@ -41,6 +41,7 @@ DEPOIS
             <li><a href="convenios.php">CONVÊNIOS</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
+            <li><a href="curiosidades.php">CURIOSIDADES</a></li>
             <li><a href="Login.php">LOGIN</a></li>
             <li><a href="Cadastro.php">CADASTRO</a></li>
         </ul>
