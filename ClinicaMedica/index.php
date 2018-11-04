@@ -33,9 +33,9 @@ require_once('navbar.php');
             <!-- Carousel Structure -->
             <div class="carousel carousel-slider s12">
                 <!-- Itens Carousel -->
-                <a class="carousel-item" href="#one"><img class="responsive-img" src="Img_Prog/medicina.jpg"></a>
-                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/no.jpg"></a>
-                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/medi.jpg"></a>
+                <a class="carousel-item" href="#one"><img class="responsive-img" src="Img_Prog/orientacao.jpg"></a>
+                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/autoexame.jpg"></a>
+
 
             </div> 
 

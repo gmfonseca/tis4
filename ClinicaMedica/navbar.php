@@ -25,7 +25,7 @@ DEPOIS
 
 <!-- DROPDOWN STRUCTURE -->
 <ul id="drop-especialidade" class="dropdown-content purple lighten-2">
-    <li><a href="cardiologia.php" class="white-text">CARDIOLOGIA</a></li>
+    <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
     <li><a href="neurologia.php" class="white-text">NEUROLOGIA</a></li>
     <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
 </ul>
@@ -36,7 +36,7 @@ DEPOIS
         <a href="index.php" class="brand-logo">Logo</a>
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="sobre-nos.php">SOBRE NÓS</a></li>
+            <li><a href="Problema.php">O PROBLEMA</a></li>
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">ESPECIALIDADES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="convenios.php">CONVÊNIOS</a></li>
             <li><a href="contato.php">CONTATO</a></li>
@@ -56,7 +56,7 @@ DEPOIS
             <li><a id="mob-especialidades" class="white-text collapsible-header">ESPECIALIDADES<i class="white-text material-icons chevron right">chevron_right</i></a>
                 <div class="collapsible-body purple lighten-2">
                     <ul>
-                        <li><a href="cardiologia.php" class="white-text">CARDIOLOGIA</a></li>
+                        <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
                         <li><a href="neurologia.php" class="white-text">NEUROLOGIA</a></li>
                         <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
                     </ul>
