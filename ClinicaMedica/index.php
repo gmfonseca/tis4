@@ -47,12 +47,12 @@ require_once('navbar.php');
                 <div class="col s12 m4 l2 offset-l3">
                     <div id="card1" class="card">
                         <div class="card-content white-text">
-                            <span class="card-title"> Cardiologia </span>
+                            <span class="card-title"> Sinais e sintomas </span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="Cardiologia.php" class="white-text"> Saiba mais</a>
+                            <a href="Sintomas.php" class="white-text"> Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -61,12 +61,12 @@ require_once('navbar.php');
                 <div class="col s12 m4 l2">
                     <div  id="card2" class="card">
                         <div class="card-content white-text">
-                            <span class="card-title"> Neurologia </span>
+                            <span class="card-title"> Alterações RO </span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="Neurologia.php" class="white-text"> Saiba mais </a>
+                            <a href="AlteracoesRO.php" class="white-text"> Saiba mais </a>
                         </div>
                     </div>
                 </div> 

@@ -26,7 +26,7 @@ DEPOIS
 <!-- DROPDOWN STRUCTURE -->
 <ul id="drop-especialidade" class="dropdown-content purple lighten-2">
     <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
-    <li><a href="neurologia.php" class="white-text">NEUROLOGIA</a></li>
+    <li><a href="AlteracoesRO.php" class="white-text">ALTERAÇÕES RO</a></li>
     <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
 </ul>
 
@@ -58,7 +58,7 @@ DEPOIS
                 <div class="collapsible-body purple lighten-2">
                     <ul>
                         <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
-                        <li><a href="neurologia.php" class="white-text">NEUROLOGIA</a></li>
+                        <li><a href="AlteracoesRO.php" class="white-text">Alterações RO</a></li>
                         <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
                     </ul>
                 </div>

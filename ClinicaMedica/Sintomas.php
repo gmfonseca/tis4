@@ -112,31 +112,31 @@
 
                     <div class="col s12 m6 l6">
                         <h4 class="corVerdeTexto center"> Lista dos sinais e sintomas </h4>
-                        <ul>
-                            <li>Obstrução nasal</li>
-                            <li>Dor de garganta</li>
-                            <li>Ardência ou prurido na faringe</li>
-                            <li>Muco espesso aderido à garganta</li>
-                            <li>Tosse seca persistente</li>
-                            <li>Cefaléia matinal</li>
-                            <li>IVAS recorrentes</li>
-                            <li>Halitose</li>
-                            <li>Enurese noturna</li>
-                            <li>Sonolência / Irritabilidade</li>
-                            <li>Dificuldade alimentar / aerofagia</li>
-                            <li>Mau aproveitamento escolar</li>
-                            <li>Facies de respirador oral crônico</li>
-                            <li>Aumento de cáries dentárias</li>
-                            <li>Deformidades dento-faciais</li>
-                            <li>Faringe opaca com metaplasia granulosa e mais vascularizada</li>
-                            <li>Pectus scavatum</li>
-                            <li>Hábito de dormir com a boca aberta</li>
-                            <li>Hábito de roncar</li>
-                            <li>Hábito de babar enquanto dorme (pois dorme com a boca aberta)</li>
-                            <li>Respiração barulhenta</li>
-                            <li>Dificuldade para se alimentar</li>
-                            <li>Boca ressecada</li>
-                            <li>Arcada dentária superior para frente e arcada inferior para trás</li>
+                        <ul class="collection">
+                            <li class="collection-item">Obstrução nasal</li>
+                            <li class="collection-item">Dor de garganta</li>
+                            <li class="collection-item">Ardência ou prurido na faringe</li>
+                            <li class="collection-item">Muco espesso aderido à garganta</li>
+                            <li class="collection-item">Tosse seca persistente</li>
+                            <li class="collection-item">Cefaléia matinal</li>
+                            <li class="collection-item">IVAS recorrentes</li>
+                            <li class="collection-item">Halitose</li>
+                            <li class="collection-item">Enurese noturna</li>
+                            <li class="collection-item">Sonolência / Irritabilidade</li>
+                            <li class="collection-item">Dificuldade alimentar / aerofagia</li>
+                            <li class="collection-item">Mau aproveitamento escolar</li>
+                            <li class="collection-item">Facies de respirador oral crônico</li>
+                            <li class="collection-item">Aumento de cáries dentárias</li>
+                            <li class="collection-item">Deformidades dento-faciais</li>
+                            <li class="collection-item">Faringe opaca com metaplasia granulosa e mais vascularizada</li>
+                            <li class="collection-item">Pectus scavatum</li>
+                            <li class="collection-item">Hábito de dormir com a boca aberta</li>
+                            <li class="collection-item">Hábito de roncar</li>
+                            <li class="collection-item">Hábito de babar enquanto dorme (pois dorme com a boca aberta)</li>
+                            <li class="collection-item">Respiração barulhenta</li>
+                            <li class="collection-item">Dificuldade para se alimentar</li>
+                            <li class="collection-item">Boca ressecada</li>
+                            <li class="collection-item">Arcada dentária superior para frente e arcada inferior para trás</li>
                         </ul>
                         Além disso, crianças maiores que possuem a Síndrome do Respirador Bucal apresentam baixo rendimento escolar, problemas de crescimento, bem como infecções respiratórias frequentes.
                     </div>
