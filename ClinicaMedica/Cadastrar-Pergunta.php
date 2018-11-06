@@ -7,9 +7,10 @@
     $errada1 = isset($_POST['tAlterE1']) ? $_POST['tAlterE1']: '';
     $errada2 = isset($_POST['tAlterE2']) ? $_POST['tAlterE2']: '';
     $errada3 = isset($_POST['tAlterE3']) ? $_POST['tAlterE3']: ''; 
+    $tipo = isset($_POST['tTipo']) ? $_POST['tTipo']: ''; 
                 
     //ENVIANDO A QUERY PARA O BANCO DE DADOS
-    $query = "INSERT INTO pergunta(descricao,cod_Questionario) VALUES('$pergunta',0)";
+    $query = "INSERT INTO pergunta(descricao,tipoQuestao,cod_Questionario) VALUES('$pergunta','$tipo',0)";
     $conexao->query($query);
     
     $sql = "SELECT codigoPergunta FROM pergunta WHERE descricao = '$pergunta'";

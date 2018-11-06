@@ -126,172 +126,13 @@
                         <nav class="nav-extended green darken-3">
                             <div class="nav-content">
                                 <ul class="tabs tabs-transparent">
-                                    <li class="tab"><a href="#imagens"> Imagens </a></li>
-                                    <li class="tab"><a href="#videos"> Vídeos </a></li>
-                                    <li class="tab"><a href="#usuarios"> Usúarios </a></li>
                                     <li class="tab"><a href="#perguntas"> Perguntas </a></li>
                                     <li class="tab"><a href="#uploadP"> Upload de Perguntas </a></li>
+                                    <li class="tab"><a href="#exercicios"> Exercícios </a></li>
+                                    <li class="tab"><a href="#uploadE"> Upload de Exercícios </a></li>
                                 </ul>
                             </div>
                         </nav>
-                        <div clas="row">
-                            <div id="imagens">
-                                <div class="col s12 m12 l12">
-                                    <table class="striped">
-                                        <thead>
-                                            <tr>
-                                                <th> Imagem </th>
-                                                <th> Data de Publicação </th>
-                                                <th> Remover </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-
-                                                </td>
-                                                <td>
-                                                    <h8></h8>
-                                                </td>
-                                                <td>
-
-                                                    <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
-                                                        <i class='material-icons right'> close </i>
-                                                    </button>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col s12 m12 l12">
-                                    <br>
-                                    <h4 class="center"> Upload de Imagem </h4><br>
-                                    <form name="formUpload" method="post" action="#" enctype="multipart/form-data">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <i class="material-icons prefix"> library_books </i>
-                                                <label for="cNome">Nome: </label><input class="active validate" type="text" name="tNome" id="cNome" maxlength="60" placeholder="Nome do Arquivo" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="file-field input-field">
-                                                <div class="btn waves-effect waves-light green darken-3">
-                                                    <span> Imagem </span>
-                                                    <input type="file" name="arquivo">
-                                                </div>
-                                                <div class="file-path-wrapper">
-                                                    <input class="file-path validate" type="text" placeholder="Upload do Arquivo">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
-                                            <i class="material-icons right"> send </i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div clas="row">
-                            <div id="videos">
-                                <div class="col s12 m12 l12">
-                                    <table class="striped">
-                                        <thead>
-                                            <tr>
-                                                <th> Vídeo </th>
-                                                <th> Data de Publicação </th>
-                                                <th> Remover </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td>
-
-                                                </td>
-                                                <td>
-                                                    <h8></h8>
-                                                </td>
-                                                <td>
-
-                                                    <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
-                                                        <i class='material-icons right'> close </i>
-                                                    </button>
-
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <div class="col s12 m12 l12">
-                                    <br>
-                                    <h4 class="center"> Upload de Vídeo </h4><br>
-                                    <form name="formUpload" method="post" action="#" enctype="multipart/form-data">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <i class="material-icons prefix"> library_books </i>
-                                                <label for="cNome">Nome: </label><input class="active validate" type="text" name="tNome" id="cNome" maxlength="60" placeholder="Nome do Arquivo" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="file-field input-field">
-                                                <div class="btn waves-effect waves-light green darken-3">
-                                                    <span> Vídeo </span>
-                                                    <input type="file" name="arquivo">
-                                                </div>
-                                                <div class="file-path-wrapper">
-                                                    <input class="file-path validate" type="text" placeholder="Upload do Arquivo">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
-                                            <i class="material-icons right"> send </i>
-                                        </button>
-                                    </form>
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-
-                        <div clas="row">
-                            <div id="usuarios" class="col s12 m12 l12">
-                                <table class="striped">
-                                    <thead>
-                                        <tr>
-                                            <th> Usúario </th>
-                                            <th> Data de Registro </th>
-                                            <th> Remover </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-
-                                            </td>
-                                            <td>
-                                                <h8></h8>
-                                            </td>
-                                            <td>
-
-                                                <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
-                                                    <i class='material-icons right'> close </i>
-                                                </button>
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
                         <div id="perguntas" class="row">
                                 <div class="col s12 m12 l12">
                                     <table class="striped">
@@ -359,7 +200,69 @@
                                             <label for="cAlterE3">Alternativa Errada 3: </label><input class="active validate" type="text" name="tAlterE3" id="cAlterE3" maxlength="300">
                                         </div>
                                     </div>
+                                    
+                                    <div class="row">
+                                        <label>
+                                            <input value="0" class="with-gap" name="tTipo" type="radio" checked />
+                                            <span>Adulto</span>
+                                          </label>
+                                          <label>
+                                            <input value="1" class="with-gap" name="tTipo" type="radio" />
+                                            <span>Infantil</span>
+                                          </label>
+                                    </div>
 
+                                    <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
+                                        <i class="material-icons right"> send </i>
+                                    </button>
+                                </form>
+                            </div>
+                            <br>
+                        </div>
+                        
+                        <div id="exercicios" class="row">
+                                <div class="col s12 m12 l12">
+                                    <table class="striped">
+                                        <thead>
+                                            <tr>
+                                                <th> Exercício </th>
+                                                <th> Alterar </th>
+                                                <th> Remover </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php while($l = mysqli_fetch_array($sql_banco)){ ?>
+                                            <tr>
+                                                <td>
+                                                    <?php echo $l["descricao"]; ?>
+                                                </td>
+                                                <td>
+                                                    <a href="Atualizar-Exercicio.php?id=<?php echo $l["codigoPergunta"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Exercicio.php?id=<?php echo $l["codigoPergunta"]; ?>';">
+                                                        <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
+                                                            <i class='material-icons right'> close </i>
+                                                        </button>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div id="uploadE" class="col s12 m12 l12">
+                                <h4 class="center"> Upload de Exercícios </h4><br>
+                                <form name="formUpload" method="post" action="Cadastrar-Exercicio.php" enctype="multipart/form-data">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix"> library_books </i>
+                                            <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" maxlength="300" required>
+                                        </div>
+                                    </div>
+                                    
                                     <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
                                         <i class="material-icons right"> send </i>
                                     </button>
