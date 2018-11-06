@@ -93,7 +93,7 @@
                 <div class="center col s12 m4 l4">							
                     <img class="responsive-imga" src="Img_Prog/dados.png" style="height: 161px; width: 161px;">
                     <br>
-                    <a href="#" class="waves-effect waves-light btn">JOGOS</a>   
+                    <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn">JOGOS</a>   
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
