@@ -88,10 +88,11 @@
             require_once('navbar.php');
             ?>
 
-             <br><br><br><br><br>
+            <br><br><br><br><br>
             <div class="row">
                 <div class="center col s12 m4 l4">							
-                    <img class="responsive-imga" src="Img_Prog/dados.png" style="height: 161px; width: 161px;">
+                
+                     <i class="large material-icons green-text text-lighten-2">games</i>
                     <br>
                     <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn">JOGOS</a>   
                     <br><br>
@@ -99,7 +100,7 @@
                 </div>
 
                 <div class="center col s12 m4 l4">	
-                    <img class="responsive-img" src="Img_Prog/player.png" style="height: 161px; width: 161px;">
+                    <i class="large material-icons green-text text-lighten-2">ondemand_video</i>
                     <br>
                     <a class="waves-effect waves-light btn">VÍDEOS</a>    
                     <br><br>
@@ -107,7 +108,7 @@
                 </div>
 
                 <div class="center col s12 m4 l4">			
-                    <img class="responsive-img" src="Img_Prog/galeria.png" style="height: 161px; width: 161px;">
+                    <i class="large material-icons green-text text-lighten-2">insert_photo</i>
                     <br>
                     <a class="waves-effect waves-light btn">GALERIA</a>
                 </div>

@@ -113,17 +113,15 @@
                 <div class="row">
                     <div class="col s12 m4 l4">
                         <img src="Img_Prog/cardiologia.jpg" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Cardiologia </h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>
-                        <a href="Cardiologia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <h5 class="corVerdeTexto"> Sinais e sintomas </h5>
+                        <a href="Sintomas.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                         <br><br>
                         <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                     </div>
                     <div class="col s12 m4 l4">
                         <img src="Img_Prog/neurologia.jpg" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Neurologia  </h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>
-                        <a href="Neurologia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <h5 class="corVerdeTexto"> Alterações RO </h5>
+                        <a href="AlteracoesRO.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                         <br><br>
                         <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                     </div>

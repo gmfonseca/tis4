@@ -76,7 +76,7 @@
     </style>
 
     <body  style="background-color:#ab47bc">
-    
+
         <!-- Website Content -->
         <div id="conteudo">
             <?php
@@ -86,7 +86,8 @@
             <br><br><br><br><br>
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
-                    <img class="responsive-imga" src="Img_Prog/adulto.png" style="height: 161px; width: 140px;">
+
+                    <i class="large material-icons green-text text-lighten-2">face</i>
                     <br>
                     <a href="Jogos.php" class="waves-effect waves-light btn"> ADULTO </a>   
                     <br><br>
@@ -94,7 +95,8 @@
                 </div>
 
                 <div class="center col s12 m6 l4">	
-                    <img class="responsive-img" src="Img_Prog/criancas.png" style="height: 161px; width: 161px;">
+
+                    <i class="large material-icons green-text text-lighten-2">child_care</i>
                     <br>
                     <a href="Infantil.php" class="waves-effect waves-light btn"> INFANTIL </a>    
                     <br><br>
