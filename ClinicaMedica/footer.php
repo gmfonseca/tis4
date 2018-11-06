@@ -13,16 +13,7 @@
 <!--Materialize JS-->
 <script src="js/materialize.min.js"></script>
 
-        <!----------------
-            REMOVER
-            IMPORT
-              DE
-            SCRIPT
-              EA
-             CSS
-            DEPOIS
-        ----------------->
-        
+
 
 <footer class="row grey lighten-3">
     <br><br>

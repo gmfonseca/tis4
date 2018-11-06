@@ -48,8 +48,7 @@ require_once('navbar.php');
                     <div id="card1" class="card">
                         <div class="card-content white-text">
                             <span class="card-title"> Sinais e sintomas </span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <p>Clique em saiba mais para mais informações sobre Sinais e Sintomas.</p>
                         </div>
                         <div class="card-action">
                             <a href="Sintomas.php" class="white-text"> Saiba mais</a>
@@ -62,8 +61,7 @@ require_once('navbar.php');
                     <div  id="card2" class="card">
                         <div class="card-content white-text">
                             <span class="card-title"> Alterações RO </span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <p>Clique em saiba mais para mais informações sobre as Alterações RO.</p>
                         </div>
                         <div class="card-action">
                             <a href="AlteracoesRO.php" class="white-text"> Saiba mais </a>

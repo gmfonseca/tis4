@@ -1,228 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title> Clinica Médica - Jogo Infantíl </title>
-    <meta charset="utf-8">
-    <!--Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Materialize CSS-->
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
-    <style>
-        
-        #tabuleiro{
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: cover;
-            z-index: -1;
-            position: absolute;
-        }
-        
-        #player{
-            height: 300px;
-            width: 200px;
-            z-index:2;
-            position: absolute;
-        }
-        
-        area{
-            cursor: pointer;
-        }
-        
-    </style>
-    
-    <script type=text/javascript>
-        var pos =0;
-        
-        function alertaTeste(){
-            alert('FUNCIONOU');
-        }
-        
-        function andar(anda){
-            let numPassos = anda;
-            var intervaloPassos = setInterval(function passos(numPassos){
-                if(y === anda){
-                    y = 0;
-                    clearInterval(intervaloPassos);
-                }else{
-                    document.getElementById(pos).hidden = true;
-                    pos++;
-                    document.getElementById(pos).hidden = false;
-                    y++;
-                }
-            }, 800);
-            getDados();
-        }
-        
-        
-        //DADO
-        function startTimer() {
-            //Reduzir o tamanho da imagem
-            document.getElementById("face").style.width = "370px";
-            document.getElementById("face").style.height = "350px";
-            //Começar um intervalo para trocar as imagens
-            var intervalo = setInterval(function displayNextImage() {
-                if(x === images.length ){
-                    //Quando terminar a animacao(passar por todas as outras faces)
-                    x = 0; // zera o contador
-                    document.getElementById("face").style.width = "370px"; //Volta imagem ao tamanho normal
-                    document.getElementById("face").style.height = "350px%";
-                    jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
-                    clearInterval(intervalo);//quebra o loop do intervalo
-                }
-                else {
-                    document.getElementById("face").src = images[x];//continua trocando as imagens
-                    x++;
-                }
-            }, 130);//Tempo que cada imagem aparece
-        }
-        
-        function jogarDado(){ 
-            var element = document.getElementById('face');
-            var sorte = Math.floor((Math.random() * 6) + 1);
-            var numeroTirado;
-            switch(sorte){
-                case 1:
-                    element.src = "Dado/face1.JPG";
-                    numeroTirado = 1;
-                    andar(numeroTirado);
-                    break;
-                case 2:
-                    element.src = "Dado/face2.JPG";
-                    numeroTirado = 2;
-                    andar(numeroTirado);
-                    break;
-                case 3:
-                    element.src = "Dado/face3.JPG";
-                    numeroTirado = 3;
-                    andar(numeroTirado);
-                    break;
-                case 4:
-                    element.src = "Dado/face4.JPG";
-                    numeroTirado = 4;
-                    andar(numeroTirado);
-                    break;
-                case 5:
-                    element.src = "Dado/face5.JPG";
-                    numeroTirado = 5;
-                    andar(numeroTirado);
-                    break;
-                case 6:
-                    element.src = "Dado/face6.JPG";
-                    numeroTirado = 6;
-                    andar(numeroTirado);
-                    break;
-                default:
-                    break;
-            }
-        }
-        var images = [], x = 0, y=0;
-        images[0] = "Dado/face1.JPG";
-        images[1] = "Dado/face2.JPG";
-        images[2] = "Dado/face3.JPG";
-        images[3] = "Dado/face4.JPG";
-        images[4] = "Dado/face5.JPG";
-        images[5] = "Dado/face6.JPG";
-        
-        
-        //PERGUNTAS DO JOGO
-        var contCerto = 0;
-        var contErrado = 0;
-        var numQuestoes = 0;
-        
-        function mudaCorCerto(btn_certo){
-            btn_certo.style.background = "#36bc27";
-        }
+    <head>
+        <title> Clinica Médica - Jogo Infantíl </title>
+        <meta charset="utf-8">
+        <!--Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize CSS-->
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
+        <style>
 
-        function mudaCorErrado(btn_errado){
-           btn_errado.style.background = "red";
-        }
-       
-       function contaQuestoes(){
-           numQuestoes = numQuestoes+1;
-       }
-       
-        function contaAcerto(){
-            contCerto = contCerto+1;            
-            return getDados();
-        }
-
-        function contaErrado(){
-            contErrado = contErrado+1;
-            return getDados();
-        }
-        
-        function calcEstatistica(){
-            if(pos == 41){
-                alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
+            #tabuleiro{
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                z-index: -1;
+                position: absolute;
             }
-        }
-        
-    </script>
-    
-    <style>
+
+            #player{
+                height: 300px;
+                width: 200px;
+                z-index:2;
+                position: absolute;
+            }
+
+            area{
+                cursor: pointer;
+            }
+
             #face{
-            width: 370px;
-            height: 350px;
-            margin-left: 130px;
-            margin-top: 70px;
-            position: absolute;
-            z-index: 1;
-        }
-        
-        /*PERGUNTAS*/
-        
-        /* Borda arredondada card-painel*/
-        .card-panel{
-            border-radius: 15px;
-        }
-        
-        /* Borda arredondada respostas collection */
-        .collection{
-            border-radius: 10px;
-        }
-        
-        /* Fonte do título da pergunta */
-        h3{
-            font-family: 'Nunito';
-        }
-        
-        /* Propriedades das respostas */
-        .collection-item{
-            font-size: 30px;
-            font-family: 'Nunito';
-            color: #424242 !important;
-        }
-        
-        /* Muda cor ao passar o mouse */
-        .muda-cor:hover{
-            background: #1e88e5 !important;
-            color: white !important;
-        }  
-        
-        p{
-            font-family: 'Nunito';
-            font-size: 30px;
-        }
-        
-        #perguntas{
-            z-index: 1;
-            position: absolute;
-            margin-left: 1150px;
-            margin-top:  10px;
-        }
-    </style>
-    
-  </head>
-  <body>
+                width: 370px;
+                height: 350px;
+                margin-left: 130px;
+                margin-top: 70px;
+                position: absolute;
+                z-index: 1;
+            }
 
-    <script type="text/javascript" src="js/ajaxtabuleiro.js"></script>
+            /*PERGUNTAS*/
 
-      <div>
+            /* Borda arredondada card-painel*/
+            .card-panel{
+                border-radius: 15px;
+            }
+
+            /* Borda arredondada respostas collection */
+            .collection{
+                border-radius: 10px;
+            }
+
+            /* Fonte do título da pergunta */
+            h3{
+                font-family: 'Nunito';
+            }
+
+            /* Propriedades das respostas */
+            .collection-item{
+                font-size: 30px;
+                font-family: 'Nunito';
+                color: #424242 !important;
+            }
+
+            /* Muda cor ao passar o mouse */
+            .muda-cor:hover{
+                background: #1e88e5 !important;
+                color: white !important;
+            }  
+
+            p{
+                font-family: 'Nunito';
+                font-size: 30px;
+            }
+
+            #perguntas{
+                z-index: 1;
+                position: absolute;
+                margin-left: 1150px;
+                margin-top:  10px;
+            }
+
+
+        </style>
+
+        <script type=text/javascript>
+            var pos =0;
+
+            function alertaTeste(){
+                alert('FUNCIONOU');
+            }
+
+            function andar(anda){
+                let numPassos = anda;
+                var intervaloPassos = setInterval(function passos(numPassos){
+                    if(y === anda){
+                        y = 0;
+                        clearInterval(intervaloPassos);
+                    }else{
+                        document.getElementById(pos).hidden = true;
+                        pos++;
+                        document.getElementById(pos).hidden = false;
+                        y++;
+                    }
+                }, 800);
+                getDados();
+            }
+
+
+            //DADO
+            function startTimer() {
+                //Reduzir o tamanho da imagem
+                document.getElementById("face").style.width = "370px";
+                document.getElementById("face").style.height = "350px";
+                //Começar um intervalo para trocar as imagens
+                var intervalo = setInterval(function displayNextImage() {
+                    if(x === images.length ){
+                        //Quando terminar a animacao(passar por todas as outras faces)
+                        x = 0; // zera o contador
+                        document.getElementById("face").style.width = "370px"; //Volta imagem ao tamanho normal
+                        document.getElementById("face").style.height = "350px%";
+                        jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
+                        clearInterval(intervalo);//quebra o loop do intervalo
+                    }
+                    else {
+                        document.getElementById("face").src = images[x];//continua trocando as imagens
+                        x++;
+                    }
+                }, 130);//Tempo que cada imagem aparece
+            }
+
+            function jogarDado(){ 
+                var element = document.getElementById('face');
+                var sorte = Math.floor((Math.random() * 6) + 1);
+                var numeroTirado;
+                switch(sorte){
+                    case 1:
+                        element.src = "Dado/face1.JPG";
+                        numeroTirado = 1;
+                        andar(numeroTirado);
+                        break;
+                    case 2:
+                        element.src = "Dado/face2.JPG";
+                        numeroTirado = 2;
+                        andar(numeroTirado);
+                        break;
+                    case 3:
+                        element.src = "Dado/face3.JPG";
+                        numeroTirado = 3;
+                        andar(numeroTirado);
+                        break;
+                    case 4:
+                        element.src = "Dado/face4.JPG";
+                        numeroTirado = 4;
+                        andar(numeroTirado);
+                        break;
+                    case 5:
+                        element.src = "Dado/face5.JPG";
+                        numeroTirado = 5;
+                        andar(numeroTirado);
+                        break;
+                    case 6:
+                        element.src = "Dado/face6.JPG";
+                        numeroTirado = 6;
+                        andar(numeroTirado);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            var images = [], x = 0, y=0;
+            images[0] = "Dado/face1.JPG";
+            images[1] = "Dado/face2.JPG";
+            images[2] = "Dado/face3.JPG";
+            images[3] = "Dado/face4.JPG";
+            images[4] = "Dado/face5.JPG";
+            images[5] = "Dado/face6.JPG";
+
+
+            //PERGUNTAS DO JOGO
+            var contCerto = 0;
+            var contErrado = 0;
+            var numQuestoes = 0;
+
+            function mudaCorCerto(btn_certo){
+                btn_certo.style.background = "#36bc27";
+            }
+
+            function mudaCorErrado(btn_errado){
+                btn_errado.style.background = "red";
+            }
+
+            function contaQuestoes(){
+                numQuestoes = numQuestoes+1;
+            }
+
+            function contaAcerto(){
+                contCerto = contCerto+1;            
+                return getDados();
+            }
+
+            function contaErrado(){
+                contErrado = contErrado+1;
+                return getDados();
+            }
+
+            function calcEstatistica(){
+                if(pos == 41){
+                    alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
+                }
+            }
+
+        </script>
+
+
+
+    </head>
+    <body>
+
+        <script type="text/javascript" src="js/ajaxtabuleiro.js"></script>
+
+        <div>
             <img src="Img_Prog/tabuleiro/tab2.png" usemap="#mapaTabuleiro" id="tabuleiro">
-      
+
             <map name="mapaTabuleiro">
                 <div>
                     <img src="Dado/face1.JPG" alt="dado" id="face" onclick="startTimer()">
@@ -270,7 +271,7 @@
                     <area title="10" shape="rect" coords="718,1775,943,2007" onclick="alertaTeste()"/>
                 </div>
                 <div>
-                     <img id="11" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 740px; margin-top: 1430px;" hidden="true">
+                    <img id="11" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 740px; margin-top: 1430px;" hidden="true">
                     <area title="11" shape="rect" coords="716,1542,949,1772" onclick="alertaTeste()"/>
                 </div>
                 <div>
@@ -399,29 +400,29 @@
                 <area id="video" title="video" shape="rect" coords="1066,1417,2248,2249" onclick="alertaTeste()"/>
             </map>  
         </div>
-      
-      <!-- PERGUNTAS -->
+
+        <!-- PERGUNTAS -->
         <script type="text/javascript" src="js/ajax.js"></script>
- 
+
         <br><br><br>
-        
+
         <div id="perguntas">
-        <div>
-            <img id="1" src="Img_Prog/tabuleiro/b-happy.png" class="imagens right" hidden="true">
-            <img id="2" src="Img_Prog/tabuleiro/b-ops.png" class="imagens right" hidden="true">
-            <img id="3" src="Img_Prog/tabuleiro/b-sad.png" class="imagens right" hidden="true">
-            <img id="4" src="Img_Prog/tabuleiro/g-ops.png" class="imagens right" hidden="true">
-            <img id="5" src="Img_Prog/tabuleiro/g-sad.png" class="imagens right" hidden="true">
-            <img id="6" src="Img_Prog/tabuleiro/g-happy.png" class="imagens right" hidden="true">
+            <div>
+                <img id="1" src="Img_Prog/tabuleiro/b-happy.png" class="imagens right" hidden="true">
+                <img id="2" src="Img_Prog/tabuleiro/b-ops.png" class="imagens right" hidden="true">
+                <img id="3" src="Img_Prog/tabuleiro/b-sad.png" class="imagens right" hidden="true">
+                <img id="4" src="Img_Prog/tabuleiro/g-ops.png" class="imagens right" hidden="true">
+                <img id="5" src="Img_Prog/tabuleiro/g-sad.png" class="imagens right" hidden="true">
+                <img id="6" src="Img_Prog/tabuleiro/g-happy.png" class="imagens right" hidden="true">
+            </div>
+
+            <div id="resultado"></div>
         </div>
-        
-        <div id="resultado"></div>
-      </div>
-        
+
         <!-- Jquery-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <!--Materialize JS-->
         <script src="js/materialize.min.js"></script>
-        
-  </body>
+
+    </body>
 </html>

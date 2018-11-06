@@ -32,7 +32,7 @@ DEPOIS
 
 <!-- NAVBAR -->
 <nav class="purple lighten-1">
-    <div class="container nav-wrapper">
+    <div class="nav-wrapper">
         <a href="index.php" class="brand-logo">Logo</a>
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
@@ -43,8 +43,10 @@ DEPOIS
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="curiosidades.php">CURIOSIDADES</a></li>
+<!--
             <li><a href="Login.php">LOGIN</a></li>
             <li><a href="Cadastro.php">CADASTRO</a></li>
+-->
         </ul>
     </div>
 </nav>
@@ -59,7 +61,7 @@ DEPOIS
                 <div class="collapsible-body purple lighten-2">
                     <ul>
                         <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
-                        <li><a href="AlteracoesRO.php" class="white-text">Alterações RO</a></li>
+                        <li><a href="AlteracoesRO.php" class="white-text">ALTERAÇÕES RO</a></li>
                         <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
                     </ul>
                 </div>
