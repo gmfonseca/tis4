@@ -39,6 +39,7 @@ DEPOIS
             <li><a href="Problema.php">O PROBLEMA</a></li>
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">ESPECIALIDADES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="convenios.php">CONVÊNIOS</a></li>
+            <li><a href="Tratamento.php">TRATAMENTO</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="curiosidades.php">CURIOSIDADES</a></li>
