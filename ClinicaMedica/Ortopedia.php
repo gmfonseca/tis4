@@ -128,7 +128,11 @@
                     <br>
                     <div class="col s24 m12 32">
                         <h4 class="corVerdeTexto">  Qual é a prevalência da respiração oral?  </h4>
-						<img class="responsive-img" src="Img_Prog/tabela1.png" style="height: 419px; width: 720px;">
+						<div class="row">
+							<div class="col s10 m10 22 offset-s2 offset-m2 offset-l2">
+								<img class="responsive-img" src="Img_Prog/tabela1.png" style="height: 419px; width: 720px;">
+							</div>
+						</div>
                     </div>
                 </div>
 				
