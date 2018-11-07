@@ -33,7 +33,7 @@ USE fisio;
 
 CREATE TABLE `exercicio` (
   `codigoExercicio` int(10) UNSIGNED NOT NULL,
-  `descricao` varchar(255) NOT NULL
+  `descricao` TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
