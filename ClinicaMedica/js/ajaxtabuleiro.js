@@ -36,7 +36,7 @@ function getDados() {
     // Exibi a imagem de progresso
     
     // Monta a requisição
-    xmlreq.open("GET", "pergunta.php", true);
+    xmlreq.open("GET", "perguntaTab.php", true);
     
     // Atribui uma função para ser executada sempre que houver uma mudança de estado
     xmlreq.onreadystatechange = function(){

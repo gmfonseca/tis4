@@ -34,8 +34,8 @@
             <div class="col l6 s12">
                 <h5 id="Atfooter">Contato</h5>
                 <p class="grey-text "> Email: pdayrell@gmail.com  </p>
-                <p class="grey-text "> Telefone:   </p>
-                <p class="grey-text "> Local:   </p>
+                <p class="grey-text "> Telefone:  (31) 3319-4423 / (31) 3319-4424.</p>
+                <p class="grey-text "> Local: Centro Clínico de Fisioterapia Av. 31 de Março - acesso 8 - prédio 46 - PUC Minas Coração Eucarístico </p>
             </div>
         </div>
     </div>
