@@ -259,7 +259,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> library_books </i>
-                                            <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" maxlength="300" required>
+                                            <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" maxlength="400" required>
                                         </div>
                                     </div>
                                     
