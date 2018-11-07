@@ -112,16 +112,66 @@
                         <img class="responsive-img" src="Img_Prog/ortopedia.png" style="height: 419px; width: 396px;">
                     </div>
                     <div class="col s12 m6 l6">
-                        <h4 class="corVerdeTexto"> A especialidade </h4>
+                        <h4 class="corVerdeTexto"> Já existem estudos validados sobre as crianças respiradoras orais? </h4>
                         <p class="topicos"> 
-                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
-                            quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
-                            Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
-                            Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum,
-                            e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.                    
+                            Já existem estudos relacionados ao respirador oral como: tipos de respirador oral, estudos cefalométricos, 
+							alterações craniofaciais, periodontais, faciais, comportamentais, posturais, dos órgãos fonoarticulatórios, 
+							da força de língua, do estado nutricional, dos problemas de aprendizagem em crianças com obstrução das vias 
+							aéreas superiores associados às dificuldades de atenção, correlação de problemas posturais com a aprendizagem, 
+							associação da respiração oral com o transtorno de déficit de atenção e hiperatividade
+                    
                         </p>
                     </div>
                 </div>
+				
+				<div class="row">
+                    <br>
+                    <div class="col s24 m12 32">
+                        <h4 class="corVerdeTexto">  Qual é a prevalência da respiração oral?  </h4>
+						<img class="responsive-img" src="Img_Prog/tabela1.png" style="height: 419px; width: 720px;">
+                    </div>
+                </div>
+				
+				<div class="row">
+                    <br>
+                    <div class="col s24 m12 32">
+                        <h4 class="corVerdeTexto">  O que é a Síndrome do Respirador Oral? </h4>
+                        <p class="topicos"> 
+                           A Síndrome do Respirador  oral é um conjunto de alterações derivada de uma disfunção respiratória que é caracterizada 
+						   pelo hábito de substituir a respiração nasal (via nariz) pela respiração oral por um período maior do que seis meses e
+						   que já apresenta ausência do selamento labial passivo, alterações dentocraniofaciais, distúrbios da fala e mastigação  
+						   perturbações do sono noturno , dificuldade de aprendizado  e adaptações compensatórias da posição de cabeça. Esta síndrome
+						   pode surgir em decorrência a outras doenças ou situações nas quais levem à necessidade de se respirar pela boca. Ela torna-se
+						   uma síndrome, e causa de preocupação, quando se torna um hábito frequente, presente na vida da criança por mais de seis meses.
+						   Se não abordada adequadamente, ela pode gerar complicações no desenvolvimento da criança.
+                    
+                        </p>
+                    </div>
+                </div>
+				
+				<div class="row">
+                    <br>
+                    <div class="col s24 m12 32">
+                        <h4 class="corVerdeTexto"> Quais são as causas da respiração oral? </h4>
+                        <p class="topicos"> 
+                            Geralmente a respiração oral é causada por algum fator obstrutivo que impede a passagem de ar pelo nariz. 
+							Muitos são os fatores que podem impedir parcial ou totalmente o fluxo normal pelas vias aéreas superiores, 
+							entre eles podemos citar:
+							<ul>
+							<li class="topicos">- Hipertrofia de cornetos
+							<li class="topicos">- Desvio de septo nasal( que pode ser provocado por traumas de acidentes domésticos ou parto)
+							<li class="topicos">- Hipertrofia de amígdalas - geralmente devido à problemas alérgicos (rinite, sinusite, bronquite),
+							<li class="topicos">- Hipertrofia de adenóides
+							<li class="topicos">- Pólipos nasais
+							<li class="topicos">- Asma brônquica
+							<li class="topicos">- Insuficiência labial
+							</ul>
+                    
+                        </p>
+                    </div>
+                </div>
+				
+				
                 <br><br>             
             </div>
             <br><br><br>
