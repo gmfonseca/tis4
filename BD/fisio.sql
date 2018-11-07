@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 28-Out-2018 às 19:06
--- Versão do servidor: 10.1.35-MariaDB
--- versão do PHP: 7.2.9
+-- Generation Time: 07-Nov-2018 às 01:30
+-- Versão do servidor: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,6 +25,17 @@ SET time_zone = "+00:00";
 CREATE DATABASE fisio;
 
 USE fisio;
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `exercicio`
+--
+
+CREATE TABLE `exercicio` (
+  `codigoExercicio` int(10) UNSIGNED NOT NULL,
+  `descricao` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 -- --------------------------------------------------------
 
 --
@@ -283,6 +294,12 @@ INSERT INTO `usuario` (`codigo`, `nome`, `email`, `senha`, `genero`, `tipo_usuar
 --
 
 --
+-- Indexes for table `exercicio`
+--
+ALTER TABLE `exercicio`
+  ADD PRIMARY KEY (`codigoExercicio`);
+
+--
 -- Indexes for table `pergunta`
 --
 ALTER TABLE `pergunta`
@@ -332,6 +349,12 @@ ALTER TABLE `usuario`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `exercicio`
+--
+ALTER TABLE `exercicio`
+  MODIFY `codigoExercicio` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `pergunta`
