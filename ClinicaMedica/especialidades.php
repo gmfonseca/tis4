@@ -128,9 +128,8 @@
             
                     <div class="col s12 m4 l4">
                         <img src="Img_Prog/ortopedia.png" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Ortopedia </h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>   
-                        <a href="Ortopedia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <h5 class="corVerdeTexto"> Prevalência </h5>
+                        <a href="Prevalencia.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                     </div>
                 </div>            
             </div>

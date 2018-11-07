@@ -33,7 +33,7 @@ DEPOIS
 <!-- NAVBAR -->
 <nav class="purple lighten-1">
     <div class="nav-wrapper">
-        <a href="index.php" class="brand-logo">Logo</a>
+        <a href="index.php" class="brand-logo">Início</a>
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="Problema.php">O PROBLEMA</a></li>
