@@ -10,7 +10,7 @@
     $tipo = isset($_POST['tTipo']) ? $_POST['tTipo']: ''; 
                 
     //ENVIANDO A QUERY PARA O BANCO DE DADOS
-    $query = "INSERT INTO pergunta(descricao,tipoQuestao,cod_Questionario) VALUES('$pergunta','$tipo',0)";
+    $query = "INSERT INTO pergunta(descricao,tipo_pergunta,cod_Questionario) VALUES('$pergunta','$tipo',0)";
     $conexao->query($query);
     
     $sql = "SELECT codigoPergunta FROM pergunta WHERE descricao = '$pergunta'";

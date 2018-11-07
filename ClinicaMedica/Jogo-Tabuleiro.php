@@ -370,7 +370,6 @@
 
 
         <!-- PERGUNTAS -->
-        <script type="text/javascript" src="js/ajaxtabuleiro.js"></script>
 
         <br><br><br>
 
