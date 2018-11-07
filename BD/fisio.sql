@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Nov-2018 às 01:30
+-- Generation Time: 07-Nov-2018 às 22:51
 -- Versão do servidor: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -33,9 +33,27 @@ USE fisio;
 
 CREATE TABLE `exercicio` (
   `codigoExercicio` int(10) UNSIGNED NOT NULL,
-  `imagem` VARCHAR(255) NULL,
-  `descricao` TEXT NOT NULL
+  `imagem` varchar(255) DEFAULT NULL,
+  `descricao` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `exercicio`
+--
+
+INSERT INTO `exercicio` (`codigoExercicio`, `imagem`, `descricao`) VALUES
+(1, NULL, 'Se vocÃª respira pelo nariz, feche uma narina e veja como o ar faz mais barulho para entrar. Se vocÃª respira pela boca, fecha a boca e perceba a entrada de ar pelo nariz. O som deve ser alto e contÃ­nuo e bem lento para que vocÃª perceba este caminho novo que o ar estÃ¡ fazendo. A boca deve ficar fechada.'),
+(2, NULL, 'Repita o somâ€HUM, HUM, HUMâ€com a boca fechada e com a boca aberta. Perceba a sensaÃ§Ã£o de alternar o fluxo pelo nariz e pela boca.'),
+(3, NULL, 'Cante uma mÃºsica inteira que vocÃª conhece  com a boca fechada, pensando na melodia, apenas fazendo um som qualquer, mantendo por um perÃ­odo maior os lÃ¡bios selados. Perceba a vibraÃ§Ã£o gerada.'),
+(4, NULL, 'Puxe o ar pelo nariz e solte o ar pela boca. Preste atenÃ§Ã£o o que acontece com seus ombros enquanto vocÃª respira.'),
+(5, NULL, 'Agora perceba como a sua cabeÃ§a  estÃ¡ em relaÃ§Ã£o ao seu corpo. Procure colar o queixo no pescoÃ§o. Se conseguiu, mantenha nesta posiÃ§Ã£o por mais 20 segundos.'),
+(6, NULL, 'Abra os seus braÃ§os, quando respirar e perceba como Ã© fÃ¡cil o ar entrar nos pulmÃµes! Quando facilitamos com os movimentos de braÃ§os, o ar entra mais rÃ¡pido. '),
+(7, NULL, 'DÃª 10 pulinhos bem alto com a boca fechada e depois mais 10 com a boca aberta e veja qual te deixou mais cansado.'),
+(8, '61ccc907-1afa-4c5e-bd1c-00b5aaa26e6f.jpg', 'Deitado de barriga para baixo , no chÃ£o. Apoiar as mÃ£os na direÃ§Ã£o do peito, encostando o queixo no chÃ£o. Levantar metade do corpo ao esticar os braÃ§os, tentar jogar a cabeÃ§a para trÃ¡s e contar atÃ© 10  em voz alta, soprando o ar. Relaxar colocando o queixo de novo no chÃ£o. Repetir 10 vezes este exercÃ­cio.'),
+(9, '0545b48c-422d-42f4-818c-3188dd2b2cc4.jpg', 'Brincar de carrinho de mÃ£o. Pedir ao papai ou a mamÃ£e para segurar as pernas e sair direcionando a crianÃ§a . Prestar atenÃ§Ã£o nas mÃ£os que devem ser posicionadas mais abertas, nÃ£o deixando que os braÃ§os fiquem dobrados e na barriguinha, que deve ficar bem contraÃ­da , longe  do chÃ£o. Cuidado para nÃ£o bater o queixo no chÃ£o!'),
+(10, '4f66754a-2ce6-4c0f-bf40-b1702aea1f08.jpg', 'Deitado de barriga para cima dobrar as pernas e segurar uma bola. Levantar o corpo entregando a bola para sua mÃ£e,  pai, irmÃ£o ou qualquer amigo que possa te ajudar nesta tarefa. Ao levantar, solte ar e preste atenÃ§Ã£o como a barriga estÃ¡ movimentando, ela deve ser sugada, ficar bem apertadinha. Repetir 10 vezes este exercÃ­cio.'),
+(11, NULL, 'De pÃ©, levantar um bastÃ£o ou um cabo de vassoura atÃ© altura acima da cabeÃ§a. Repetir este exercÃ­cio 10 vezes. Dar continuidade a este exercÃ­cio, levando o braÃ§o atrÃ¡s da orelha, abaixando o cotovelo e mantendo-o bem prÃ³ximo da cintura. Manter esta posiÃ§Ã£o contando atÃ©  20, pensando em direcionar o cotovelo para frente. '),
+(12, '534d88b5-2cc2-4a99-9be3-fc56958b0705.jpg', 'Deitado de barriga para cima. Manter a cabeÃ§a e as costas bem encostadas no chÃ£o. Prestar atenÃ§Ã£o na posiÃ§Ã£o da cabeÃ§a, o queixo deve ficar encaixado. Nesta posiÃ§Ã£o, rodar as pernas imaginando um cÃ­rculo e pensando em todas as letras do alfabeto. ');
 
 -- --------------------------------------------------------
 
@@ -355,7 +373,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `exercicio`
 --
 ALTER TABLE `exercicio`
-  MODIFY `codigoExercicio` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `codigoExercicio` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `pergunta`
