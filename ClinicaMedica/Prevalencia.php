@@ -2,7 +2,7 @@
   <html>
     <head>  
         
-       <title> Clinica Médica - Ortopedia </title>
+       <title> Clinica Médica - Prevalência </title>
         
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -100,7 +100,7 @@
 
                 <div class="col s8 offset-s2">
                     <br>
-                    <h4 class="white-text"> Ortopedia </h4>
+                    <h4 class="white-text"> Prevalência </h4>
                     <br>
                 </div>
             </div>
@@ -108,9 +108,7 @@
             <div class="container">
                 <div class="row">
                     <br>
-                    <div class="col s12 m6 l6">
-                        <img class="responsive-img" src="Img_Prog/ortopedia.png" style="height: 419px; width: 396px;">
-                    </div>
+           
                     <div class="col s12 m6 l6">
                         <h4 class="corVerdeTexto"> Já existem estudos validados sobre as crianças respiradoras orais? </h4>
                         <p class="topicos"> 

@@ -170,28 +170,7 @@
                 </div>
 
 
-                <br><br>
-                <div class="row center">
-                    <h4 class="corVerdeTexto"> O cuidado que você merece, os melhores profissionais. </h4>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col s12 m4 l4">
-                        <img class="responsive-img" src="Img_Prog/medico 1.jpg" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Dr. Gregory House </h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img class="responsive-img" src="Img_Prog/medico 2.png" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Dr. Pedro Nunes  </h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img class="responsive-img" src="Img_Prog/medico 3.jpg" style="height: 161px; width: 271px;">
-                        <h5 class="corVerdeTexto"> Dra. Amélia Amaral</h5>
-                        <p class="topicos"> Sou um subtítulo. Clique aqui para editar e contar aos seus clientes um pouco sobre você.</p>   
-                    </div>
-                </div>             
+           
             </div>
             <br><br><br>
         </div>

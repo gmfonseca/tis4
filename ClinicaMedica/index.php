@@ -73,12 +73,11 @@ require_once('navbar.php');
                 <div class="col s12 m4 l2">
                     <div id="card3" class="card">
                         <div class="card-content white-text">
-                            <span class="card-title"> Ortopedia </span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title"> Prevalência </span>
+                            <p>Clique em saiba mais para mais informações sobre as Prevalências da respiração oral.</p>
                         </div>
                         <div class="card-action">
-                            <a href="Ortopedia.php" class="white-text"> Saiba mais </a>
+                            <a href="Prevalencia.php" class="white-text"> Saiba mais </a>
                         </div>
                     </div>
                 </div>

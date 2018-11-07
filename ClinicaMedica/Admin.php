@@ -94,19 +94,6 @@
 
 <body class="grey lighten-3">
 
-    <!-- Nav-Bar -->
-    <div style="background-color: rgb(145, 85, 167);">
-        <nav class="z-depth-0" style="height: 100px;">
-            <div class="nav-wrapper white">
-                <ul class="center">
-                    <!-- ><li><a href="index.php"><img src="Img_Prog/logo.png" height="100px" width="200px;"> </a></li> -->
-                    <li class="lina"><a href="Sobre-Nos.php" class="black-text"> SOBRE NÓS </a></li>
-                    <li class="lina"><a href="Espcialidades.php" class="black-text dropdown-trigger" data-target="Especialidades"> ESPECIALIDADES <i class="material-icons right"> arrow_drop_down </i></a></li>
-                    <li class="lina"><a href="Convenios.php" class="black-text"> CONVÊNIOS </a></li>
-                    <li class="lina"><a href="Contato.php" class="black-text"> CONTATO </a></li>
-                </ul>
-            </div>
-        </nav>
 
 
         <!-- Dropdown Structure -->
@@ -277,26 +264,6 @@
 
         <br><br><br>
 
-        <div class="row grey lighten-3">
-            <br><br>
-            <div class="center">
-                <h4 id="Atfooter"> Receba nossa newsletter </h4>
-            </div>
-            <div class="center">
-                <p> Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor. </p>
-            </div>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6 m6 l6 offset-m3 offset-l3">
-                        <i class="material-icons prefix"> email </i>
-                        <input id="email" type="email" class="validate">
-                        <label for="email">Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

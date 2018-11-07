@@ -27,7 +27,7 @@ DEPOIS
 <ul id="drop-especialidade" class="dropdown-content purple lighten-2">
     <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
     <li><a href="AlteracoesRO.php" class="white-text">ALTERAÇÕES RO</a></li>
-    <li><a href="ortopedia.php" class="white-text">ORTOPEDIA</a></li>
+    <li><a href="Prevalencia.php" class="white-text">PREVALÊNCIA</a></li>
 </ul>
 
 <!-- NAVBAR -->

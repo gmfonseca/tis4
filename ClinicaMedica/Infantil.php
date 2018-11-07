@@ -90,15 +90,16 @@
 
             <br><br><br><br><br>
             <div class="row">
-                <div class="center col s12 m4 l4">							
+                <div class="center ">							
                 
                      <i class="large material-icons green-text text-lighten-2">games</i>
                     <br>
-                    <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn">JOGOS</a>   
+                    <a href="Jogo-Tabuleiro.php" target="blank" class="waves-effect waves-light btn">JOGOS</a>   
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
 
+<!--
                 <div class="center col s12 m4 l4">	
                     <i class="large material-icons green-text text-lighten-2">ondemand_video</i>
                     <br>
@@ -112,6 +113,7 @@
                     <br>
                     <a class="waves-effect waves-light btn">GALERIA</a>
                 </div>
+-->
             </div>   
             <br>			
         </div>
