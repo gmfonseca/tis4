@@ -88,6 +88,10 @@
             background-color: rgba(109, 204, 163, 0.9);
         }
 
+        p{
+            font-size: 1.2em;
+        }
+
     </style>
 
     <body class="grey lighten-3">
@@ -99,10 +103,10 @@
                 require_once('navbar.php');
                 ?>
 
-                <div class="col s12 offset-s2">
-                    <br>
-                    <h4 class="white-text"> Alterações RO </h4>
-                    <br>
+                <div class="col s12">
+                    <br><br>
+                    <h4 class="container white-text"> Alterações da Respiração Oral </h4>
+                    <br><br>
                 </div>
             </div>
 
@@ -137,12 +141,11 @@
                             Para equilibrar o corpo que tende a ir para frente e para baixo, o respirador oral faz compensações posturais que afetam o equilíbrio do corpo, causando tropeços e quedas. Todas essas alterações são mecanismos de compensação e adaptação, sendo contínuas e cumulativas. Toda essa alteração muscular faz com que a respiração seja rápida e curta, onde a criança apresenta um cansaço constante a qualquer tipo de brincadeiras ou atividades físicas.  
                         </p>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <img class="responsive-img" src="Img_Prog/AlteracoesPosturais.PNG" style="height: 419px; width: 396px;">
-                        Observem nas figuras acima: como a cabeça das crianças são deslocadas para frente.
+                    <div class="col s12 m6 l6" style=" font-weight: 500;">
+                        <img class="responsive-img" src="Img_Prog/AlteracoesPosturais.PNG" style="height: 419px; width: 396px;"><br>
+                        Observem nas figuras acima, como a cabeça das crianças são deslocadas para frente. <br>
                         Preste atenção nos ombros e na barriga.
                         Para a criança ter um bom equilíbrio , as alterações que começam na  posição da cabeça desencadeiam compensações em todo o corpo.
-
                     </div>
                 </div>
 
