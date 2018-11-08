@@ -155,7 +155,7 @@
                         <p>• Os lábios são mantidos abertos pra ajudar a respirar durante a mastigação. <br> <br></p>
                     </li>
                     <li>
-                        <p>• As crianças tem uma tendencia em colocar a cabeça para frente e realizar a protusão cervicalou seja, flexionam a parte da coluna cervical baixa e hiperextendem a coluna cervical alta. <br> <br></p>
+                        <p>• As crianças tem uma tendencia em colocar a cabeça para frente e realizar a protusão cervical, ou seja, flexionam a parte da coluna cervical baixa e hiperextendem a coluna cervical alta. <br> <br></p>
                     </li>
                     <li>
                         <p>• As crianças podem ter dificuldade na fala devido a hipomobilidade da lingua e órgão vocais. <br> <br></p>
@@ -164,14 +164,13 @@
                         <p>• O aleitamento materno previne a sindrome, pois permite o incentivo ao desenvolvimento da musculatura orofacial e favorecimento de fluxo aéreo pelo nariz. <br> <br></p>
                     </li>
                     <li>
-                        <p>• O governo incentiva os programas de aleitamento que são preventivos ao desenvolvimento da Sindrome da Respiração oral. Além da amamentação, a conscientização em relação aos hábitos orais (uso de chupetas e mamadeiras inadequadas, sucção ), à alimentação (consistência dos alimentos) e à higiene ambiental , o governo tem programas de aleitamento tbm , todos são preventivos. <br> <br></p>
+                        <p>• O governo incentiva os programas de aleitamento que são preventivos ao desenvolvimento da Sindrome da Respiração oral. Além da amamentação, a conscientização em relação aos hábitos orais (uso de chupetas e mamadeiras inadequadas, sucção), à alimentação (consistência dos alimentos) e à higiene ambiental, o governo tem programas de aleitamento também, todos são preventivos. <br> <br></p>
                     </li>
                 </ul>
             </div>
             <br><br>
         </div>
         </div>
-
 
         <?php 
             require_once('footer.php')
