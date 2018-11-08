@@ -22,7 +22,7 @@
                     <div class="container">
                         <div class="card-panel z-depth-5 white">
                             <div class="card-panel z-depth-5">
-                                <h3 class="center"></h3>                            
+                                <h3 class="center">'.$pergunta["descricao"].'</h3>                            
                             </div>
                         </div>
                         <div class="row">

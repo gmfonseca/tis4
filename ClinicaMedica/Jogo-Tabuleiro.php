@@ -108,7 +108,12 @@
                         y++;
                     }
                 }, 800);
-                getDados();
+                var p = pos + anda;
+                if(pos == 4 || pos == 10 || pos == 13 || pos == 21 || pos == 31 || pos == 38){
+                    getExercicio();
+                }else{
+                    getDados();   
+                }
             }
 
 
