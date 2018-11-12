@@ -99,32 +99,17 @@ require_once('navbar.php');
 
         <div class="row center" style="background-color: white;">
             <br><br>
-            <h4 id="cuide"> Cuide bem da sua saúde </h4>
+            <h4 id="cuide"> Está na dúvida ? </h4>
 
             <br><br>
             <div class="container" style="background-color: white;">
                 <div class="row">
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/batepapo.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Convênios que atendemos </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="Convenios.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/estetoscopio.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Especialidades médicas </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>   
-                        <a href="especialidades.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                    <div class="col s12 m12 l12">
+                          <i class="large material-icons green-text ">priority_high</i>
+                        <h4 class="topicos"> Responda as perguntas e verifique se você possui respiração oral ou tem tendência a tê-la !</h4>
+                        <a href="Contato.php" style="color: rgb(145, 85, 167);"> > Responder questionário </a>
+         
+ 
                     </div>
                 </div>
             </div>
