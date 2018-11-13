@@ -92,7 +92,11 @@
         }
 
     </style>
-
+    <script type="text/javascript">
+        function ajuda(){
+            aler( document.getElementsByName('group1').value);
+        }
+    </script>
     <body class="grey lighten-3">
 
         <div id="god" class="white"> 
@@ -111,15 +115,175 @@
             <br><br>
             <div class="container">
                 <div class="row">
-                    <div class="col l6 s12">
-                        <h5 id="Atfooter">Contato</h5>
-                        <p class="grey-text "> Email: pdayrell@gmail.com  </p>
-                        <p class="grey-text "> Telefone:  (31) 3319-4423 / (31) 3319-4424.</p>
-                        <p class="grey-text "> Local: Centro Clínico de Fisioterapia Av. 31 de Março - acesso 8 - prédio 46 - PUC Minas Coração Eucarístico </p>
+                    <div class="col l6 s6">
+                        <h5 id="Atfooter"> Triagem </h5>
+                      
+
+                            <p>
+                                Você tem dificuldade de respirar pelo nariz?
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" value="sim" />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" value="nao"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+                            <p>
+                                Você respira pela boca?
+                                <label>
+                                    <input class="with-gap" name="group2" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group2" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+                            <p>
+                                Você tem resfriados frequentemente?
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group3" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+                            <p>
+                                Você tem coceira no nariz?
+                                <label>
+                                    <input class="with-gap" name="group4" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group4" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você sente o nariz entupido?
+                                <label>
+                                    <input class="with-gap" name="group5" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group5" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você espirra várias vezes em seguida?
+                                <label>
+                                    <input class="with-gap" name="group6" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group6" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você apresenta secreção no nariz frequentemente?
+                                <label>
+                                    <input class="with-gap" name="group7" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group7" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você ronca?
+                                <label>
+                                    <input class="with-gap" name="group8" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group8" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você tem algum problema com sono?
+                                <label>
+                                    <input class="with-gap" name="group9" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group9" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+
+
+                            <p>
+                                Você dorme com a boca aberta?
+                                <label>
+                                    <input class="with-gap" name="group9" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group9" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você sente cansaço durante o dia?
+                                <label>
+                                    <input class="with-gap" name="group10" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group10" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+
+                            <p>
+                                Você acorda com a boca seca?
+                                <label>
+                                    <input class="with-gap" name="group11" type="radio"  />
+                                    <span>Sim</span>
+                                </label>
+                                <label>
+                                    <input class="with-gap" name="group11" type="radio"  />
+                                    <span>Não</span>
+                                </label>
+                            </p>
+                            <button class="btn waves-effect waves-light" type="button" onclick="ajuda()">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+
+                            
                     </div>
                 </div>
+                <!--
+<div class="row">
+<div class="col l6 s6">
+<h5 id="Atfooter">Contato</h5>
+<p class="grey-text "> Email: pdayrell@gmail.com  </p>
+<p class="grey-text "> Telefone:  (31) 3319-4423 / (31) 3319-4424.</p>
+<p class="grey-text "> Local: Centro Clínico de Fisioterapia Av. 31 de Março - acesso 8 - prédio 46 - PUC Minas Coração Eucarístico </p>
+</div>
+</div>
+-->
             </div>
         </div>
+        <?php
+        require_once('footer.php');
+        ?>
+
 
 
 

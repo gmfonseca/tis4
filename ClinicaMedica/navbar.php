@@ -33,7 +33,7 @@ DEPOIS
 </ul>
 
 <!-- NAVBAR -->
-<nav class="purple lighten-1">
+<nav class="light-blue accent-2">
     <div class="nav-wrapper">
         <a href="index.php" class="brand-logo" style="margin-left: 10px">Início</a>
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
