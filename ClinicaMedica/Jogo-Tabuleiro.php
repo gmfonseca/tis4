@@ -11,6 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Kalam|Nunito|Patrick+Hand|Roboto+Mono|Raleway" rel="stylesheet">
         <style>
 
+            body{
+                zoom:25%;
+            }
+            
             #tabuleiro{
                 background-repeat: no-repeat;
                 background-position: center center;
