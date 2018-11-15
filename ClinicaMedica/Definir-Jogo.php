@@ -58,11 +58,7 @@
 
         /*Conteudo da página*/
         #conteudo{
-<<<<<<< HEAD
-            background: #ba68c8;
-=======
             background-color: #b3e5fc;
->>>>>>> e93eaf84a7ce024d0d28bce254676626e9798678
         }
         a
         .btn{
@@ -83,11 +79,7 @@
 
     </style>
 
-<<<<<<< HEAD
-    <body  style="background-color:#ba68c8">
-=======
     <body  style="background-color:#b3e5fc">
->>>>>>> e93eaf84a7ce024d0d28bce254676626e9798678
 
         <!-- Website Content -->
         <div id="conteudo">
@@ -99,18 +91,18 @@
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
 
-                    <i class="large material-icons grey-text text-lighten-2 tamIcons">face</i>
+                    <i class="large material-icons green-text text-lighten-2 tamIcons">face</i>
                     <br>
-                    <a href="Jogos.php" class="waves-effect waves-light btn-large blue"> ADULTO </a>   
+                    <a href="Jogos.php" class="waves-effect waves-light btn-large"> ADULTO </a>   
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
 
                 <div class="center col s12 m6 l4">	
 
-                    <i class="large material-icons grey-text text-lighten-2 tamIcons">child_care</i>
+                    <i class="large material-icons green-text text-lighten-2 tamIcons">child_care</i>
                     <br>
-                    <a href="Infantil.php" class="waves-effect waves-light btn-large blue"> INFANTIL </a>    
+                    <a href="Infantil.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
