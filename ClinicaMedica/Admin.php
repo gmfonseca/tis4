@@ -2,6 +2,7 @@
     session_start();
     include "Conexao.php";
     $sql_banco = mysqli_query($conexao, "SELECT * FROM pergunta");
+ $sql_banco_ex = mysqli_query($conexao, "SELECT * FROM exercicio");
 ?>
 
 <!DOCTYPE html>
@@ -218,16 +219,16 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php while($l = mysqli_fetch_array($sql_banco)){ ?>
+                                            <?php while($r = mysqli_fetch_array($sql_banco_ex)){ ?>
                                             <tr>
                                                 <td>
-                                                    <?php echo $l["descricao"]; ?>
+                                                    <?php echo $r["descricao"]; ?>
                                                 </td>
                                                 <td>
-                                                    <a href="Atualizar-Exercicio.php?id=<?php echo $l["codigoPergunta"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
+                                                    <a href="Atualizar-Exercicio.php?id=<?php echo $r["codigoExercicio"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
                                                 </td>
                                                 <td>
-                                                    <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Exercicio.php?id=<?php echo $l["codigoPergunta"]; ?>';">
+                                                    <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Exercicio.php?id=<?php echo $r["codigoExercicio"]; ?>';">
                                                         <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
                                                             <i class='material-icons right'> close </i>
                                                         </button>
@@ -249,7 +250,17 @@
                                             <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" maxlength="400" required>
                                         </div>
                                     </div>
-                                    
+                                    <div class="row">
+                                <div class="file-field input-field">
+                                    <div class="btn waves-effect waves-light light-blue darken-3">
+                                        <span> Imagem </span>
+                                        <input type="file" name="arquivo" required>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
                                     <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick="return valida()"> Publicar
                                         <i class="material-icons right"> send </i>
                                     </button>

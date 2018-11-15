@@ -88,6 +88,10 @@
             background-color: rgba(109, 204, 163, 0.9);
         }
 
+        p{
+            font-size: 1.2em;
+        }
+
     </style>
 
     <body class="grey lighten-3">
@@ -98,10 +102,10 @@
                     require_once('navbar.php')
                 ?>
 
-                <div class="col s8 offset-s2">
-                    <br>
-                    <h4 class="white-text"> Prevalência </h4>
-                    <br>
+                <div class="col s12">
+                    <br><br>
+                    <h4 class="container white-text"> Prevalência </h4>
+                    <br><br>
                 </div>
             </div>
             
@@ -109,7 +113,7 @@
                 <div class="row">
                     <br>
            
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m12 l12">
                         <h4 class="corVerdeTexto"> Já existem estudos validados sobre as crianças respiradoras orais? </h4>
                         <p class="topicos"> 
                             Já existem estudos relacionados ao respirador oral como: tipos de respirador oral, estudos cefalométricos, 
@@ -124,10 +128,10 @@
 				
 				<div class="row">
                     <br>
-                    <div class="col s24 m12 32">
+                    <div class="col s12 m12 32">
                         <h4 class="corVerdeTexto">  Qual é a prevalência da respiração oral?  </h4>
 						<div class="row">
-							<div class="col s10 m10 22 offset-s2 offset-m2 offset-l2">
+							<div class="col s12 m10 22 offset-m2 offset-l2">
 								<img class="responsive-img" src="Img_Prog/tabela1.png" style="height: 419px; width: 720px;">
 							</div>
 						</div>
@@ -136,7 +140,7 @@
 				
 				<div class="row">
                     <br>
-                    <div class="col s24 m12 32">
+                    <div class="col s12 m12 32">
                         <h4 class="corVerdeTexto">  O que é a Síndrome do Respirador Oral? </h4>
                         <p class="topicos"> 
                            A Síndrome do Respirador  oral é um conjunto de alterações derivada de uma disfunção respiratória que é caracterizada 
@@ -153,7 +157,7 @@
 				
 				<div class="row">
                     <br>
-                    <div class="col s24 m12 32">
+                    <div class="col s12 m12 32">
                         <h4 class="corVerdeTexto"> Quais são as causas da respiração oral? </h4>
                         <p class="topicos"> 
                             Geralmente a respiração oral é causada por algum fator obstrutivo que impede a passagem de ar pelo nariz. 

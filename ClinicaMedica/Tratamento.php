@@ -88,6 +88,10 @@
             background-color: rgba(109, 204, 163, 0.9);
         }
 
+        p{
+            font-size: 1.2em;
+        }
+
     </style>
 
     <body class="grey lighten-3">
@@ -99,16 +103,16 @@
                 require_once('navbar.php');
                 ?>
 
-                <div class="col s12 offset-s2">
-                    <br>
-                    <h4 class="white-text"> Tratamento </h4>
-                    <br>
+                <div class="col s12">
+                    <br><br>
+                    <h4 class="container white-text"> Tratamento </h4>
+                    <br><br>
                 </div>
             </div>
 
             <div class="container">
                 <div class="row">
-                    <div class="col s8 offset-s2">
+                    <div class="col s12">
                         <p class="topicos"> 
                             O tratamento para a respiração oral e suas consequências envolve vários profissionais, dentre eles: médico otorrinolaringologista, pediatra e alergista, ortodontista, fisioterapeuta e fonoaudiólogo.                
                         </p>
@@ -136,7 +140,7 @@
                     <div class="col s12 m6 l6">
                         <h4 class="corVerdeTexto"> Quando a criança deve ser encaminhada ao fonoaudiólogo? </h4>
                         <p class="topicos"> 
-                            Logo que a criança inicie a fase de balbucio, a avaliação fonoaudiológica já pode ser feita.              
+                            Logo que a criança inicia a fase de balbucio, a avaliação fonoaudiológica já pode ser feita.              
                         </p>
                     </div>
                     <div class="col s12 m6 l6">
@@ -149,10 +153,10 @@
 
                 <div class="row">
                     <br>
-                    <div class="col s8 offset-s2">
+                    <div class="col s12">
                         <h4 class="corVerdeTexto"> O tratamento da respiração oral é só cirúrgico? </h4>
                         <p class="topicos"> 
-                            Não. O otorrinolaringologista é o profissional que deve avaliar a criança para definir qual o melhor tratamento. Normalmente as crianças usam medicações antialérgicas quando tem a rinite associada e medicações tópicas nas fossas nasais para controlar a obstrução que pode ser reversível. Caso a obstrução ocupe mais do que 70% da luz do trajeto respiratório normalmente o tratamento é cirúrgico.
+                            <b>Não.</b> O otorrinolaringologista é o profissional que deve avaliar a criança para definir qual o melhor tratamento. Normalmente as crianças usam medicações antialérgicas quando tem a rinite associada e medicações tópicas nas fossas nasais para controlar a obstrução que pode ser reversível. Caso a obstrução ocupe mais do que 70% da luz do trajeto respiratório normalmente o tratamento é cirúrgico.
                         </p>
                     </div>
                 </div>

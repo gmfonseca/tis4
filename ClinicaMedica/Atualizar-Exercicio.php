@@ -126,6 +126,17 @@
                                             <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" value="<?php echo $r["descricao"]; ?>" maxlength="300" required>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                <div class="file-field input-field">
+                                    <div class="btn waves-effect waves-light light-blue darken-3">
+                                        <span> Foto </span>
+                                        <input type="file" name="arquivo" required>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" required>
+                                    </div>
+                                </div>
+                            </div>
 
                                     <div class="row">
                                     <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick=""> Publicar

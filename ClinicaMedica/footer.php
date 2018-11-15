@@ -41,7 +41,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            <p class="grey-text "> © 2018 PUC MINAS FISIOTERAPIA </p>
+            <p class="grey-text "> © 2018 PUC MINAS FISIOTERAPIA - Desenvolvido pelos alunos do 4.º período de Engenharia de Software da PUC MINAS - Praça da Liberdade </p>
         </div>
     </div>
 </footer>

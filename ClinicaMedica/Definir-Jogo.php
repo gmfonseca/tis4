@@ -58,7 +58,11 @@
 
         /*Conteudo da página*/
         #conteudo{
+<<<<<<< HEAD
             background: #ba68c8;
+=======
+            background-color: #b3e5fc;
+>>>>>>> e93eaf84a7ce024d0d28bce254676626e9798678
         }
         a
         .btn{
@@ -79,7 +83,11 @@
 
     </style>
 
+<<<<<<< HEAD
     <body  style="background-color:#ba68c8">
+=======
+    <body  style="background-color:#b3e5fc">
+>>>>>>> e93eaf84a7ce024d0d28bce254676626e9798678
 
         <!-- Website Content -->
         <div id="conteudo">

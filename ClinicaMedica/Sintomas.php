@@ -88,6 +88,10 @@
             background-color: rgba(109, 204, 163, 0.9);
         }
 
+        p{
+            font-size: 1.2em;
+        }
+
     </style>
 
     <body class="grey lighten-3">
@@ -99,10 +103,10 @@
                 require_once('navbar.php');
                 ?>
 
-                <div class="col s8 offset-s2">
-                    <br>
-                    <h4 class="white-text center"> Sinais e Sintomas </h4>
-                    <br>
+                <div class="col s12">
+                    <br><br>
+                    <h4 class="container white-text"> Sinais e Sintomas </h4>
+                    <br><br>
                 </div>
             </div>
 
