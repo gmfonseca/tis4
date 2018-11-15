@@ -59,9 +59,9 @@
                     document.getElementById('1').hidden = false;
                     setTimeout(function(){document.getElementById('1').hidden = true; }, 3000);   
                     break;
-                case 6:
-                    document.getElementById('6').hidden = false;
-                    setTimeout(function(){document.getElementById('6').hidden = true; }, 3000);   
+                case 2:
+                    document.getElementById('2').hidden = false;
+                    setTimeout(function(){document.getElementById('2').hidden = true; }, 3000);   
                     break;
                 default:
                     break;
@@ -72,13 +72,9 @@
         function contaErrado(){
             contErrado = contErrado+1;
   
-            var sorte = Math.floor((Math.random() * 4) + 1);
+            var sorte = Math.floor((Math.random() * 4) + 3);
 
             switch(sorte){
-                case 2:
-                    document.getElementById('2').hidden = false;
-                    setTimeout(function(){document.getElementById('2').hidden = true; }, 3000);   
-                    break;
                 case 3:
                     document.getElementById('3').hidden = false;
                     setTimeout(function(){document.getElementById('3').hidden = true; }, 3000);   
@@ -90,6 +86,10 @@
                 case 5:
                     document.getElementById('5').hidden = false;
                     setTimeout(function(){document.getElementById('5').hidden = true; }, 3000);   
+                    break;
+                case 6:
+                    document.getElementById('6').hidden = false;
+                    setTimeout(function(){document.getElementById('6').hidden = true; }, 3000);   
                     break;
                 default:
                     break;
@@ -107,10 +107,6 @@
                 alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
             }
         }
-       
-        
-
-        
 
     </script>
     
@@ -153,6 +149,11 @@
             width: 300px;
             heigh: 400px;
         }
+        
+        .respostaCompleta{
+            font-size: 24px;
+            font-family: 'Raleway';
+        }
 
     </style>
 
@@ -163,16 +164,25 @@
         
         <div clas="rigth">
             <img id="1" src="Img_Prog/tabuleiro/b-happy.png" class="imagens right" hidden="true">
-            <img id="2" src="Img_Prog/tabuleiro/b-ops.png" class="imagens right" hidden="true">
-            <img id="3" src="Img_Prog/tabuleiro/b-sad.png" class="imagens right" hidden="true">
-            <img id="4" src="Img_Prog/tabuleiro/g-ops.png" class="imagens right" hidden="true">
-            <img id="5" src="Img_Prog/tabuleiro/g-sad.png" class="imagens right" hidden="true">
-            <img id="6" src="Img_Prog/tabuleiro/g-happy.png" class="imagens right" hidden="true">
+            <img id="3" src="Img_Prog/tabuleiro/b-ops.png" class="imagens right" hidden="true">
+            <img id="4" src="Img_Prog/tabuleiro/b-sad.png" class="imagens right" hidden="true">
+            <img id="5" src="Img_Prog/tabuleiro/g-ops.png" class="imagens right" hidden="true">
+            <img id="6" src="Img_Prog/tabuleiro/g-sad.png" class="imagens right" hidden="true">
+            <img id="2" src="Img_Prog/tabuleiro/g-happy.png" class="imagens right" hidden="true">
         </div>
         
         <div id="resultado"></div>
              
 
+        <div class="row">
+            <div class="container">
+                <div class="card-panel z-depth-5 white">
+                
+                    <p class="respostaCompleta"> <b> Resposta: </b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac leo ac nulla placerat placerat. Pellentesque pulvinar vel orci sit amet malesuada. In tincidunt a lorem vestibulum dapibus. Curabitur et dolor sagittis, molestie neque a, semper ipsum. Morbi id posuere est. Nulla commodo vulputate euismod. In massa diam, molestie in sodales eget, maximus et diam. Ut ut ultricies quam. Donec et libero ac nulla laoreet condimentum.</p>
+
+                    </div>
+            </div>
+        </div>
         
         <div class="container">
             <div class="row">
