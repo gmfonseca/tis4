@@ -33,8 +33,8 @@ require_once('navbar.php');
             <!-- Carousel Structure -->
             <div class="carousel carousel-slider s12">
                 <!-- Itens Carousel -->
-                <a class="carousel-item" href="#one"><img class="responsive-img" src="Img_Prog/orientacao.jpg"></a>
-                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/autoexame.jpg"></a>
+                <a class="carousel-item" href="#one"><img class="responsive-img" src="#"></a>
+                <a class="carousel-item" href="#two"><img class="responsive-img" src="#"></a>
 
 
             </div> 
