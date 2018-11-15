@@ -69,10 +69,10 @@
             }
 
             /* Muda cor ao passar o mouse */
-            .muda-cor:hover{
+            /*.muda-cor:hover{
                 background: #1e88e5 !important;
                 color: white !important;
-            }  
+            } */ 
 
             p{
                 font-family: 'Nunito';
@@ -94,6 +94,9 @@
 
         <script type=text/javascript>
             var pos =0;
+            var travadado = 0;
+            var travapergunta = 0;
+            var p = 0;
 
             function alertaTeste(){
                 alert('FUNCIONOU');
@@ -112,8 +115,8 @@
                         y++;
                     }
                 }, 800);
-                var p = pos + anda;
-                if(pos == 4 || pos == 10 || pos == 13 || pos == 21 || pos == 31 || pos == 38){
+                p = pos + anda;
+                if(p == 4 || p == 10 || p == 13 || p == 21 || p == 31 || p == 38){
                     getExercicio();
                 }else{
                     getDados();   
@@ -123,24 +126,27 @@
 
             //DADO
             function startTimer() {
-                //Reduzir o tamanho da imagem
-                document.getElementById("face").style.width = "370px";
-                document.getElementById("face").style.height = "350px";
-                //Começar um intervalo para trocar as imagens
-                var intervalo = setInterval(function displayNextImage() {
-                    if(x === images.length ){
-                        //Quando terminar a animacao(passar por todas as outras faces)
-                        x = 0; // zera o contador
-                        document.getElementById("face").style.width = "370px"; //Volta imagem ao tamanho normal
-                        document.getElementById("face").style.height = "350px%";
-                        jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
-                        clearInterval(intervalo);//quebra o loop do intervalo
-                    }
-                    else {
-                        document.getElementById("face").src = images[x];//continua trocando as imagens
-                        x++;
-                    }
-                }, 130);//Tempo que cada imagem aparece
+                if(travadado == 0){
+                    travadado = 1;
+                    //Reduzir o tamanho da imagem
+                    document.getElementById("face").style.width = "370px";
+                    document.getElementById("face").style.height = "350px";
+                    //Começar um intervalo para trocar as imagens
+                    var intervalo = setInterval(function displayNextImage() {
+                        if(x === images.length ){
+                            //Quando terminar a animacao(passar por todas as outras faces)
+                            x = 0; // zera o contador
+                            document.getElementById("face").style.width = "370px"; //Volta imagem ao tamanho normal
+                            document.getElementById("face").style.height = "350px%";
+                            jogarDado(); //Faze a sorte do usuário(Escolhe o número e coloca a na face do dado)
+                            clearInterval(intervalo);//quebra o loop do intervalo
+                        }
+                        else {
+                            document.getElementById("face").src = images[x];//continua trocando as imagens
+                            x++;
+                        }
+                    }, 130);//Tempo que cada imagem aparece 
+                }
             }
 
             function jogarDado(){ 
@@ -197,11 +203,15 @@
             var numQuestoes = 0;
 
             function mudaCorCerto(btn_certo){
-                btn_certo.style.background = "#36bc27";
+                 if(travapergunta == 0){
+                    btn_certo.style.background = "#36bc27";
+                 }
             }
 
             function mudaCorErrado(btn_errado){
-                btn_errado.style.background = "red";
+                if(travapergunta == 0){
+                    btn_errado.style.background = "red";
+                }
             }
 
             function contaQuestoes(){
@@ -209,23 +219,41 @@
             }
 
             function contaAcerto(){
-                contCerto = contCerto+1;
-                var intvA = setInterval(function limpaResultA() {
-                    document.getElementById('resultado').innerHTML = "";
-                    clearInterval(intvA);
-                },3000);
+                if(travapergunta == 0){
+                    travapergunta = 1;
+                    contCerto = contCerto+1;
+                    contaQuestoes();
+                    var intvA = setInterval(function limpaResultA() {
+                        document.getElementById('resultado').innerHTML = "";
+                        travapergunta = 0;
+                        travadado = 0;
+                        clearInterval(intvA);
+                    },3000); 
+                }
             }
 
             function contaErrado(){
-                contErrado = contErrado+1;
-                var intvE = setInterval(function limpaResultE() {
-                    document.getElementById('resultado').innerHTML = "";
-                    clearInterval(intvE);
-                },3000);
+                if(travapergunta == 0){
+                    travapergunta = 1;
+                    contErrado = contErrado+1;
+                    contaQuestoes();
+                    var intvE = setInterval(function limpaResultE() {
+                        document.getElementById('resultado').innerHTML = "";
+                        travapergunta = 0;
+                        travadado = 0;
+                        clearInterval(intvE);
+                    },3000);
+                }
             }
 
+            function concluirExe(){
+                document.getElementById('resultado').innerHTML = "";
+                alert("Ande 2 casas extras!");
+                andar(2);
+            }
+            
             function calcEstatistica(){
-                if(pos == 41){
+                if(p == 41){
                     alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
                 }
             }

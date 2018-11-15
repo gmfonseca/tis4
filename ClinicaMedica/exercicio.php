@@ -21,7 +21,8 @@
                             <div class="card-image">
                                 <img src="Imgs/'.$exercicio["imagem"].'">
                           </div>
-                                <h3 class="center">'.$exercicio["descricao"].'</h3>                            
+                                <h3 class="center">'.$exercicio["descricao"].'</h3> 
+                                <a class="waves-effect waves-light btn" onClick="concluirExe()"><i class="material-icons right">check</i> Concluído </a>
                             </div>
                         </div>
                         </div>
