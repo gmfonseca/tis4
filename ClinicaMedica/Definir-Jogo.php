@@ -58,7 +58,7 @@
 
         /*Conteudo da página*/
         #conteudo{
-            background: linear-gradient(#8e24aa   , #ab47bc  );
+            background: #ba68c8;
         }
         a
         .btn{
@@ -72,10 +72,14 @@
         .divisor-line{
             border-color: #eee;
         }
+        
+        .tamIcons{
+            font-size: 270px !important;
+        }
 
     </style>
 
-    <body  style="background-color:#ab47bc">
+    <body  style="background-color:#ba68c8">
 
         <!-- Website Content -->
         <div id="conteudo">
@@ -87,18 +91,18 @@
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
 
-                    <i class="large material-icons green-text text-lighten-2">face</i>
+                    <i class="large material-icons grey-text text-lighten-2 tamIcons">face</i>
                     <br>
-                    <a href="Jogos.php" class="waves-effect waves-light btn"> ADULTO </a>   
+                    <a href="Jogos.php" class="waves-effect waves-light btn-large blue"> ADULTO </a>   
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
 
                 <div class="center col s12 m6 l4">	
 
-                    <i class="large material-icons green-text text-lighten-2">child_care</i>
+                    <i class="large material-icons grey-text text-lighten-2 tamIcons">child_care</i>
                     <br>
-                    <a href="Infantil.php" class="waves-effect waves-light btn"> INFANTIL </a>    
+                    <a href="Infantil.php" class="waves-effect waves-light btn-large blue"> INFANTIL </a>    
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>

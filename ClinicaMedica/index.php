@@ -126,6 +126,46 @@ require_once('navbar.php');
                         <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>   
                         <a href="especialidades.php" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
                     </div>
+                    <div class="col s12 m4 l4">
+                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
+                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
+                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
+                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <br><br>
+                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
+                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
+                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
+                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <br><br>
+                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
+                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
+                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
+                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <br><br>
+                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
+                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
+                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
+                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <br><br>
+                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
+                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
+                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
+                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
+                        <br><br>
+                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
+                    </div>
                 </div>
             </div>
         </div>
