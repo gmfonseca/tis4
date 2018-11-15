@@ -64,6 +64,7 @@ INSERT INTO `exercicio` (`codigoExercicio`, `imagem`, `descricao`) VALUES
 CREATE TABLE `pergunta` (
   `codigoPergunta` int(10) UNSIGNED NOT NULL,
   `descricao` varchar(300) NOT NULL,
+  `respostaCerta` varchar(300) NOT NULL,
   `tipo_pergunta` int(10) UNSIGNED NOT NULL,
   `cod_Questionario` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
