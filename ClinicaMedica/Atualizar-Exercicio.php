@@ -123,20 +123,21 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <i class="material-icons prefix"> library_books </i>
-                                            <label for="cExercicio">Descrição: </label><input class="active validate" type="text" name="tExercicio" id="cExercicio" value="<?php echo $r["descricao"]; ?>" maxlength="300" required>
+                                            <label for="cExercicio">Descrição: </label>
+                                            <textarea id="cExercicio" class="materialize-textarea active validate" name="tExercicio"> <?= $r["descricao"]?> </textarea>
                                         </div>
                                     </div>
                                     <div class="row">
-                                <div class="file-field input-field">
-                                    <div class="btn waves-effect waves-light light-blue darken-3">
-                                        <span> Foto </span>
-                                        <input type="file" name="arquivo" required>
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text" required>
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span> Foto </span>
+                                            <input type="file" name="arquivo">
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
                                     <div class="row">
                                     <button class="btn waves-effect waves-light green darken-3 right" type="submit" onclick=""> Publicar

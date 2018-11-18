@@ -40,7 +40,7 @@ DEPOIS
         <ul class="right hide-on-med-and-down">
             <li><a href="Problema.php">O PROBLEMA</a></li>
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">ESPECIALIDADES<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="convenios.php">CONVÊNIOS</a></li>
+            <li><a href="locais-atendimento.php">LOCAIS DE ATENDIMENTO</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="curiosidades.php">CURIOSIDADES</a></li>
@@ -71,7 +71,7 @@ DEPOIS
             </li>
         </ul>
     </li>
-    <li><a href="convenios.php" class="collapsible-header white-text">CONVÊNIOS</a></li>
+    <li><a href="locais-atendimento.php" class="collapsible-header white-text">LOCAIS DE ATENDIMENTO</a></li>
     <li><a href="contato.php" class="collapsible-header white-text">CONTATO</a></li>
     <li><a href="Definir-Jogo.php" class="collapsible-header white-text"> JOGOS</a></li>
     <li><a href="curiosidades.php" class="collapsible-header white-text">CURIOSIDADES</a></li>

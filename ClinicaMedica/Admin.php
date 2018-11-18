@@ -2,7 +2,9 @@
     session_start();
     include "Conexao.php";
     $sql_banco = mysqli_query($conexao, "SELECT * FROM pergunta");
- $sql_banco_ex = mysqli_query($conexao, "SELECT * FROM exercicio");
+    $sql_banco_ex = mysqli_query($conexao, "SELECT * FROM exercicio");
+    $sql_acertos = mysqli_query($conexao, "SELECT * FROM respostacerta"); 
+    $sql_erros = mysqli_query($conexao, "SELECT * FROM respostaerrada"); 
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +32,10 @@
             font-family: 'Raleway';
         }
         
+        .bold{
+            font-weight: 700;
+        }
+
         /* Distância dos <li> de Especialidades */
         #Especialidades{
             top: 90px !important;
@@ -93,23 +99,12 @@
 
     </style>
 
-<body class="grey lighten-3">
-
-
-
-        <!-- Dropdown Structure -->
-        <ul id="Especialidades" class="dropdown-content z-depth-0">
-            <li><a href="Espcialidades.php" class="black-text center"> ÁREAS </a></li>
-            <li><a href="Cardiologia.php" class="black-text center"> CARDIOLOGIA </a></li>
-            <li><a href="Neurologia.php" class="black-text center"> NEUROLOGIA </a></li>
-            <li><a href="Ortopedia.php" class="black-text center"> ORTOPEDIA </a></li>
-        </ul>
-        
+<body class="grey lighten-3">        
         <br><br><br>
         
         <div class="container">
             <div class="row">
-                <div class="col s12 m12 112 container center z-depth-5">
+                <div class="col m12 center z-depth-5">
                     <div class="card-panel z-depth-5">
                         <nav class="nav-extended green darken-3">
                             <div class="nav-content">
@@ -121,12 +116,15 @@
                                 </ul>
                             </div>
                         </nav>
-                        <div id="perguntas" class="row">
-                                <div class="col s12 m12 l12">
+
+                        <div id="perguntas">
+                                <div>
                                     <table class="striped">
                                         <thead>
                                             <tr>
                                                 <th> Pergunta </th>
+                                                <th class="green-text bold"> Acerto(%) </th>
+                                                <th class="red-text bold"> Erro(%) </th>
                                                 <th> Alterar </th>
                                                 <th> Remover </th>
                                             </tr>
@@ -137,10 +135,50 @@
                                                 <td>
                                                     <?php echo $l["descricao"]; ?>
                                                 </td>
-                                                <td>
+                                                <td class="green-text bold center">
+                                                <!-- PERCENT CERTAS -->
+                                                    <?php 
+                                                        $cod = $l["codigoPergunta"];
+                                                        $percentCerta = mysqli_query($conexao, "SELECT COUNT(cod_pergunta) FROM respostacerta WHERE cod_pergunta = $cod");
+                                                        $percentCerta = mysqli_fetch_array($percentCerta);
+                                                        $percentCerta = $percentCerta['COUNT(cod_pergunta)'];
+
+                                                        $percentErrada = mysqli_query($conexao, "SELECT COUNT(cod_pergunta) FROM respostaerrada WHERE cod_pergunta = $cod");
+                                                        $percentErrada = mysqli_fetch_array($percentErrada);
+                                                        $percentErrada = $percentErrada['COUNT(cod_pergunta)'];
+
+                                                        $perguntasTotal = $percentCerta + $percentErrada;
+                                                        if($perguntasTotal>0){
+                                                            $percentCerta = 100*$percentCerta/$perguntasTotal;
+                                                            $percentErrada = 100*$percentErrada/$perguntasTotal;
+                                                            echo $percentCerta.'%'; 
+                                                        }else{
+                                                            $percentCerta = "N/R";
+                                                            $percentErrada = "N/R";
+
+                                                            echo $percentCerta; 
+                                                        }
+
+                                                        
+                                                    ?>
+                                                </td>
+                                                <td class="red-text bold center">
+                                                <!-- PERCENT ERRADAS -->
+                                                    <?php 
+                                                        if($perguntasTotal>0){
+                                                        echo $percentErrada.'%'; 
+                                                    }else{
+                                                        echo $percentErrada; 
+                                                    }
+                                                    ?>
+                                                </td>
+                                            
+
+                                                <td class="center">
                                                     <a href="Atualizar-Pergunta.php?id=<?php echo $l["codigoPergunta"]; ?>" class="btn-floating blue"><i class="material-icons"> edit </i></a>
                                                 </td>
-                                                <td>
+
+                                                <td class="center">
                                                     <a href="javascript: if(confirm('Tem certeza que deseja remover esta pergunta ?')) location.href='Remover-Pergunta.php?id=<?php echo $l["codigoPergunta"]; ?>';">
                                                         <button class='btn-floating waves-effect waves-light red darken-2' type='button' onclick=''>
                                                             <i class='material-icons right'> close </i>
@@ -155,7 +193,7 @@
                         </div>
 
                         <div class="row">
-                            <div id="uploadP" class="col s12 m12 l12">
+                            <div id="uploadP" class="col s12 m12 ">
                                 <h4 class="center"> Upload de Pergunta </h4><br>
                                 <form name="formUpload" method="post" action="Cadastrar-Pergunta.php" enctype="multipart/form-data">
                                     <div class="row">
@@ -209,7 +247,7 @@
                         </div>
                         
                         <div id="exercicios" class="row">
-                                <div class="col s12 m12 l12">
+                                <div class="col s12 m12 ">
                                     <table class="striped">
                                         <thead>
                                             <tr>
@@ -241,7 +279,7 @@
                                 </div>
                         </div>
                         <div class="row">
-                            <div id="uploadE" class="col s12 m12 l12">
+                            <div id="uploadE" class="col s12 m12">
                                 <h4 class="center"> Upload de Exercícios </h4><br>
                                 <form name="formUpload" method="post" action="Cadastrar-Exercicio.php" enctype="multipart/form-data">
                                     <div class="row">
