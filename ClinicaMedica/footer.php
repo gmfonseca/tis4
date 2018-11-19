@@ -38,6 +38,11 @@
                 <p class="grey-text "> Local: Centro Clínico de Fisioterapia Av. 31 de Março - acesso 8 - prédio 46 - PUC Minas Coração Eucarístico </p>
             </div>
         </div>
+		<div class="row">
+			<div class="col l6 s12">
+				<a href="login.php" class="waves-effect waves-light btn-small">LOGIN</a>
+			</div>
+		</div>
     </div>
     <div class="footer-copyright">
         <div class="container">
