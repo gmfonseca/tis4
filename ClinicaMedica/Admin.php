@@ -1,5 +1,15 @@
 <?php 
     session_start();
+	if ($_SESSION['LogadoAdm'] == false)
+	{
+		//Caso o login não seja de adm, redireciona o usuário para a página inicial
+		header("Location: index.php");
+	}
+	else
+	{
+		//caso o login tenha funcionado, volto a variável para false, obrigando o usuário a logar novamente para entrar na pag de ADM
+		$_SESSION['LogadoAdm'] = false;
+	}
     include "Conexao.php";
     $sql_banco = mysqli_query($conexao, "SELECT * FROM pergunta");
     $sql_banco_ex = mysqli_query($conexao, "SELECT * FROM exercicio");

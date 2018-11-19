@@ -1,6 +1,7 @@
 <?php 
 session_start();//INICIA A SESSÃO
 include_once("Conexao.php");
+$_SESSION['LogadoAdm'] = false;
 
 if((isset($_POST['tUsuario']))&& (isset($_POST['tSenha']))){
 
@@ -23,8 +24,12 @@ $usuario = isset($_POST['tUsuario'])? $_POST['tUsuario']: '';
         $_SESSION['usuarioSenha'] = $resultado['senha'];
         $_SESSION['usuarioTipo'] = $resultado['tipo_usuario'];
         if($_SESSION['usuarioTipo'] == 1){
+			//Criação da variável que valida o login dos ADMs
+			$_SESSION['LogadoAdm'] = true;
             header("Location: admin.php");
         }else {
+			//Criação da variável que valida o login dos ADMs
+			$_SESSION['LogadoAdm'] = false;
             header("Location: index.php");
         }
     }else{
