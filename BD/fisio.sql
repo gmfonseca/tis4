@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Nov-2018 às 22:51
--- Versão do servidor: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Generation Time: 19-Nov-2018 às 20:45
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -73,35 +73,35 @@ CREATE TABLE `pergunta` (
 -- Extraindo dados da tabela `pergunta`
 --
 
-INSERT INTO `pergunta` (`codigoPergunta`, `descricao`, `tipo_pergunta`, `cod_Questionario`) VALUES
-(4, 'A Fisioterapia atua nas alteraÃ§Ãµes posturais e nas disfunÃ§Ãµes respiratÃ³rias das crianÃ§as respiradoras orais?', 0, 0),
-(6, 'A crianÃ§a nasce respiradora oral?', 0, 0),
-(7, 'O maior tempo de amamentaÃ§Ã£o favorecerÃ¡ o crescimento adequado dos ossos da face?', 0, 0),
-(8, 'Ã‰ causa da respiraÃ§Ã£o oral a presenÃ§a da rinite alÃ©rgica?', 0, 0),
-(9, 'A obstruÃ§Ã£o mecÃ¢nica pela presenÃ§a da adenoides e tonsilas paliativas Ã© causa da respiraÃ§Ã£o oral?', 0, 0),
-(10, 'O tratamento adequado da rinite alÃ©rgica considerando a retirada dos fatores ambientais associado a medicamentos  controla os fatores de risco para desenvolvimento da respiraÃ§Ã£o oral?', 0, 0),
-(11, 'SÃ£o caracterÃ­sticas de face de crianÃ§as respiradoras orais a presenÃ§a de olheiras?', 0, 0),
-(12, 'As crianÃ§as respiradoras orais nÃ£o babam no travesseiro?', 0, 0),
-(13, 'As crianÃ§as respiradoras orais tem dificuldade de comer alimentos mais moles?', 0, 0),
-(14, 'As crianÃ§as respiradoras orais nÃ£o apresentam mau hÃ¡lito?', 0, 0),
-(15, 'As crianÃ§as respiradoras orais apresentam o lÃ¡bio superior mais grosso do que o inferior?', 0, 0),
-(16, 'A respiraÃ§Ã£o oral, entre diversos problemas, pode ocasionar alteraÃ§Ã£o da fala?', 0, 0),
-(17, 'A mÃ¡-oclusÃ£o, uma das principais caracterÃ­sticas do respirador oral pode acarretar dificuldades ou desvios de produÃ§Ã£o fonÃ©tico/articulatÃ³rio?', 0, 0),
-(18, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 0, 0),
-(19, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 0, 0),
-(20, 'A crianÃ§a respiradora oral nÃ£o apresenta muita tosse?', 0, 0),
-(21, 'Os pacientes com respiraÃ§Ã£o oral podem apresentar hipersonolÃªncia diurna, sono dessincronizado (alteraÃ§Ã£o da fase REM do sono), depressÃ£o da capacidade de despertar, sono agitado e enurese noturna ( xixi na cama a noite)?', 0, 0),
-(22, 'A crianÃ§a respiradora oral nÃ£o apresenta ronco?', 0, 0),
-(23, 'Aerofagia ou engolir ar Ã© um sintoma frequente no respirador oral?', 0, 0),
-(24, 'CrianÃ§as respiradoras orais apresentam projeÃ§Ã£o da cabeÃ§a para frente e hiperlordose cervical, que se acentuam com a idade?', 0, 0),
-(25, 'A obstruÃ§Ã£o nasal pode cursar com alteraÃ§Ã£o na audiÃ§Ã£o temporÃ¡ria?', 0, 0),
-(26, 'A obstruÃ§Ã£o nasal predispÃµe a estase das secreÃ§Ãµes nasossinusais, facilitando a infecÃ§Ã£o?', 0, 0),
-(27, 'CrianÃ§a respiradora oral nÃ£o tem alteraÃ§Ã£o  de voz?', 0, 0),
-(28, 'A utilizaÃ§Ã£o de mamadeiras, mesmo em associaÃ§Ã£o com aleitamento materno, leva a alteraÃ§Ãµes no desenvolvimento orofacial?', 0, 0),
-(29, 'A rinite pode levar ao quadro de respiraÃ§Ã£o oral?', 0, 0),
-(30, 'O papel do mÃ©dico Ã© importante neste processo?', 0, 0),
-(31, 'A respiraÃ§Ã£o oral nÃ£o interfere na qualidade de vida das crianÃ§as?', 0, 0),
-(32, 'O Tratamento da respiraÃ§Ã£o oral deve ser  multidisciplinar?', 0, 0);
+INSERT INTO `pergunta` (`codigoPergunta`, `descricao`, `respostaCerta`, `tipo_pergunta`, `cod_Questionario`) VALUES
+(4, 'A Fisioterapia atua nas alteraÃ§Ãµes posturais e nas disfunÃ§Ãµes respiratÃ³rias das crianÃ§as respiradoras orais?', 'Fisioterapeuta é um profissional capaz de atuar nas disfunções posturais  principalmente as alterações de posição de cabeça e  pescoço e as demais consequências destas alterações.', 0, 0),
+(6, 'A crianÃ§a nasce respiradora oral?', 'A criança nasce com a via de entrada de ar pelo nariz e pela boca e amamentação que favorecerá a passagem do ar pelo nariz e consequentemente o desenvolvimento da respiração  nasal.', 0, 0),
+(7, 'O maior tempo de amamentaÃ§Ã£o favorecerÃ¡ o crescimento adequado dos ossos da face?', 'A respiração nasal favorece o crescimento e desenvolvimento craniofacial, cujo processo fisiológico inicia-se a partir da passagem do ar pelo nariz.', 0, 0),
+(8, 'Ã‰ causa da respiraÃ§Ã£o oral a presenÃ§a da rinite alÃ©rgica?', 'A rinite alérgica não tratada é  a segunda maior causa da respiração oral.', 0, 0),
+(9, 'A obstruÃ§Ã£o mecÃ¢nica pela presenÃ§a da adenoides e tonsilas paliativas Ã© causa da respiraÃ§Ã£o oral?', 'A obstrução nasal pela presença e crescimento das tonsilas palatinas, amigdalianas e adenoideanas são a maior causa da respiração oral seguido da rinite alérgica.', 0, 0),
+(10, 'O tratamento adequado da rinite alÃ©rgica considerando a retirada dos fatores ambientais associado a medicamentos  controla os fatores de risco para desenvolvimento da respiraÃ§Ã£o oral?', 'O controle ambientais de agentes alérgenos é a melhor estratégia para tratar a rinite alérgica.', 0, 0),
+(11, 'SÃ£o caracterÃ­sticas de face de crianÃ§as respiradoras orais a presenÃ§a de olheiras?', 'A presença de olheiras em crianças respiradoras orais se dá pela ausência de sono regular noturno e  períodos de despertar.', 0, 0),
+(12, 'As crianÃ§as respiradoras orais nÃ£o babam no travesseiro?', 'As crianças respiradoras orais  babam no travesseiro por permanecerem com a boca aberta um período da noite.', 0, 0),
+(13, 'As crianÃ§as respiradoras orais tem dificuldade de comer alimentos mais moles?', 'As crianças respiradoras orais  tem mais facilidade de comer alimentos mais moles pois a  mastigação é mais rápida e conseguem sincronizar melhor respiração e deglutição.', 0, 0),
+(14, 'As crianÃ§as respiradoras orais nÃ£o apresentam mau hÃ¡lito?', 'As crianças respiradoras orais  por permanecerem muito tempo com a boca aberta podem ter predisposição a maior colonização da cavidade oral.', 0, 0),
+(15, 'As crianÃ§as respiradoras orais apresentam o lÃ¡bio superior mais grosso do que o inferior?', 'A hipotonia da musculatura perioral causada pela constante abertura oral origina o apagamento do sulco nasolabial.', 0, 0),
+(16, 'A respiraÃ§Ã£o oral, entre diversos problemas, pode ocasionar alteraÃ§Ã£o da fala?', 'Os problemas de fala podem ser causados por alterações de mobilidade.\r\ntônus e postura dos órgãos fonoarticulatórios e alterações das estruturas orofaciais, muito comum em respiradores orais.\r\n', 0, 0),
+(17, 'A mÃ¡-oclusÃ£o, uma das principais caracterÃ­sticas do respirador oral pode acarretar dificuldades ou desvios de produÃ§Ã£o fonÃ©tico/articulatÃ³rio?', 'A fala pode ser imprecisa e a voz pode ser alterada pelo ressecamento dos tecidos da laringe que prejudica a vibração das pregas vocais.', 0, 0),
+(18, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 'A criança respiradora oral pode desenvolver o quadro de respiração oral funcional pela presenças destes hábitos de sucção e não necessariamente ter obstrução nasal significativa.', 0, 0),
+(19, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 'A criança respiradora oral pode desenvolver o quadro de respiração oral funcional pela presenças destes hábitos de sucção e não necessariamente ter obstrução nasal significativa.', 0, 0),
+(20, 'A crianÃ§a respiradora oral nÃ£o apresenta muita tosse?', 'A tosse crônica apresentada por muitos respiradores orais ocorre porque através da\r\nrespiração oral não há adequado aquecimento e umidificação do ar inspirado.\r\n', 0, 0),
+(21, 'Os pacientes com respiraÃ§Ã£o oral podem apresentar hipersonolÃªncia diurna, sono dessincronizado (alteraÃ§Ã£o da fase REM do sono), depressÃ£o da capacidade de despertar, sono agitado e enurese noturna ( xixi na cama a noite)?', 'A presença de alterações do sono já são descritas em crianças respiradoras orais e devem ser investigadas.', 0, 0),
+(22, 'A crianÃ§a respiradora oral nÃ£o apresenta ronco?', 'O ronco é uma incapacidade do centro respiratório no sistema nervoso central de gerar\r\ntônus muscular adequado da faringe, levando a estreitamento da passagem de ar durante\r\no sono.\r\n', 0, 0),
+(23, 'Aerofagia ou engolir ar Ã© um sintoma frequente no respirador oral?', 'A obstrução nasal pode gerar disfagia quando a enfermidade da nasofaringe dificulta a coordenação da respiração com a deglutição ou quando a enfermidade nasal exerce efeito obstrutivo por extensão caudal em faringe.', 0, 0),
+(24, 'CrianÃ§as respiradoras orais apresentam projeÃ§Ã£o da cabeÃ§a para frente e hiperlordose cervical, que se acentuam com a idade?', 'Alterações posturais são descritas em crianças respiradoras orais  principalmente na posição de cabeça que é alterada para aumentar o diâmetro faríngeo para facilitar a entrada do ar.', 0, 0),
+(25, 'A obstruÃ§Ã£o nasal pode cursar com alteraÃ§Ã£o na audiÃ§Ã£o temporÃ¡ria?', 'A maioria das alterações otológicas é devido à obstrução mecânica, causando disfunção tubária e favorecimento do aparecimento de otites médias.', 0, 0),
+(26, 'A obstruÃ§Ã£o nasal predispÃµe a estase das secreÃ§Ãµes nasossinusais, facilitando a infecÃ§Ã£o?', 'A presença de colonização de bactérias no tecido adenoideano favorece o aparecimento das infecções', 0, 0),
+(27, 'CrianÃ§a respiradora oral nÃ£o tem alteraÃ§Ã£o  de voz?', 'Tonsilas aumentadas ocasionalmente interferem na fase faríngea da deglutição,\r\npodendo causar obstrução mecânica ou incoordenação entre a respiração e a deglutição.\r\nSimilarmente, um aumento de tonsilas pode diminuir o fluxo nasal e causar voz hiponasal.\r\n', 0, 0),
+(28, 'A utilizaÃ§Ã£o de mamadeiras, mesmo em associaÃ§Ã£o com aleitamento materno, leva a alteraÃ§Ãµes no desenvolvimento orofacial?', 'Com o desmame precoce, a criança não supre suas necessidades de sucção e acaba adquirindo hábitos de sucção não nutritiva.', 0, 0),
+(29, 'A rinite pode levar ao quadro de respiraÃ§Ã£o oral?', 'Essa doença se caracteriza pelo nariz sempre escorrendo, coçando, entupido e espirros seguidos, sem presença de febre. A sensação de nariz entupido atrapalha a respiração e faz com que a criança respire pela boca.', 0, 0),
+(30, 'O papel do mÃ©dico Ã© importante neste processo?', 'O papel do médico é fundamental para fazer o diagnóstico da causa dessa dificuldade de respiração. é importante um diagnóstico preciso para garantir o sucesso do tratamento, o qual trará melhor qualidade de vida e benefícios para a saúde da criança e do adolescente.', 0, 0),
+(31, 'A respiraÃ§Ã£o oral nÃ£o interfere na qualidade de vida das crianÃ§as?', 'As alterações na respiração provocam vários sintomas nas crianças. São relatados problemas na escola, como déficit de atenção e dificuldade de concentração, além da perda do apetite, dificuldades de controle de urina durante a noite, alterações na arcada dentária, na face e na fala.', 0, 0),
+(32, 'O Tratamento da respiraÃ§Ã£o oral deve ser  multidisciplinar?', 'A equipe deveria ser composta de pediatras, otorrinolaringologistas, alergistas,fisioterapeutas, fonoaudiólogos, odontólogos e ortodontistas.', 0, 0);
 
 -- --------------------------------------------------------
 
