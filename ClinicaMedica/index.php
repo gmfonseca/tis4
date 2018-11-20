@@ -113,7 +113,7 @@ require_once('navbar.php');
             <br><br>
             <h4> FAÇA AUTO-EXAME </h4>
             <p>Responda as perguntas e verifique se você é um Respirador Oral ou tem tendência a tê la!</p>
-            <p>
+            <p hidden="true">
                 Você tem dificuldade de respirar pelo nariz?
                 <label>
                     <input class="with-gap" name="group1" type="radio" value="sim" />
@@ -124,18 +124,9 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            <!--
-<p>
-Você tem dificuldade de respirar pelo nariz?
-<label>
-<input class="with-gap" name="group1" type="radio" value="sim" />
-<span>Sim</span>
-</label>
-<label>
-<input class="with-gap" name="group1" type="radio" value="nao"  />
-<span>Não</span>
-</label>
-</p>
+            
+
+            
 <p>
 Você respira pela boca?
 <label>
@@ -147,6 +138,7 @@ Você respira pela boca?
 <span>Não</span>
 </label>
 </p>
+<!--
 <p>
 Você tem resfriados frequentemente?
 <label>

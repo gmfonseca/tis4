@@ -41,7 +41,7 @@ DEPOIS
             <li><a href="Problema.php">O PROBLEMA</a></li>
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">INFORMAÇÕES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="locais-atendimento.php">LOCAIS DE ATENDIMENTO</a></li>
-            <li><a href="contato.php">CONTATO</a></li>
+            <li><a href="contato.php">FALE CONOSCO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="curiosidades.php">CURIOSIDADES</a></li>
             <!--
@@ -72,7 +72,7 @@ DEPOIS
         </ul>
     </li>
     <li><a href="locais-atendimento.php" class="collapsible-header white-text">LOCAIS DE ATENDIMENTO</a></li>
-    <li><a href="contato.php" class="collapsible-header white-text">CONTATO</a></li>
+    <li><a href="contato.php" class="collapsible-header white-text">FALE CONOSCO</a></li>
     <li><a href="Definir-Jogo.php" class="collapsible-header white-text"> JOGOS</a></li>
     <li><a href="curiosidades.php" class="collapsible-header white-text">CURIOSIDADES</a></li>
     <!-- 
