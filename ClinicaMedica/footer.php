@@ -39,8 +39,8 @@
             </div>
         </div>
 		<div class="row">
-			<div class="col l6 s12">
-				<a href="login.php" class="waves-effect waves-light btn-small">LOGIN</a>
+			<div style="float:right">
+				<a href="login.php" class="waves-effect waves-light btn-small">LOGIN DE ADMINISTRADORES</a>
 			</div>
 		</div>
     </div>

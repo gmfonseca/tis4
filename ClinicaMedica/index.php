@@ -5,7 +5,7 @@ require_once('navbar.php');
 <!DOCTYPE html>
 <html>
     <head>  
-        
+
         <title> Clinica Médica </title>
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,30 +19,38 @@ require_once('navbar.php');
 
         <link rel="stylesheet" href="css/style.css">
 
-        <script>
+        <style>
+            #locais{
+                color: white;
+                margin-bottom: 10%;
+            }
+            #saibaMais{
+                background-color: #81c784;
+                margin-top: 5%;
+            }
 
-        </script>
+        </style>
 
     </head>
 
     <body class="grey lighten-3">
 
         <!-- Nav-Bar -->
-        <div  style="background-color: rgb(145, 85, 167);">
+        <div  style="background-color: white">
 
             <!-- Carousel Structure -->
             <div class="carousel carousel-slider s12">
                 <!-- Itens Carousel -->
-                <a class="carousel-item" href="#one"><img class="responsive-img" src="#"></a>
-                <a class="carousel-item" href="#two"><img class="responsive-img" src="#"></a>
-
+                <a class="carousel-item" href="#one"><img class="responsive-img" src="Img_Prog/respiradorOral.jpg"></a>
+                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/dadoETabuleiro.jpg"></a>
+                <a class="carousel-item" href="#three"><img class="responsive-img" src="Img_Prog/curiosidade.jpg"></a>
 
             </div> 
 
             <br><br>
 
             <!-- Cards Structure -->
-            <div class="row" style="background-color: rgb(145, 85, 167);">
+            <div class="row" style="background-color: white  ">
                 <!-- Cards 1 -->
                 <div class="col s12 m4 l2 offset-l3">
                     <div id="card1" class="card">
@@ -83,15 +91,19 @@ require_once('navbar.php');
                 </div>
             </div>
 
-            <br>
 
-            <div class="hide-on-med-and-up">
-                <div class="row"  style="background-color: rgb(145, 85, 167);">
-                    <div class="col m6 l8 offset-m3 offset-l4">
-                        <h5 class="white-text"> > Especialidades </h5>                 
-                    </div> 
+            <div class="row center" style="background-color: #a5d6a7  ;">
+                <br><br>
+                <div class="col s6">
+                    <h4 id="locais"> > Locais de atendimento </h4>
+                </div>
+                <div class="col s6">
+                    <a id="saibaMais" href="locais-atendimento.php" class="waves-effect waves-light btn">Saiba Mais</a>
                 </div>
             </div>
+            <br>
+
+
             <br>
         </div>
 
@@ -99,60 +111,163 @@ require_once('navbar.php');
 
         <div class="row center" style="background-color: white;">
             <br><br>
-            <h4 id="cuide"> Está na dúvida ? </h4>
+            <h4> FAÇA AUTO-EXAME </h4>
+            <p>Responda as perguntas e verifique se você é um Respirador Oral ou tem tendência a tê la!</p>
+            <p>
+                Você tem dificuldade de respirar pelo nariz?
+                <label>
+                    <input class="with-gap" name="group1" type="radio" value="sim" />
+                    <span>Sim</span>
+                </label>
+                <label>
+                    <input class="with-gap" name="group1" type="radio" value="nao"  />
+                    <span>Não</span>
+                </label>
+            </p>
+            <!--
+<p>
+Você tem dificuldade de respirar pelo nariz?
+<label>
+<input class="with-gap" name="group1" type="radio" value="sim" />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group1" type="radio" value="nao"  />
+<span>Não</span>
+</label>
+</p>
+<p>
+Você respira pela boca?
+<label>
+<input class="with-gap" name="group2" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group2" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+<p>
+Você tem resfriados frequentemente?
+<label>
+<input class="with-gap" name="group3" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group3" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+<p>
+Você tem coceira no nariz?
+<label>
+<input class="with-gap" name="group4" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group4" type="radio"  />
+<span>Não</span>
+</label>
+</p>
 
-            <br><br>
-            <div class="container" style="background-color: white;">
-                <div class="row">
-                    <div class="col s12 m12 l12">
-                          <i class="large material-icons green-text ">priority_high</i>
-                        <h4 class="topicos"> Responda as perguntas e verifique se você possui respiração oral ou tem tendência a tê-la !</h4>
-                        <a href="Contato.php" style="color: rgb(145, 85, 167);"> > Responder questionário </a>
-         
- 
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <img src="Img_Prog/pessoa.png" style="height: 80px; width: 80px;">
-                        <h4 class="topicos"> Conheça mais sobre a Clínica Médica </h4>
-                        <p class="topicos"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et gravida metus. Integer maximus odio quis diam rhoncus molestie. Nullam eu ipsum ante. Ut dictum pharetra velit vitae finibus.</p>
-                        <a href="#" style="color: rgb(145, 85, 167);"> > Saiba mais </a>
-                        <br><br>
-                        <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
-                    </div>
-                </div>
-            </div>
+<p>
+Você sente o nariz entupido?
+<label>
+<input class="with-gap" name="group5" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group5" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você espirra várias vezes em seguida?
+<label>
+<input class="with-gap" name="group6" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group6" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você apresenta secreção no nariz frequentemente?
+<label>
+<input class="with-gap" name="group7" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group7" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você ronca?
+<label>
+<input class="with-gap" name="group8" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group8" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você tem algum problema com sono?
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+
+
+<p>
+Você dorme com a boca aberta?
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você sente cansaço durante o dia?
+<label>
+<input class="with-gap" name="group10" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group10" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você acorda com a boca seca?
+<label>
+<input class="with-gap" name="group11" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group11" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+-->
         </div>
 
         <?php

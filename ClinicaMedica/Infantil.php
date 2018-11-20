@@ -64,7 +64,7 @@
 
         /*Conteudo da página*/
         #conteudo{
-            background: linear-gradient(#8e24aa   , #ab47bc  );
+            background-color:#0000;
         }
         a
         .btn{
@@ -80,7 +80,7 @@
         }
     </style>
 
-    <body style="background-color:#ab47bc">
+    <body style="background-color:#0000">
 
         <!-- Website Content -->
         <div id="conteudo">

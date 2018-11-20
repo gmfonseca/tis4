@@ -58,7 +58,7 @@
 
         /*Conteudo da página*/
         #conteudo{
-            background-color: #b3e5fc;
+            background-color: #0000;
         }
         a
         .btn{
@@ -72,14 +72,25 @@
         .divisor-line{
             border-color: #eee;
         }
-        
+
         .tamIcons{
             font-size: 270px !important;
         }
+        img{
+            width: 50%;
+            height: 50%;
+        }
+        #criancas{
+            width: 40%;
 
+        }
+        #clique{
+            color: #a5d6a7;
+        }
+        
     </style>
 
-    <body  style="background-color:#b3e5fc">
+    <body  style="background-color:#0000">
 
         <!-- Website Content -->
         <div id="conteudo">
@@ -88,10 +99,13 @@
             ?>
 
             <br><br><br><br><br>
+            <div class="row center">
+                <h4 id="clique">Clique no Jogos</h4>
+            </div>
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
 
-                    <i class="large material-icons green-text text-lighten-2 tamIcons">face</i>
+                    <img src="Img_Prog/adultos.jpg"/ >
                     <br>
                     <a href="Jogos.php" class="waves-effect waves-light btn-large"> ADULTO </a>   
                     <br><br>
@@ -100,7 +114,7 @@
 
                 <div class="center col s12 m6 l4">	
 
-                    <i class="large material-icons green-text text-lighten-2 tamIcons">child_care</i>
+                    <img id="criancas" src="Img_Prog/criancas.png">
                     <br>
                     <a href="Infantil.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
                     <br><br>

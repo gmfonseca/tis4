@@ -24,7 +24,7 @@ DEPOIS
 ----------------->
 
 <!-- DROPDOWN STRUCTURE -->
-<ul id="drop-especialidade" class="dropdown-content purple lighten-2">
+<ul id="drop-especialidade" class="dropdown-content green lighten-2">
     <li><a href="Sintomas.php" class="white-text">SINAIS E SINTOMAS</a></li>
     <li><a href="AlteracoesRO.php" class="white-text">ALTERAÇÕES RO</a></li>
     <li><a href="Prevalencia.php" class="white-text">PREVALÊNCIA</a></li>
@@ -33,27 +33,27 @@ DEPOIS
 </ul>
 
 <!-- NAVBAR -->
-<nav class="light-blue accent-2">
+<nav class="green lighten-1">
     <div class="nav-wrapper">
-        <a href="index.php" class="brand-logo" style="margin-left: 10px">Início</a>
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
+            <li> <a href="index.php" style="font-size:30px;">Início</a></li>
             <li><a href="Problema.php">O PROBLEMA</a></li>
-            <li><a class="dropdown-trigger"  data-target="drop-especialidade">ESPECIALIDADES<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger"  data-target="drop-especialidade">INFORMAÇÕES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="locais-atendimento.php">LOCAIS DE ATENDIMENTO</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li><a href="Definir-Jogo.php">JOGOS</a></li>
             <li><a href="curiosidades.php">CURIOSIDADES</a></li>
-        <!--
-            <li><a href="Login.php">LOGIN</a></li>
-            <li><a href="Cadastro.php">CADASTRO</a></li>
-        -->
+            <!--
+<li><a href="Login.php">LOGIN</a></li>
+<li><a href="Cadastro.php">CADASTRO</a></li>
+-->
         </ul>
     </div>
 </nav>
 
 <!-- NAVBAR MOBILE -->
-<ul id="mobile-demo" class="sidenav purple lighten-1">
+<ul id="mobile-demo" class="sidenav green lighten-2">
     <li><a><i class="sidenav-close white-text material-icons">close</i></a></li>
     <li><a href="problema.php" class="collapsible-header white-text">O PROBLEMA</a></li>
     <li>
@@ -76,9 +76,9 @@ DEPOIS
     <li><a href="Definir-Jogo.php" class="collapsible-header white-text"> JOGOS</a></li>
     <li><a href="curiosidades.php" class="collapsible-header white-text">CURIOSIDADES</a></li>
     <!-- 
-        <li><a href="Login.php" class="collapsible-header white-text"> LOGIN</a></li>
-        <li><a href="Cadastro.php" class="collapsible-header white-text"> CADASTRO</a></li> 
-    -->
+<li><a href="Login.php" class="collapsible-header white-text"> LOGIN</a></li>
+<li><a href="Cadastro.php" class="collapsible-header white-text"> CADASTRO</a></li> 
+-->
 </ul>
 
 <!-- NAVBAR SCRIPT -->

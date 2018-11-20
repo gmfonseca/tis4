@@ -99,9 +99,6 @@
 
         <div class="conteudo">
 
-            <?php 
-                require_once('navbar.php');
-            ?>
             <!--Login-->
             <div class="container">
                 <div class="container">
