@@ -65,7 +65,8 @@
                     break;
                 default:
                     break;
-            }            
+            }
+            mostraResp();
             return getDados();
         }
 
@@ -94,7 +95,7 @@
                 default:
                     break;
             }
-
+            mostraResp();
             return getDados();
         }
         
@@ -106,6 +107,10 @@
             }else{
                 alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
             }
+        }
+        
+        function mostraResp(){
+            document.getElementById('resp').hidden = false;
         }
 
     </script>
@@ -147,7 +152,7 @@
         
         .imagens{
             width: 300px;
-            heigh: 400px;
+            height: 400px;
         }
         
         .respostaCompleta{
@@ -173,16 +178,6 @@
         
         <div id="resultado"></div>
              
-
-        <div class="row">
-            <div class="container">
-                <div class="card-panel z-depth-5 white">
-                
-                    <p class="respostaCompleta"> <b> Resposta: </b>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac leo ac nulla placerat placerat. Pellentesque pulvinar vel orci sit amet malesuada. In tincidunt a lorem vestibulum dapibus. Curabitur et dolor sagittis, molestie neque a, semper ipsum. Morbi id posuere est. Nulla commodo vulputate euismod. In massa diam, molestie in sodales eget, maximus et diam. Ut ut ultricies quam. Donec et libero ac nulla laoreet condimentum.</p>
-
-                    </div>
-            </div>
-        </div>
         
         <div class="container">
             <div class="row">
