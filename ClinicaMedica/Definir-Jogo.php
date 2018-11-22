@@ -116,7 +116,7 @@
 
                     <img id="criancas" src="Img_Prog/criancas.png">
                     <br>
-                    <a href="Infantil.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
+                    <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
