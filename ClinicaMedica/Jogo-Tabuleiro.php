@@ -272,7 +272,7 @@
 
             <map name="mapaTabuleiro">
 
-                    <img src="Dado/face1.JPG" alt="dado" id="face" onclick="startTimer()">
+                    <img src="Dado/face1.JPG" alt="dado" id="face" style="margin-left: 1470px; margin-top: 1650px;" onclick="startTimer()">
                     <img id="0" src="Img_Prog/tabuleiro/player.png" style="height: 300px; width: 200px; margin-left: 210px; margin-top: 270px;">
                     <area title="partida" shape="rect" coords="121,481,476,590" onclick="alertaTeste()"/>
 
