@@ -18,109 +18,36 @@
     </head>
 
     <style>
-        /* Fonte da letra dos <li> */
-        li{
-            font-family: 'Raleway';
-        }
-
-        /* Distância dos <li> de Especialidades */
-        #Especialidades{
-            top: 90px !important;
-        }
-
-        /* Centraliza o NavBar */
-        .nav-wrapper ul.center {
-            display: block;
-            width: auto;
-        }
-
-        .nav-wrapper > ul.center li {
-            float: none;
-            display: inline-block;
-        }
-
-        /* Distância do topo do NavBar */
-        .lina{
-            margin-top: 25px;
-        }
-
-        /* Cor dos botões do Carousel */
-        .carousel .indicators .indicator-item.active {
-            background-color: rgb(145, 85, 167);
-        }
-
-        /* Posição dos botões do Carousel */
-        .caoursel .indicators {
-            bottom: 60px;
-            z-index: 100;
-        }
-
-        /*Cards Colors*/
-        #card1{
-            background-color: rgba(109, 204, 163, 0.9);
-        }
-        #card2{
-            background-color: rgba(13, 178, 107, 0.9);
-        }
-        #card3{
-            background-color: rgba(9, 119, 71, 0.9);
-        }
-
-        /* Cor verde do texto "Cuide..." */
-        #cuide, #Atfooter{
-            color: #0DB26B;
-        }
-
-        /*Fonte para esse tipo de tags*/
-        p, span, h5,h4, #Atfooter{
-            font-family: raleway, sans-serif;
-              color: #f3e5f5    ;
-        }
-
-        .topicos{
-            color: #605E5E;
-        }
-
-        body{
-            overflow-x: hidden;
-        }
-        h1{
-            color: #ce93d8  ;
-        }
-        input{
-            color: #e1bee7  ;
-        }
-        .conteudo{
-            background: linear-gradient(#8e24aa   , #ab47bc  );
-        }
     </style>
 
-    <body style="background-color:#ab47bc">
+    <body class="green darken-4">
 
         <div class="conteudo">
 
             <!--Login-->
             <div class="container">
                 <div class="container">
-                    <h1>Login</h1>
+                    <h1 class="white-text">Login</h1>
                     <!--Container do formulario-->
                     <div class="row">
                         <form method="post" class="col s12" action="Valida-Login.php" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input name="tUsuario" id="usuario" type="text" class="validate">
+                                    <i class="material-icons prefix">person</i>
+                                    <input name="tUsuario" id="usuario" type="text" class="validate white-text">
                                     <label class="active" for="usuario">Usuário</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input name="tSenha" id="senha" type="password" class="validate">
+                                    <i class="material-icons prefix">vpn_key</i>
+                                    <input name="tSenha" id="senha" type="password" class="validate white-text">
                                     <label class="active" for="senha">Senha</label>
                                 </div>
                             </div>
-                                                <div class="right-align">
-                                                    <button type="submit" class="waves-effect waves-light btn"> Entrar </button>
-                    </div>
+                            <div class="left-align">
+                                <button type="submit" class="waves-effect waves-light btn" style="width: 100%"> Entrar </button>
+                            </div>
                         </form>
                     </div>
                 </div>
