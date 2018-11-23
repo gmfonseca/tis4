@@ -85,7 +85,12 @@
                 margin-left: 1150px;
                 margin-top:  10px;
             }
-
+            #resultado{
+                        z-index: 1;
+                        position: fixed;
+                        margin-left: 1020px;
+                        margin-top:  -200px;
+            }
             #principal{
                 background-color: red;
             }
@@ -103,10 +108,16 @@
             }
 
             function andar(anda){
+                p += anda;
                 let numPassos = anda;
                 var intervaloPassos = setInterval(function passos(numPassos){
                     if(y === anda){
                         y = 0;
+                        if(p == 4 || p == 10 || p == 13 || p == 21 || p == 31 || p == 38){
+                            getExercicio();
+                        }else{
+                            getDados();   
+                        }
                         clearInterval(intervaloPassos);
                     }else{
                         document.getElementById(pos).hidden = true;
@@ -115,12 +126,6 @@
                         y++;
                     }
                 }, 800);
-                p = pos + anda;
-                if(p == 4 || p == 10 || p == 13 || p == 21 || p == 31 || p == 38){
-                    getExercicio();
-                }else{
-                    getDados();   
-                }
             }
 
 
@@ -410,11 +415,8 @@
 
         <br><br><br>
 
-            <div id="perguntas">
-
                 <div id="resultado"></div>
                 
-            </div>
         </div>
         
         <!-- Jquery-->

@@ -7,7 +7,7 @@
     include "Conexao.php";
 
     $sql = "SELECT * FROM pergunta ORDER BY RAND() LIMIT 1";
-    sleep(3);
+    sleep(0.5);
 
     $result = mysqli_query($conexao,$sql);
         $pergunta = mysqli_fetch_array($result);

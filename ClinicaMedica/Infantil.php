@@ -3,7 +3,7 @@
     <head>  
 
         <meta charset="utf-8">
-        <title> Clinica Médica - Escolher Jogo </title>
+        <title> Clinica Médica - Infantil </title>
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -56,9 +56,15 @@
             font-family: raleway, sans-serif;
         }
 
+
+        body{
+            background-color:#C3C3C3
+
+        }
+
         /*Conteudo da página*/
         #conteudo{
-            background-color: #0000;
+            background-color:#0000;
         }
         a
         .btn{
@@ -72,54 +78,42 @@
         .divisor-line{
             border-color: #eee;
         }
-
-        .tamIcons{
-            font-size: 270px !important;
-        }
-        img{
-            width: 50%;
-            height: 50%;
-        }
-        #criancas{
-            width: 40%;
-
-        }
-        #clique{
-            color: #a5d6a7;
-        }
-        
     </style>
 
-    <body  style="background-color:#0000">
+    <body style="background-color:#0000">
 
         <!-- Website Content -->
         <div id="conteudo">
-            <?php
+            <?php 
             require_once('navbar.php');
             ?>
 
             <br><br><br><br><br>
-            <div class="row center">
-                <h4 id="clique">Clique no Jogos</h4>
-            </div>
-            <div class="row" id="linha">
-                <div class="center col s12 m6 l4 offset-l2">							
-
-                    <img src="Img_Prog/adultos.jpg"/ >
+            <div class="row">
+                <div class="center ">							
+                
+                     <i class="large material-icons green-text text-lighten-2">games</i>
                     <br>
-                    <a href="Jogos.php" class="waves-effect waves-light btn-large"> ADULTO </a>   
+                    <a href="Jogo-Tabuleiro.php" target="blank" class="waves-effect waves-light btn">JOGOS</a>   
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
 
-                <div class="center col s12 m6 l4">	
-
-                    <img id="criancas" src="Img_Prog/criancas.png">
+<!--
+                <div class="center col s12 m4 l4">	
+                    <i class="large material-icons green-text text-lighten-2">ondemand_video</i>
                     <br>
-                    <a href="Infantil.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
+                    <a class="waves-effect waves-light btn">VÍDEOS</a>    
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>
+
+                <div class="center col s12 m4 l4">			
+                    <i class="large material-icons green-text text-lighten-2">insert_photo</i>
+                    <br>
+                    <a class="waves-effect waves-light btn">GALERIA</a>
+                </div>
+-->
             </div>   
             <br>			
         </div>

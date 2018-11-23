@@ -30,37 +30,6 @@ require_once('navbar.php');
             }
 
         </style>
-        
-        <script>
-            
-            var count = 1;
-            
-            function mudaPergunta(Antid){
-                if(count <=6){
-                var prox = Antid+1;
-                setTimeout(function(){document.getElementById(Antid).hidden = true; }, 1000); 
-                setTimeout(function(){document.getElementById(prox).hidden = false; }, 1000); 
-                count++;}
-                else if(count > 6){
-                    for(var i=1; i<12; i++){
-                        document.getElementById(i).hidden=true;
-                    }
-                    document.getElementById('contato').hidden=false;                   
-                }
-            }
-            
-            function trataNao(Antid){                
-                var prox = Antid+1;
-                setTimeout(function(){document.getElementById(Antid).hidden = true; }, 1000); 
-                setTimeout(function(){document.getElementById(prox).hidden = false; }, 1000); 
-                if(Antid == 12 && count<6){
-                    document.getElementById('noproblem').hidden=false;
-                }
-            }
-            
-            
-            
-        </script>
 
     </head>
 
@@ -144,182 +113,155 @@ require_once('navbar.php');
             <br><br>
             <h4> FAÇA AUTO-EXAME </h4>
             <p>Responda as perguntas e verifique se você é um Respirador Oral ou tem tendência a tê la!</p>
-            <p id="1">
+            <p hidden="true">
                 Você tem dificuldade de respirar pelo nariz?
                 <label>
-                    <input class="with-gap" name="group1" type="radio" value="sim" onClick="mudaPergunta(1)"/>
+                    <input class="with-gap" name="group1" type="radio" value="sim" />
                     <span>Sim</span>
                 </label>
                 <label>
-                    <input class="with-gap" name="group1" type="radio" value="nao" onClick="trataNao(1)"/>
-                    <span>Não</span>
-                </label>
-            </p>
- 
-            <p id="2" hidden="true">
-                Você respira pela boca?
-                <label>
-                    <input class="with-gap" name="group2" type="radio"  onclick="mudaPergunta(2)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group2" type="radio" onClick="trataNao(2)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-
-            <p id="3" hidden="true">
-                Você tem resfriados frequentemente?
-                <label>
-                    <input class="with-gap" name="group3" type="radio"  onclick="mudaPergunta(3)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group3" type="radio" onClick="trataNao(3)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="4" hidden="true">
-                Você tem coceira no nariz?
-                <label>
-                    <input class="with-gap" name="group4" type="radio"  onclick="mudaPergunta(4)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group4" type="radio" onClick="trataNao(4)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="5" hidden="true">
-                Você sente o nariz entupido?
-                <label>
-                    <input class="with-gap" name="group5" type="radio"  onclick="mudaPergunta(5)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group5" type="radio" onClick="trataNao(5)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="6" hidden="true">
-                Você espirra várias vezes em seguida?
-                <label>
-                    <input class="with-gap" name="group6" type="radio"  onclick="mudaPergunta(6)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group6" type="radio" onClick="trataNao(6)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="7" hidden="true">
-                Você apresenta secreção no nariz frequentemente?
-                <label>
-                    <input class="with-gap" name="group7" type="radio"  onclick="mudaPergunta(7)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group7" type="radio" onClick="trataNao(7)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="8" hidden="true">
-                Você ronca?
-                <label>
-                    <input class="with-gap" name="group8" type="radio"  onclick="mudaPergunta(8)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group8" type="radio" onClick="trataNao(8)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="9" hidden="true">
-                Você tem algum problema com sono?
-                <label>
-                    <input class="with-gap" name="group9" type="radio"  onclick="mudaPergunta(9)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group9" type="radio" onClick="trataNao(9)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="10" hidden="true">
-                Você dorme com a boca aberta?
-                <label>
-                    <input class="with-gap" name="group9" type="radio"  onclick="mudaPergunta(10)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group9" type="radio" onClick="trataNao(10)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="11" hidden="true">
-                Você sente cansaço durante o dia?
-                <label>
-                    <input class="with-gap" name="group10" type="radio"  onclick="mudaPergunta(11)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group10" type="radio" onClick="trataNao(11)"/>
-                    <span>Não</span>
-                </label>
-            </p>
-            
-            <p id="12" hidden="true">
-                Você acorda com a boca seca?
-                <label>
-                    <input class="with-gap" name="group11" type="radio"  onclick="mudaPergunta(12)"/>
-                    <span>Sim</span>
-                </label>
-                <label>
-                    <input class="with-gap" name="group11" type="radio" onClick="trataNao(12)"/>
+                    <input class="with-gap" name="group1" type="radio" value="nao"  />
                     <span>Não</span>
                 </label>
             </p>
             
 
-                <div id="contato" class="row" hidden="true">
-                    <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
-                        <div class="card" style="background-color: #a5d6a7;">
-                            <div class="card-content white-text">
-                                <span class="card-title"> Atenção! </span>
-                                <p> Você possui tendências a ter respiração oral, clique no botão a baixo para entrar em contato conosco! </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="Contato.php" class="waves-effect waves-light btn"> Entre em Contato </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             
-                <div id="noproblem" class="row" hidden="true">
-                    <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
-                        <div class="card" style="background-color: #a5d6a7;">
-                            <div class="card-content white-text">
-                                <span class="card-title"> Auto-Exame Concluído! </span>
-                                <p> Você não possui tendência a ter respiração oral! </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="Contato.php" class="waves-effect waves-light btn"> Entre em Contato Para mais Informações </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            <br><br><br>
+<p>
+Você respira pela boca?
+<label>
+<input class="with-gap" name="group2" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group2" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+<!--
+<p>
+Você tem resfriados frequentemente?
+<label>
+<input class="with-gap" name="group3" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group3" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+<p>
+Você tem coceira no nariz?
+<label>
+<input class="with-gap" name="group4" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group4" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você sente o nariz entupido?
+<label>
+<input class="with-gap" name="group5" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group5" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você espirra várias vezes em seguida?
+<label>
+<input class="with-gap" name="group6" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group6" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você apresenta secreção no nariz frequentemente?
+<label>
+<input class="with-gap" name="group7" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group7" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você ronca?
+<label>
+<input class="with-gap" name="group8" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group8" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você tem algum problema com sono?
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+
+
+<p>
+Você dorme com a boca aberta?
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group9" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você sente cansaço durante o dia?
+<label>
+<input class="with-gap" name="group10" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group10" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+
+<p>
+Você acorda com a boca seca?
+<label>
+<input class="with-gap" name="group11" type="radio"  />
+<span>Sim</span>
+</label>
+<label>
+<input class="with-gap" name="group11" type="radio"  />
+<span>Não</span>
+</label>
+</p>
+-->
         </div>
-        
+
         <?php
         require_once('footer.php');
         ?>
