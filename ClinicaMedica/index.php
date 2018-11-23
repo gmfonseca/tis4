@@ -297,7 +297,7 @@ require_once('navbar.php');
                                 <p> Você possui tendências a ter respiração oral, clique no botão a baixo para entrar em contato conosco! </p>
                             </div>
                             <div class="card-action">
-                                <a href="Contato.php" class="waves-effect waves-light btn"> Entre em Contato </a>
+                                <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato </a>
                             </div>
                         </div>
                     </div>
@@ -311,7 +311,7 @@ require_once('navbar.php');
                                 <p> Você não possui tendência a ter respiração oral! </p>
                             </div>
                             <div class="card-action">
-                                <a href="Contato.php" class="waves-effect waves-light btn"> Entre em Contato Para mais Informações </a>
+                                <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato Para mais Informações </a>
                             </div>
                         </div>
                     </div>
