@@ -105,7 +105,7 @@
             <div class="row" id="linha">
                 <div class="center col s12 m6 l4 offset-l2">							
 
-                    <img src="Img_Prog/adultos.jpg"/ >
+                    <img src="Img_Prog/adultos.jpg" />
                     <br>
                     <a href="Jogos.php" class="waves-effect waves-light btn-large"> ADULTO </a>   
                     <br><br>
@@ -116,7 +116,7 @@
 
                     <img id="criancas" src="Img_Prog/criancas.png">
                     <br>
-                    <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn-large"> INFANTIL </a>    
+                    <a href="Jogo-Tabuleiro.php" class="waves-effect waves-light btn-large" target="_blank"> INFANTIL </a>    
                     <br><br>
                     <span class="col s12 hide-on-med-and-up divisor-line"><br></span>
                 </div>

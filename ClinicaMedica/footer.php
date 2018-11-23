@@ -13,21 +13,6 @@
 <!--Materialize JS-->
 <script src="js/materialize.min.js"></script>
 
-
-
-
-<!--
-<footer class="row grey lighten-3">
-
-<div class="right">
-<h4 id="Atfooter"> Contato </h4>
-</div>
-<div class="right">
-<p>  pdayrell@gmail.com  </p>               
-</div> 
-</footer>
--->
-
 <footer class="page-footer row grey lighten-3">
     <div class="container">
         <div class="row">
