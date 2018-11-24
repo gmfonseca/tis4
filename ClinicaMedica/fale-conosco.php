@@ -142,7 +142,7 @@
                                 <label for="mensagem">Mensagem</label>
                             </div>
                             <div class="right-align">
-                                <button class="btn waves-effect waves-light" type="button" onclick="ajuda()">Submit
+                                <button class="btn waves-effect waves-light" type="button" onclick="ajuda()">Enviar
                                     <i class="material-icons right">send</i>
                                 </button>
                             </div>
