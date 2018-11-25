@@ -12,7 +12,13 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!--Materialize JS-->
 <script src="js/materialize.min.js"></script>
-
+<style>
+.btn-small {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 0.5rem;
+}
+</style>
 <footer class="page-footer row grey lighten-3">
     <div class="container">
         <div class="row">
@@ -21,15 +27,16 @@
                 <p class="grey-text "> Email: respiradororal@gmail.com  </p>
             </div>
         </div>
-		<div class="row">
-			<div style="float:right">
-				<a href="login.php" class="waves-effect waves-light btn-small">LOGIN DE ADMINISTRADORES</a>
-			</div>
-		</div>
+        <div class="row">
+
+        </div>
     </div>
     <div class="footer-copyright">
         <div class="container">
             <p class="grey-text "> © 2018 PUC MINAS FISIOTERAPIA - Desenvolvido pelos alunos do 4.º período de Engenharia de Software da PUC MINAS - Praça da Liberdade </p>
+            <div style="float:right">
+                <a href="login.php" class="btn-small">Login administradores</a>
+            </div>
         </div>
     </div>
 </footer>

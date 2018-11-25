@@ -113,14 +113,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col s8 offset-s2">
-                        <img class="responsive-img" src="Img_Prog/AlteracoesRO.png">
+                        <img class="responsive-img" src="Img_Prog/AlteracaoRO.png" />
                     </div>
 
                 </div>
                 <div class="row">
                     <br>
-
-                    <div class="col s12 m12 l12">
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="Img_Prog/AlteracoesFace.jpg" style="height: 419px; width: 396px;">
+                    </div>
+                    <div class="col s12 m6 l6">
                         <h4 class="corVerdeTexto"> Alterações na Face </h4>
                         <p class="topicos"> 
                             O respirador oral apresenta desenvolvimento assimétrico dos músculos, ossos do nariz, lábios e bochechas, provocando efeitos na face: o nariz fica estreito e curto (por falta de uso), bochechas pálidas e baixas, lábio inferior curto, mandíbula posicionada para trás e pouco desenvolvida. Frequentemente, observamos que a criança que respira pela boca apresenta um rosto mais triste e cansado, principalmente pela presença de olheiras ao redor dos olhos.                 
@@ -183,7 +185,7 @@
                             Acordam com a boca seca. Roncam, porque o ar que entra pela boca faz vibrar os músculos da garganta, gerando o barulho do ronco.
                         </p>
                     </div>
-                    
+
                 </div>
 
                 <div class="row">

@@ -144,6 +144,9 @@
                         </ul>
                         Além disso, crianças maiores que possuem a Síndrome do Respirador Bucal apresentam baixo rendimento escolar, problemas de crescimento, bem como infecções respiratórias frequentes.
                     </div>
+                    <div class="col s12 m6 l6">
+                        <img class="responsive-img" src="Img_Prog/sinaisEsintomas.jpg" style="height: 419px; width: 396px;"/>
+                    </div>
                 </div>
                 <br><br>             
             </div>

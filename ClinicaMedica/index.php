@@ -30,17 +30,17 @@ require_once('navbar.php');
             }
 
         </style>
-        
+
         <script>
-            
+
             var count = 1;
-            
+
             function mudaPergunta(Antid){
                 if(count <=6){
-                var prox = Antid+1;
-                setTimeout(function(){document.getElementById(Antid).hidden = true; }, 1000); 
-                setTimeout(function(){document.getElementById(prox).hidden = false; }, 1000); 
-                count++;}
+                    var prox = Antid+1;
+                    setTimeout(function(){document.getElementById(Antid).hidden = true; }, 1000); 
+                    setTimeout(function(){document.getElementById(prox).hidden = false; }, 1000); 
+                    count++;}
                 else if(count > 6){
                     for(var i=1; i<12; i++){
                         document.getElementById(i).hidden=true;
@@ -48,7 +48,7 @@ require_once('navbar.php');
                     document.getElementById('contato').hidden=false;                   
                 }
             }
-            
+
             function trataNao(Antid){                
                 var prox = Antid+1;
                 setTimeout(function(){document.getElementById(Antid).hidden = true; }, 1000); 
@@ -57,9 +57,9 @@ require_once('navbar.php');
                     document.getElementById('noproblem').hidden=false;
                 }
             }
-            
-            
-            
+
+
+
         </script>
 
     </head>
@@ -112,8 +112,8 @@ require_once('navbar.php');
                 <div class="col s12 m4 l2">
                     <div id="card3" class="card">
                         <div class="card-content white-text">
-                            <span class="card-title"> Prevalência </span>
-                            <p>Clique em saiba mais para mais informações sobre as Prevalências da respiração oral.</p>
+                            <span id="prevalencia" class="card-title"> Prevalência e causas </span>
+                            <p>Clique em saiba mais para mais informações sobre as Prevalências.</p>
                         </div>
                         <div class="card-action">
                             <a href="Prevalencia.php" class="white-text"> Saiba mais </a>
@@ -155,7 +155,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
- 
+
             <p id="2" hidden="true">
                 Você respira pela boca?
                 <label>
@@ -179,7 +179,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="4" hidden="true">
                 Você tem coceira no nariz?
                 <label>
@@ -191,7 +191,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="5" hidden="true">
                 Você sente o nariz entupido?
                 <label>
@@ -203,7 +203,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="6" hidden="true">
                 Você espirra várias vezes em seguida?
                 <label>
@@ -215,7 +215,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="7" hidden="true">
                 Você apresenta secreção no nariz frequentemente?
                 <label>
@@ -227,7 +227,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="8" hidden="true">
                 Você ronca?
                 <label>
@@ -239,7 +239,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="9" hidden="true">
                 Você tem algum problema com sono?
                 <label>
@@ -251,7 +251,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="10" hidden="true">
                 Você dorme com a boca aberta?
                 <label>
@@ -263,7 +263,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="11" hidden="true">
                 Você sente cansaço durante o dia?
                 <label>
@@ -275,7 +275,7 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
+
             <p id="12" hidden="true">
                 Você acorda com a boca seca?
                 <label>
@@ -287,39 +287,39 @@ require_once('navbar.php');
                     <span>Não</span>
                 </label>
             </p>
-            
 
-                <div id="contato" class="row" hidden="true">
-                    <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
-                        <div class="card" style="background-color: #a5d6a7;">
-                            <div class="card-content white-text">
-                                <span class="card-title"> Atenção! </span>
-                                <p> Você possui tendências a ter respiração oral, clique no botão a baixo para entrar em contato conosco! </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato </a>
-                            </div>
+
+            <div id="contato" class="row" hidden="true">
+                <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
+                    <div class="card" style="background-color: #a5d6a7;">
+                        <div class="card-content white-text">
+                            <span class="card-title"> Atenção! </span>
+                            <p> Você possui tendências a ter respiração oral, clique no botão a baixo para entrar em contato conosco! </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato </a>
                         </div>
                     </div>
                 </div>
-            
-                <div id="noproblem" class="row" hidden="true">
-                    <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
-                        <div class="card" style="background-color: #a5d6a7;">
-                            <div class="card-content white-text">
-                                <span class="card-title"> Auto-Exame Concluído! </span>
-                                <p> Você não possui tendência a ter respiração oral! </p>
-                            </div>
-                            <div class="card-action">
-                                <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato Para mais Informações </a>
-                            </div>
+            </div>
+
+            <div id="noproblem" class="row" hidden="true">
+                <div class="col s4 m4 l4 offset-24 offset-m4 offset-l4">
+                    <div class="card" style="background-color: #a5d6a7;">
+                        <div class="card-content white-text">
+                            <span class="card-title"> Auto-Exame Concluído! </span>
+                            <p> Você não possui tendência a ter respiração oral! </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="fale-conosco.php" class="waves-effect waves-light btn"> Entre em Contato Para mais Informações </a>
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
             <br><br><br>
         </div>
-        
+
         <?php
         require_once('footer.php');
         ?>
