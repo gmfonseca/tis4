@@ -37,7 +37,7 @@ DEPOIS
     <div class="nav-wrapper">
         <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li> <a href="index.php" style="font-size:30px;">Início</a></li>
+            <li> <a href="index.php" style="font-size:30px;">INÍCIO</a></li>
             <li><a href="Problema.php">O PROBLEMA</a></li>
             <li><a class="dropdown-trigger"  data-target="drop-especialidade">INFORMAÇÕES<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="locais-atendimento.php">LOCAIS DE ATENDIMENTO</a></li>

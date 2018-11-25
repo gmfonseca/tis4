@@ -119,27 +119,14 @@
                         <img class="" src="Img_Prog/ufmg.jpg" style="height: 100px; width: 200px;">
                     </div>
                     <div class="col s12 m6">
-                        <p>Hospital São Geraldo - HC UFMG
-                        <br/>Endereço: Av. Prof. Alfredo Balena, 190 - Santa Efigênia, Belo Horizonte - MG, 30130-100
-                        <br/>Horário: XXXX</p>
+                        <p>Ambulatório do Respirador Oral
+                            Hospital São Geraldo - 2° andar
+                            Funcionamento:  Quinta-feira a partir de 13:30.
+                            <br>(Para ser agendado é necessário ter um encaminhamento solicitando interconsulta do otorrinolaringologista).</p>
                     </div>
                 </div>
 
                 <div class="divider "></div><br>
-
-                <div class="row">
-                    <div class="col s12 m6 ">
-                        <img src="Img_Prog/pucminas.jpg" style="height: 145px; width: 200px;">
-                    </div>
-                    <div class="col s12 m6">
-                        <p>Centro Clínico de Fisioterapia
-                            Av. 31 de Março - acesso 8 - prédio 46 - PUC Minas Coração Eucarístico. 
-
-                            <br/>Horário de funcionamento: De segunda a sexta-feira, de 7h às 12h20 e de 13h30 às 18h50.
-
-                            <br/>Informações: (31)3319-4423 / 3319-4424s</p>
-                    </div>
-                </div>
                 <br>
                 <div class="row">
                     <div class="col s12 m6 offset-m6">
