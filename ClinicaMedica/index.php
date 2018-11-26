@@ -72,9 +72,9 @@ require_once('navbar.php');
             <!-- Carousel Structure -->
             <div class="carousel carousel-slider s12">
                 <!-- Itens Carousel -->
-                <a class="carousel-item" href="#one"><img class="responsive-img" src="Img_Prog/respiradorOral.jpg"></a>
-                <a class="carousel-item" href="#two"><img class="responsive-img" src="Img_Prog/dadoETabuleiro.jpg"></a>
-                <a class="carousel-item" href="#three"><img class="responsive-img" src="Img_Prog/curiosidade.jpg"></a>
+                <a class="carousel-item" href="Problema.php"><img class="responsive-img" src="Img_Prog/respiradorOral.jpg"></a>
+                <a class="carousel-item" href="Definir-Jogo.php"><img class="responsive-img" src="Img_Prog/dadoETabuleiro.jpg"></a>
+                <a class="carousel-item" href="curiosidades.php"><img class="responsive-img" src="Img_Prog/curiosidade.jpg"></a>
 
             </div> 
 
