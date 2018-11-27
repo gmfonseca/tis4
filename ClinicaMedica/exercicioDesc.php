@@ -12,7 +12,10 @@
     $result = mysqli_query($conexao,$sql);
         $exercicio = mysqli_fetch_array($result);
         // Atribui o código HTML para montar uma tabela
-        $tabela = '<img src="Imgs/'.$exercicio["imagem"].'">';
+        $tabela = '<div class="row">
+                        <h3 class="center white-text">'.$exercicio["descricao"].'</h3> 
+                        <a class="waves-effect waves-light btn" onClick="concluirExe()"><i class="material-icons right">check</i> Concluído </a>
+                    </div>';
 
         $return = "$tabela";
 

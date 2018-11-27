@@ -112,14 +112,23 @@
 
             function andar(anda){
                 p += anda;
+                if(p > 41){
+                    p = p - anda;
+                    anda = 41 - p;
+                    p += anda;
+                }
                 let numPassos = anda;
                 var intervaloPassos = setInterval(function passos(numPassos){
                     if(y === anda){
                         y = 0;
-                        if(p == 4 || p == 10 || p == 13 || p == 21 || p == 31 || p == 38){
+                        if(p == 41){
+                            calcEstatistica();
+                        }else if(p == 4 || p == 10 || p == 13 || p == 21 || p == 31 || p == 38){
                             getExercicio();
+                            getDesc();
                         }else{
-                            getDados();   
+                            getPergunta();   
+                            getRespostas();
                         }
                         clearInterval(intervaloPassos);
                     }else{
@@ -232,7 +241,8 @@
                     contCerto = contCerto+1;
                     contaQuestoes();
                     var intvA = setInterval(function limpaResultA() {
-                        document.getElementById('resultado').innerHTML = "";
+                        document.getElementById('pergunta').innerHTML = "";
+                        document.getElementById('respostas').innerHTML = "";
                         travapergunta = 0;
                         travadado = 0;
                         clearInterval(intvA);
@@ -246,7 +256,8 @@
                     contErrado = contErrado+1;
                     contaQuestoes();
                     var intvE = setInterval(function limpaResultE() {
-                        document.getElementById('resultado').innerHTML = "";
+                        document.getElementById('pergunta').innerHTML = "";
+                        document.getElementById('respostas').innerHTML = "";
                         travapergunta = 0;
                         travadado = 0;
                         clearInterval(intvE);
@@ -255,15 +266,15 @@
             }
 
             function concluirExe(){
-                document.getElementById('resultado').innerHTML = "";
+                document.getElementById('pergunta').innerHTML = "";
+                document.getElementById('respostas').innerHTML = "";
                 alert("Ande 2 casas extras!");
                 andar(2);
             }
             
             function calcEstatistica(){
-                if(p == 41){
-                    alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
-                }
+                travadado = 1;
+                alert('Você acertou ' + contCerto +' questões, errou ' + contErrado + ' de ' + numQuestoes + ' questões!');
             }
 
         </script>
@@ -273,7 +284,7 @@
     </head>
     <body style="background-color: rgb(4,180,4)">
 
-        <script type="text/javascript" src="js/ajaxtabuleiro.js"></script>
+        <script type="text/javascript" src="js/novoajax.js"></script>
 
         <div id="tabu">
             <img src="Img_Prog/tabuleiro/tab2.png" usemap="#mapaTabuleiro" id="tabuleiro">
@@ -417,19 +428,12 @@
             <div id="test3" class="col s12 m12 l12 grey darken-3" style="margin-left: 1040px; margin-top: 500px; height: 1000px; width: 1250px; position:absolute;">
                 <div class="row">
                     <div class="col s12 m12 l12">
-                        <div class="card-panel  grey darken-2" style="border-radius: 0px;">
-                            <h3 class="ralewayFont center white-text ralewayFont"> Pergunta </h3>                           
+                        <div id="pergunta" class="card-panel  grey darken-2" style="border-radius: 0px;">                          
                         </div>                        
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
-                        <div class="collection">
-                            <a href="#!" class="collection-item">Alvin</a>
-                            <a href="#!" class="collection-item">Alvin</a>
-                            <a href="#!" class="collection-item">Alvin</a>
-                            <a href="#!" class="collection-item">Alvin</a>
-                        </div>
+                    <div id="respostas" class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
                     </div>
                 </div>
             </div>

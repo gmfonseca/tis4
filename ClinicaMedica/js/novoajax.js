@@ -27,10 +27,10 @@ function CriaRequest() {
 /**
  * Função para enviar os dados
  */
-function getDados() {
+function getPergunta() {
     
     // Declaração de Variáveis
-    var result = document.getElementById("resultado");
+    var result = document.getElementById("pergunta");
     var xmlreq = CriaRequest();
     
     // Exibi a imagem de progresso
@@ -55,10 +55,38 @@ function getDados() {
     xmlreq.send(null);
 }
 
+function getRespostas() {
+    
+    // Declaração de Variáveis
+    var result = document.getElementById("respostas");
+    var xmlreq = CriaRequest();
+    
+    // Exibi a imagem de progresso
+    
+    // Monta a requisição
+    xmlreq.open("GET", "respostasTab.php", true);
+    
+    // Atribui uma função para ser executada sempre que houver uma mudança de estado
+    xmlreq.onreadystatechange = function(){
+        
+        // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
+        if (xmlreq.readyState == 4) {
+            
+            // Verifica se o arquivo foi encontrado com sucesso
+            if (xmlreq.status == 200) {
+                result.innerHTML = xmlreq.responseText;
+            }else{
+                result.innerHTML = "Erro: " + xmlreq.statusText;
+            }
+        }
+    };
+    xmlreq.send(null);
+}
+
 function getExercicio() {
     
     // Declaração de Variáveis
-    var result = document.getElementById("resultado");
+    var result = document.getElementById("pergunta");
     var xmlreq = CriaRequest();
     
     // Exibi a imagem de progresso
@@ -83,5 +111,30 @@ function getExercicio() {
     xmlreq.send(null);
 }
 
-
-
+function getDesc() {
+    
+    // Declaração de Variáveis
+    var result = document.getElementById("respostas");
+    var xmlreq = CriaRequest();
+    
+    // Exibi a imagem de progresso
+    
+    // Monta a requisição
+    xmlreq.open("GET", "exercicioDesc.php", true);
+    
+    // Atribui uma função para ser executada sempre que houver uma mudança de estado
+    xmlreq.onreadystatechange = function(){
+        
+        // Verifica se foi concluído com sucesso e a conexão fechada (readyState=4)
+        if (xmlreq.readyState == 4) {
+            
+            // Verifica se o arquivo foi encontrado com sucesso
+            if (xmlreq.status == 200) {
+                result.innerHTML = xmlreq.responseText;
+            }else{
+                result.innerHTML = "Erro: " + xmlreq.statusText;
+            }
+        }
+    };
+    xmlreq.send(null);
+}
