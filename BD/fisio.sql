@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Nov-2018 às 20:45
+-- Generation Time: 27-Nov-2018 às 15:04
 -- Versão do servidor: 10.1.35-MariaDB
 -- versão do PHP: 7.2.9
 
@@ -21,7 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `fisio`
 --
-
 CREATE DATABASE fisio;
 
 USE fisio;
@@ -87,8 +86,6 @@ INSERT INTO `pergunta` (`codigoPergunta`, `descricao`, `respostaCerta`, `tipo_pe
 (15, 'As crianÃ§as respiradoras orais apresentam o lÃ¡bio superior mais grosso do que o inferior?', 'A hipotonia da musculatura perioral causada pela constante abertura oral origina o apagamento do sulco nasolabial.', 0, 0),
 (16, 'A respiraÃ§Ã£o oral, entre diversos problemas, pode ocasionar alteraÃ§Ã£o da fala?', 'Os problemas de fala podem ser causados por alterações de mobilidade.\r\ntônus e postura dos órgãos fonoarticulatórios e alterações das estruturas orofaciais, muito comum em respiradores orais.\r\n', 0, 0),
 (17, 'A mÃ¡-oclusÃ£o, uma das principais caracterÃ­sticas do respirador oral pode acarretar dificuldades ou desvios de produÃ§Ã£o fonÃ©tico/articulatÃ³rio?', 'A fala pode ser imprecisa e a voz pode ser alterada pelo ressecamento dos tecidos da laringe que prejudica a vibração das pregas vocais.', 0, 0),
-(18, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 'A criança respiradora oral pode desenvolver o quadro de respiração oral funcional pela presenças destes hábitos de sucção e não necessariamente ter obstrução nasal significativa.', 0, 0),
-(19, 'A apresentaÃ§Ã£o de sintomas isolados pode mascarar a respiraÃ§Ã£o oral, impondo-se, portanto, um desafio diagnÃ³stico. Ã‰ importante questionar os hÃ¡bitos das crianÃ§as, como uso de chupetas e mamadeiras ou hÃ¡bito de chupar o dedo â€“ hÃ¡bitos que podem desencadear o aparecimento da respiraÃ§Ã£o ', 'A criança respiradora oral pode desenvolver o quadro de respiração oral funcional pela presenças destes hábitos de sucção e não necessariamente ter obstrução nasal significativa.', 0, 0),
 (20, 'A crianÃ§a respiradora oral nÃ£o apresenta muita tosse?', 'A tosse crônica apresentada por muitos respiradores orais ocorre porque através da\r\nrespiração oral não há adequado aquecimento e umidificação do ar inspirado.\r\n', 0, 0),
 (21, 'Os pacientes com respiraÃ§Ã£o oral podem apresentar hipersonolÃªncia diurna, sono dessincronizado (alteraÃ§Ã£o da fase REM do sono), depressÃ£o da capacidade de despertar, sono agitado e enurese noturna ( xixi na cama a noite)?', 'A presença de alterações do sono já são descritas em crianças respiradoras orais e devem ser investigadas.', 0, 0),
 (22, 'A crianÃ§a respiradora oral nÃ£o apresenta ronco?', 'O ronco é uma incapacidade do centro respiratório no sistema nervoso central de gerar\r\ntônus muscular adequado da faringe, levando a estreitamento da passagem de ar durante\r\no sono.\r\n', 0, 0),

@@ -10,7 +10,7 @@
         
         <!--Let browser know website is optimized for mobile-->
         <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <!--Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Materialize CSS-->
@@ -92,10 +92,10 @@
         }
         
         /* Muda cor ao passar o mouse */
-        .muda-cor:hover{
+        /*.muda-cor:hover{
             background: #1e88e5 !important;
             color: white !important;
-        }  
+        }*/  
         
         p{
             font-family: 'Nunito';

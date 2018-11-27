@@ -94,6 +94,11 @@
             #principal{
                 background-color: red;
             }
+            
+            #tabu{
+                margin-left: 20%;
+                margin-right: 25%;
+            }
 
         </style>
 
@@ -270,7 +275,7 @@
 
         <script type="text/javascript" src="js/ajaxtabuleiro.js"></script>
 
-        <div>
+        <div id="tabu">
             <img src="Img_Prog/tabuleiro/tab2.png" usemap="#mapaTabuleiro" id="tabuleiro">
 
             <map name="mapaTabuleiro">

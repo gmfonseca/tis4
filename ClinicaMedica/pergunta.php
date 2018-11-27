@@ -7,7 +7,7 @@
     include "Conexao.php";
 
     $sql = "SELECT * FROM pergunta ORDER BY RAND() LIMIT 1";
-    sleep(3);
+    sleep(6);
 
     $result = mysqli_query($conexao,$sql);
         $pergunta = mysqli_fetch_array($result);
@@ -59,7 +59,7 @@
             <div class="container">
                 <div class="card-panel z-depth-5 white">
                 
-                    <p class="respostaCompleta"> <b> Resposta: </b>'.$pergunta["respostaCerta"].'</p>
+                    <p class="respostaCompleta"> <b> Resposta: </b>'.utf8_encode($pergunta["respostaCerta"]).'</p>
 
                     </div>
             </div>
