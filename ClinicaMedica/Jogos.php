@@ -26,29 +26,50 @@
         var contCerto = 0;
         var contErrado = 0;
         var numQuestoes = 0;
+        var travapergunta = 0;
         
         function mudaCorCerto(btn_certo){
-            btn_certo.style.background = "#36bc27";
+            if(travapergunta == 0){
+                btn_certo.style.background = "#36bc27";
+            }
         }
 
         function mudaCorErrado(btn_errado){
-           btn_errado.style.background = "red";
+            if(travapergunta == 0){
+                btn_errado.style.background = "red";
+            }
         }
        
        function contaQuestoes(){
-           numQuestoes = numQuestoes+1;
+            numQuestoes = numQuestoes+1;
        }
        
         function contaAcerto(){
-            contCerto = contCerto+1; 
-            mostraResp();
-            return getDados();
+            if(travapergunta == 0){
+                travapergunta = 1;
+                contCerto = contCerto+1; 
+                contaQuestoes();
+                mostraResp();
+                getDados();
+                var intvA = setInterval(function liberaPergA() {
+                        travapergunta = 0;
+                        clearInterval(intvA);
+                    },6000);
+            }
         }
 
         function contaErrado(){
-            contErrado = contErrado+1;
-            mostraResp();
-            return getDados();
+            if(travapergunta == 0){
+                travapergunta = 1;
+                contErrado = contErrado+1;
+                contaQuestoes();
+                mostraResp();
+                getDados();
+                var intvE = setInterval(function liberaPergE() {
+                        travapergunta = 0;
+                        clearInterval(intvE);
+                    },6000);
+            }
         }
         
         function calcEstatistica(){
