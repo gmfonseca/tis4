@@ -282,7 +282,7 @@
 
 
     </head>
-    <body style="background-color: rgb(4,180,4); transform: scale(1.25); position: absolute">
+    <body style="background-color: rgb(4,180,4);">
 
         <script type="text/javascript" src="js/novoajax.js"></script>
 
