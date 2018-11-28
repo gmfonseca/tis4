@@ -169,6 +169,7 @@
             function jogarDado(){ 
                 var element = document.getElementById('face');
                 var sorte = Math.floor((Math.random() * 6) + 1);
+                sorte=4
                 var numeroTirado;
                 switch(sorte){
                     case 1:
@@ -282,7 +283,7 @@
 
 
     </head>
-    <body style="background-color: rgb(4,180,4)">
+    <body style="background-color: rgb(4,180,4); transform: scale(1.5); position: absolute;left: 10%">
 
         <script type="text/javascript" src="js/novoajax.js"></script>
 
@@ -433,7 +434,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div id="respostas" class="col s8 m8 l8 offset-s2 offset-m2 offset-l2">
+                    <div id="respostas" class="col s12 m8 l8  offset-m2 offset-l2">
                     </div>
                 </div>
             </div>
